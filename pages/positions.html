@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/home.css?v=20261030t" />
+  <link rel="stylesheet" href="../css/style.css?v=20261030t" />
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md antialiased">
+  <header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="relative z-10 h-20 w-full max-w-[1260px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between">
+
+      <!-- Brand -->
+      <div class="flex items-center gap-space-md">
+        <img class="h-9 w-auto" alt="" data-site-logo style="display:none">
+        <a class="flex flex-col" href="../index.html">
+          <span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-bold" id="site-name"></span>
+          <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary" id="site-subtitle"></span>
+        </a>
+      </div>
+
+      <!-- Back to Home (text + link from data/edit_join_the_lab_section.json -> buttons.back) -->
+      <a class="inline-flex items-center justify-center gap-space-xs bg-primary text-on-primary hover:bg-secondary transition-all font-label-md text-label-md uppercase tracking-[0.15em] px-space-lg py-space-sm max-sm:px-0 max-sm:w-9 max-sm:h-9" href="../index.html" id="positions-back">
+        <span class="cw-icon cw-icon--arrow-back text-[20px] sm:text-[16px]" aria-hidden="true"></span>
+        <span class="hidden sm:inline" id="positions-back-text"></span>
+      </a>
+
+    </div>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- Editorial hero — drawn from data/edit_join_the_lab_section.json by js/positions.js -->
+    <section class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-lg" id="positions-hero">
+      <noscript>
+        <p class="section-message">Enable JavaScript to see this page, or go back to the <a href="../index.html">home page</a>.</p>
+      </noscript>
+    </section>
+
+    <!-- Status pills (generated from data/edit_join_the_lab_section.json -> statuses) -->
+    <section class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-lg">
+      <div class="max-w-[1260px] mx-auto flex flex-wrap justify-center gap-space-xs" id="filter-bar"></div>
+    </section>
+
+    <!-- The roles ledger -->
+    <section class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-xl">
+      <div class="max-w-[1260px] mx-auto">
+
+        <div class="flex items-center gap-space-sm pb-space-sm">
+          <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary" id="positions-label"></span>
+          <span class="flex-1 h-px bg-outline-variant"></span>
+          <span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant" id="positions-count"></span>
+        </div>
+
+        <div id="positions-list">
+          <noscript>
+            <p class="section-message">Enable JavaScript to see the positions.</p>
+          </noscript>
+        </div>
+
+        <!-- Empty state -->
+        <div class="hidden py-space-xl text-center" id="empty-state">
+          <p class="font-body-md text-body-md text-on-surface-variant">No positions match this filter.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Closing note (words from data/edit_join_the_lab_section.json -> note) -->
+    <section class="w-full bg-[#1B1C19] pt-16 lg:pt-20 pb-16 lg:pb-20 px-margin md:px-margin-tablet lg:px-margin-desktop" id="positions-note"></section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer"></footer>
+
+  <script src="../js/helpers.js?v=20261105a"></script>
+<script src="../js/site.js?v=20261030t"></script>
+  <script src="../js/positions.js?v=20261105a"></script>
+
+  <style>
+    /* Editorial filter chips: sharp, hairline, uppercase.
+       Status pills wear their status colour (inline vars). */
+    .filter-btn {
+      background: transparent;
+      color: #494740;
+      border: 1px solid #cac6bd;
+      transition: all 0.15s ease;
+    }
+    .filter-btn:hover {
+      border-color: #7a776f;
+      color: #1b1c19;
+    }
+    .filter-btn.filter-btn--status {
+      background: var(--status-bg, transparent);
+      color: var(--status-fg, #494740);
+      border-color: transparent;
+    }
+    .filter-btn.filter-btn--status:hover {
+      background: var(--status-bg, transparent);
+      color: var(--status-fg, #494740);
+      filter: brightness(0.94);
+    }
+    .filter-btn.active,
+    .filter-btn.filter-btn--status.active,
+    .filter-btn.filter-btn--status.active:hover {
+      background: #1b1c19;
+      color: #fbf9f4;
+      border-color: #1b1c19;
+      filter: none;
+    }
+  </style>
+
+  <script src="../js/footer.js?v=20261030t"></script>
+</body>
+</html>

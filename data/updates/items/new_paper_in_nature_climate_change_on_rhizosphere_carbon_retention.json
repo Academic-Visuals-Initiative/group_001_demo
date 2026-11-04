@@ -1,0 +1,87 @@
+{
+  "current_date": "2026-09-02",
+  "add_relevant_category_name": "Publication",
+  "is_pinned": true,
+  "item_title": "New paper in Nature Climate Change on fungal carbon retention",
+  "item_introduction": "A four-year labelling experiment shows that intact fungal networks keep carbon in boreal soil far longer than previously assumed.",
+  "add_author_names": [
+    "Michael Carter",
+    "Prof. Katherine Bennett",
+    "Dr. Emily Morgan",
+    "Jasmine Brooks"
+  ],
+  "add_image": {
+    "image_path": "assets/images/about_us/action_1.jpg",
+    "image_alt": "Researchers preparing samples at a laboratory bench",
+    "image_caption": "Preparing the labelled cores for the 2026 analysis round."
+  },
+  "add_paragraph": [
+    "A new study published today in ==Nature Climate Change== reveals that rhizosphere carbon retention in alpine soils is far more sensitive to **temperature oscillation patterns** than previously understood.",
+    "The research, led by {Michael Carter|mailto:michael.carter@clearwaterlab.org}, uses a novel combination of **isotope tracing**, `metagenomic sequencing`, and high-frequency soil temperature monitoring to trace carbon flow from living roots into stable mineral-associated pools.",
+    "The study leverages the lab's decade-long warming experiment at **Storglombreen**, where soil temperatures have been manipulated at 2°C increments across 48 plots since 2016. By introducing ¹³C-labeled root exudates and tracking their fate, the team discovered that increased temperature variability — not just mean warming — **accelerates carbon loss** from the rhizosphere by up to 37%.",
+    "The findings have significant implications for Earth system models, which currently parameterize soil carbon feedbacks based on mean annual temperature alone."
+  ],
+  "add_button": {
+    "center_small": true,
+    "items": [
+      {
+        "label": "Read the paper",
+        "link": "https://doi.org/10.1038/s41558-026-01984-2",
+        "style": "solid"
+      },
+      {
+        "label": "Download the data",
+        "link": "https://zenodo.org/records/1234567",
+        "style": "outline"
+      }
+    ]
+  },
+  "add_content_to_page": [
+    {
+      "add_gallery": {
+        "layout": "grid",
+        "columns": 2,
+        "size": "16x9",
+        "images": [
+          {
+            "image_path": "assets/images/about_us/action_3.jpg",
+            "image_alt": "Researchers sampling beside a stream",
+            "image_caption": "Sampling the riparian plots after the autumn rain",
+            "credit": "TerraNova Media"
+          },
+          {
+            "image_path": "assets/images/research_areas_and_labs/labs/icp_ms_suite.jpg",
+            "image_alt": "ICP-MS instrument in the clean laboratory",
+            "image_caption": "Isotope analysis in the clean lab",
+            "credit": "CLEAR WATER LAB"
+          }
+        ]
+      }
+    },
+    {
+      "add_paragraph": [
+        "The team hopes these results will inform the next generation of Earth system models ahead of the IPCC AR7 cycle. ==Funding== was provided by the National Science Foundation under award #EAR-241558."
+      ]
+    }
+  ],
+  "add_tags": [
+    "publication",
+    "soil-carbon",
+    "rhizosphere",
+    "climate-change",
+    "nature-climate-change"
+  ],
+  "add_full_width_links": {
+    "heading": "DOI:",
+    "links": [
+      {
+        "label": "10.1038/s41558-026-01984-2",
+        "link": "https://doi.org/10.1038/s41558-026-01984-2"
+      }
+    ]
+  },
+  "add_contact_information": {
+    "name": "Michael Carter",
+    "email": "michael.carter@clearwaterlab.org"
+  }
+}

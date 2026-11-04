@@ -1,0 +1,18 @@
+{
+  "title": "Undergraduate Student",
+  "add_relevant_category_name": "Undergraduate",
+  "duration": "Summer / term project",
+  "summary": "A semester-long project supporting field campaigns and laboratory analysis in the soil-carbon group.",
+  "add_content_to_page": [
+    {
+      "add_paragraph": [
+        "Summer research placements and final-year thesis supervision. Students gain hands-on experience with analytical instruments, sampling campaigns and open-source data pipelines."
+      ]
+    }
+  ],
+  "add_tags": [
+    "Laboratory analysis",
+    "Fieldwork",
+    "Soil chemistry"
+  ]
+}

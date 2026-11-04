@@ -1,0 +1,66 @@
+{
+  "title": "Environmental Sensor Networks",
+  "keywords_for_the_page_and_card": "Instrumentation · Open hardware · Telemetry · Long-term monitoring",
+  "intro": "A measurement is only useful if it survives the winter. We build open-hardware sensors that keep reporting when nobody is there to fix them.",
+  "show_the_page_heading": true,
+  "add_image": {
+    "image_path": "assets/images/research_areas_and_labs/labs/environmental_sensor_development_lab.jpg",
+    "image_alt": "Environmental sensor development laboratory"
+  },
+  "add_focus_list": [
+    "Open-hardware nutrient and turbidity sensors",
+    "Sub-zero power budgets and anti-fouling design",
+    "LoRaWAN telemetry across remote catchments",
+    "Public data APIs with versioned calibration records"
+  ],
+  "add_paragraph": "Commercial environmental sensors are expensive, closed and rarely designed for a Norwegian winter. Our group builds its own: modular boards, open firmware and calibration routines that can be repeated in any partner lab.\n\nThe network now spans nine sites, from rooftop aerosol monitors in Oslo to coastal observatories in the Oslofjord and an alpine station above the tree line. Every node publishes raw counts alongside calibrated values, so a downstream user can decide for themselves how much to trust the number.",
+  "add_gallery": {
+    "images": [
+      {
+        "image_path": "assets/images/research_areas_and_labs/labs/station_nord_03_coastal_observatory_01.jpg",
+        "image_alt": "Coastal observatory station",
+        "image_caption": "Station Nord-03, Oslofjord."
+      }
+    ]
+  },
+  "add_content_to_page": [
+    {
+      "add_gallery": {
+        "heading": "Hardware and field sites",
+        "size": "3:2",
+        "columns": 2,
+        "images": [
+          {
+            "image_path": "assets/images/research_areas_and_labs/labs/environmental_sensor_development_lab.jpg",
+            "image_alt": "Sensor development bench",
+            "image_caption": "Sensor assembly and bench testing"
+          },
+          {
+            "image_path": "assets/images/research_areas_and_labs/labs/station_nord_03_coastal_observatory_02.jpg",
+            "image_alt": "Coastal observatory installation",
+            "image_caption": "Coastal observatory, winter configuration"
+          }
+        ]
+      }
+    },
+    {
+      "add_gallery": {
+        "heading": "Calibration",
+        "size": "natural",
+        "columns": 2,
+        "images": [
+          {
+            "image_path": "assets/images/research_areas_and_labs/labs/water_quality_field_kit.jpg",
+            "image_alt": "Water-quality field kit",
+            "image_caption": "Field validation kit"
+          },
+          {
+            "image_path": "assets/images/research_areas_and_labs/labs/icp_ms_suite.jpg",
+            "image_alt": "Laboratory reference analysis",
+            "image_caption": "Laboratory reference measurements"
+          }
+        ]
+      }
+    }
+  ]
+}

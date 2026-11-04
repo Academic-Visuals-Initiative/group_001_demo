@@ -1,0 +1,3144 @@
+/* ================================================================
+   style.css — hand-written styles replacing Tailwind utilities.
+   Section by section this file grows and site.css shrinks, until
+   Tailwind can be removed entirely.
+
+   Converted so far: news section (pilot), join section (home),
+   positions page (hero cards + note), funders section (home)
+   ================================================================ */
+
+:root {
+  /* palette (mirrors build/tailwind.config.home.js — template 02) */
+  --cw-surface: #fbf9f4;
+  --cw-surface-low: #f5f3ee;
+  --cw-surface-high: #eae8e3;
+  --cw-surface-container: #f0eee9;
+  --cw-on-surface: #1b1c19;
+  --cw-on-surface-variant: #494740;
+  --cw-secondary: #615e52;
+  --cw-primary: #000000;
+  --cw-on-primary: #ffffff;
+  --cw-surface-lowest: #ffffff;
+  --cw-secondary-container: #e5dfd0;
+  --cw-on-secondary-container: #666356;
+  --cw-on-secondary-fixed: #1d1c12;
+  --cw-tertiary-fixed: #e7e2d3;
+  --cw-on-tertiary-fixed: #1d1c12;
+  --cw-outline-variant: #cac6bd;
+  --cw-primary-fixed-dim: #cac6c1;
+
+  /* shadows, radii */
+  --cw-shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --cw-shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --cw-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --cw-radius: 0.25rem;
+  --cw-radius-full: 9999px;
+
+  /* fonts */
+  --cw-font-body: "Newsreader", serif;
+  --cw-font-display: "Newsreader", serif;
+  --cw-font-label: "Space Grotesk", sans-serif;
+  --cw-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  /* motion */
+  --cw-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --cw-speed: 150ms;
+}
+
+/* --- Section band (page-width wrapper) ------------------------- */
+.section {
+  width: 100%;
+  padding: 2rem 1.25rem;
+}
+@media (min-width: 768px) {
+  .section { padding-left: 2rem; padding-right: 2rem; }
+}
+@media (min-width: 1024px) {
+  .section { padding-left: 3.5rem; padding-right: 3.5rem; }
+}
+.section__inner { padding: 2rem; }
+@media (min-width: 768px) {
+  .section__inner { padding: 3rem; }
+}
+
+/* --- Section header (label + title + button) ------------------- */
+.section-head {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 640px) {
+  .section-head {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.section-eyebrow {
+  font-family: var(--cw-font-body);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--cw-secondary);
+}
+.section-title {
+  font-family: var(--cw-font-display);
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 600;
+  letter-spacing: -0.025em; /* -0.7px @ 28px, matches text-headline-lg-mobile */
+  color: var(--cw-on-surface);
+}
+@media (min-width: 768px) {
+  .section-title { font-size: 40px; line-height: 46px; letter-spacing: -0.02em; }
+}
+
+/* --- The status pills on the join band --------------------------
+   The openings at a glance, one cream pill per status with the status's
+   own dot beside it — the site's label voice, a seat big enough to read
+   from across the dark band, the count stepped back a shade. */
+.home-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.625rem 1.25rem;
+  background: #FAF9F5;
+  color: #191917;
+  font-family: var(--cw-font-label);
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.home-status__dot {
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+}
+.home-status__count { color: #615e52; }
+
+/* --- Supporter logos on the showcase band ---------------------- */
+.featured-logo {
+  height: 80px;
+  width: auto;
+  max-width: 260px;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: opacity 0.15s;
+}
+.featured-logo:hover { opacity: 1; }
+@media (min-width: 768px) {
+  .featured-logo {
+    height: 96px;
+    max-width: 300px;
+  }
+}
+
+/* More than five logos: a window of five that slides one place at a time. */
+.featured-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.featured-logos__viewport {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.featured-logos__track {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  will-change: transform;
+}
+.featured-logos__dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.featured-logos__dot {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: #C7BAA0;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.15s;
+}
+.featured-logos__dot.is-active {
+  background: #1B1C19;
+  transform: scale(1.2);
+}
+
+/* --- Buttons ---------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  padding: 0.75rem 2rem;
+  border-radius: var(--cw-radius);
+  font-family: var(--cw-font-body);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  box-shadow: var(--cw-shadow-xs);
+  transition: all var(--cw-speed) var(--cw-ease);
+  cursor: pointer;
+}
+.btn--primary { background: var(--cw-primary); color: var(--cw-on-primary); }
+.btn--primary:hover { background: var(--cw-secondary); }
+.btn__icon { font-size: 16px; }
+
+/* header button hidden on phones, shown from sm up */
+.section-head__cta { display: none; }
+@media (min-width: 640px) {
+  .section-head__cta { display: inline-flex; align-self: flex-start; }
+}
+@media (min-width: 1024px) {
+  .section-head__cta { align-self: auto; }
+}
+
+/* --- Messages (noscript / errors) ------------------------------ */
+.section-message {
+  font-family: var(--cw-font-body);
+  font-size: 15px;
+  line-height: 23px;
+  color: var(--cw-on-surface-variant);
+  padding: 1.25rem 0;
+}
+.section-message a { color: inherit; }
+
+/* --- Inline links inside body text ------------------------------ */
+/* The label is bold and wears the face's own underline, tucked just
+   under the baseline and skipping descenders. A link that leaves the
+   site adds the same arrow_outward icon the buttons use, sized to the
+   text. The rule sits on the label only, so it never runs under the
+   icon. */
+.cw-inline-link { color: inherit; text-decoration: none; }
+.cw-inline-link > strong {
+  text-decoration-line: underline;
+  text-decoration-thickness: from-font;
+  text-decoration-color: var(--cw-outline-variant);
+  text-decoration-skip-ink: auto;
+  text-underline-offset: 0.16em;
+  transition: text-decoration-color var(--cw-speed) var(--cw-ease);
+}
+.cw-inline-link:hover > strong { text-decoration-color: var(--cw-primary); }
+.cw-inline-link .cw-inline-link__icon {
+  font-size: 0.82em;
+  line-height: 1;
+  vertical-align: -0.06em;
+  margin-left: 0.12em;
+}
+
+/* --- News list -------------------------------------------------- */
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* --- Home "Recent Publications & Datasets" list ------------------ */
+/* phones: the arrow leaves the row and becomes a big full-width
+   button under the text (same treatment as the outputs list) */
+@media (max-width: 639px) {
+  .pub-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .pub-arrow {
+    width: 100%;
+    height: 48px;
+    align-self: stretch;
+  }
+  .pub-arrow .material-symbols-outlined { font-size: 20px; }
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  background: var(--cw-surface-lowest);
+  border-radius: 0.25rem;
+  box-shadow: var(--cw-shadow-xs);
+  transition: all var(--cw-speed) var(--cw-ease);
+}
+.news-card:hover {
+  box-shadow: var(--cw-shadow-sm);
+  transform: translateY(-2px);
+}
+@media (min-width: 640px) {
+  .news-card { flex-direction: row; }
+}
+
+.news-card__date {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+@media (min-width: 640px) {
+  .news-card__date {
+    flex-direction: column;
+    align-self: center;
+    width: 5rem;
+  }
+}
+.news-card__day {
+  font-family: var(--cw-font-body);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--cw-on-surface);
+}
+@media (min-width: 640px) {
+  .news-card__day {
+    font-family: var(--cw-font-display);
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+  }
+}
+.news-card__month {
+  font-family: var(--cw-font-body);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--cw-secondary);
+}
+@media (min-width: 640px) {
+  .news-card__month {
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    margin-top: 4px;
+  }
+}
+
+.news-card__body { flex: 1 1 0%; }
+.news-card__tag {
+  display: inline-block;
+  padding: 2px 12px;
+  margin-bottom: 4px;
+  border-radius: var(--cw-radius);
+  font-family: var(--cw-font-body);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.news-card__tag--secondary {
+  background: var(--cw-secondary-container);
+  color: var(--cw-on-secondary-fixed);
+}
+.news-card__tag--tertiary {
+  background: var(--cw-tertiary-fixed);
+  color: var(--cw-on-tertiary-fixed);
+}
+.news-card__title {
+  font-family: var(--cw-font-display);
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--cw-on-surface);
+}
+.news-card__text {
+  font-family: var(--cw-font-body);
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 400;
+  margin-top: 4px;
+  color: var(--cw-on-surface-variant);
+}
+
+.news-card__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  align-self: flex-end;
+  border-radius: var(--cw-radius);
+  background: var(--cw-primary);
+  color: var(--cw-on-primary);
+  transition: all var(--cw-speed) var(--cw-ease);
+}
+.news-card:hover .news-card__arrow { background: var(--cw-secondary); }
+@media (min-width: 640px) {
+  .news-card__arrow { align-self: center; }
+}
+.news-card__arrow .material-symbols-outlined { font-size: 16px; }
+/* phones: the arrow becomes a big full-width button under the card
+   (same treatment as the outputs list) */
+@media (max-width: 639px) {
+  .news-card__arrow {
+    width: 100%;
+    height: 48px;
+    align-self: stretch;
+  }
+  .news-card__arrow .material-symbols-outlined { font-size: 20px; }
+}
+
+/* --- Mobile "all updates" footer button ------------------------- */
+.section-foot {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+@media (min-width: 640px) {
+  .section-foot { display: none; }
+}
+
+/* ================================================================
+   Join the Lab (home) — words from site.json, pill colors from
+   edit_join_the_lab_section.json. Drawn by js/join.js.
+   ================================================================ */
+.join-card {
+  background: var(--cw-surface-lowest);
+  border-radius: 0.25rem; /* rounded-xl token */
+  padding: 2rem;
+  box-shadow: var(--cw-shadow-md);
+}
+@media (min-width: 768px) {
+  .join-card { padding: 3rem; }
+}
+.join-card__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .join-card__row { flex-direction: row; align-items: center; }
+}
+.join-card__col { max-width: 672px; } /* max-w-2xl */
+.join-card .section-title { margin-top: 4px; } /* mt-1 under the eyebrow */
+.join-card__text {
+  font-family: var(--cw-font-body);
+  font-size: 15px;
+  line-height: 23px;
+  color: var(--cw-on-surface-variant);
+  margin-top: 0.75rem;
+}
+.join-card__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-top: 1.25rem;
+}
+.join-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 4px 12px;
+  border-radius: var(--cw-radius);
+  font-family: var(--cw-font-body);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.join-pill__dot {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: var(--cw-radius-full);
+}
+.join-pill__dot--pulse { animation: cwl-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+.join__cta { align-self: flex-end; } /* phones: hugs the right edge */
+@media (min-width: 1024px) {
+  .join__cta { align-self: auto; }
+}
+
+/* ================================================================
+   Positions page — cards, status badges and the bottom note.
+   Drawn by js/positions.js from data/edit_join_the_lab_section.json.
+   ================================================================ */
+@keyframes cwl-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 4px 12px;
+  flex-shrink: 0;
+  border-radius: var(--cw-radius);
+  font-family: var(--cw-font-body);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.status-badge__dot {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: var(--cw-radius-full);
+}
+.status-badge__dot--pulse { animation: cwl-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+
+/* The list itself: a masonry. Cards hug their content and the columns
+   balance themselves — no stretched rows, no empty bands when a card
+   is small. Two columns from the md breakpoint up (same as before). */
+.positions-list { column-count: 1; }
+@media (min-width: 768px) {
+  .positions-list {
+    column-count: 2;
+    column-gap: 1.5rem; /* gutter */
+  }
+}
+
+/* position rows — layout is drawn with base-template utilities in
+   js/positions.js (hairline grid rows); no component rule here */
+.position-card--compact {
+  align-self: start; /* no paragraph: hug the content, don't stretch to the row */
+}
+.position-card--compact .position-card__id {
+  align-items: flex-start; /* title lines up with the status tag */
+}
+.position-card__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.position-card__id {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+@media (max-width: 639px) {
+  /* narrow screens: the status tag drops under the icon + title row and
+     lines up with the title text (not under the icon) */
+  .position-card__head { flex-direction: column; align-items: flex-start; }
+  .status-badge { margin-left: calc(2.5rem + 0.75rem); } /* icon width + gap */
+}
+.position-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* never squeezes — always a circle */
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--cw-radius);
+  background: var(--cw-primary);
+  color: var(--cw-on-primary);
+  transition: all var(--cw-speed) var(--cw-ease);
+}
+.position-card:hover .position-card__icon { background: var(--cw-secondary); }
+.position-card__icon .material-symbols-outlined { font-size: 20px; }
+.position-card__title {
+  font-family: var(--cw-font-display);
+  font-size: 19px;
+  line-height: 1.25; /* leading-tight */
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--cw-on-surface);
+}
+.position-card__duration {
+  font-family: var(--cw-font-body);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--cw-secondary);
+}
+.position-card__text {
+  font-family: var(--cw-font-body);
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--cw-on-surface-variant);
+  margin-top: 1.25rem;
+  flex: 1 1 0%; /* pushes tags + button to the card's foot */
+}
+.position-card__grow {
+  flex: 1 1 0%; /* no paragraph: still pins tags + button to the foot */
+}
+.position-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-top: 1.25rem;
+}
+.position-tag {
+  padding: 4px 12px;
+  border-radius: var(--cw-radius);
+  background: var(--cw-surface-high);
+  color: var(--cw-on-surface-variant);
+  font-family: var(--cw-font-body);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.position-card__cta {
+  margin-top: 2rem;
+  justify-content: center;
+  align-self: stretch;
+}
+
+/* outline button (statuses where you can't apply directly) */
+.btn--outline {
+  background: var(--cw-surface);
+  color: var(--cw-on-surface);
+  border: 1px solid var(--cw-outline-variant);
+  box-shadow: none;
+}
+.btn--outline:hover { background: var(--cw-surface-low); }
+
+/* Two rows from the same category: the rule between them is lighter,
+   so a change of category reads as the stronger break. */
+.position-card--same-category {
+  border-top-color: rgba(202, 198, 189, 0.22);
+}
+
+/* --- Bottom note ("Don't see your role?") ---------------------- */
+.positions-note {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding: 2rem;
+  background: var(--cw-surface-low);
+  border-radius: 0.25rem; /* rounded-xl token */
+}
+@media (min-width: 768px) {
+  .positions-note {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+  }
+}
+.positions-note__col { max-width: 672px; } /* max-w-2xl */
+.positions-note__heading {
+  font-family: var(--cw-font-display);
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--cw-on-surface);
+}
+.positions-note__text {
+  font-family: var(--cw-font-body);
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--cw-on-surface-variant);
+  margin-top: 4px;
+}
+.positions-note__cta { flex-shrink: 0; }
+
+/* ================================================================
+   Showcase section ("Supported by") — every word and the logos come
+   from data/edit_featured_section.json (site.json only switches it on/off).
+   Drawn by js/funding.js.
+   ================================================================ */
+.section--last { padding-bottom: 4rem; } /* pb-16: extra room before the footer */
+
+.funding-card {
+  background: var(--cw-surface-lowest);
+  border-radius: 0.25rem; /* rounded-xl token */
+  padding: 2rem;
+  box-shadow: var(--cw-shadow-md);
+}
+@media (min-width: 768px) {
+  .funding-card { padding: 3rem; }
+}
+.funding-card__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem; /* gap-space-md */
+  text-align: center;
+}
+.funding-card .section-title { margin-top: 4px; } /* mt-1 under the eyebrow */
+.funding-card__text {
+  font-family: var(--cw-font-body);
+  font-size: 15px;
+  line-height: 23px;
+  color: var(--cw-on-surface-variant);
+  max-width: 36rem; /* max-w-xl */
+}
+.funding-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem; /* gap-space-md */
+}
+.funding-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.funding-logo img { height: 4rem; width: auto; } /* h-16 w-auto */
+
+
+/* ================================================================
+   Contact section ("Get in touch") — every word comes from
+   data/edit_contact_section.json. Drawn by js/contact.js.
+   ================================================================ */
+
+.section--contact { padding-top: 3rem; padding-bottom: 3rem; } /* py-space-xl */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  .contact-grid { padding: 3rem; }
+}
+@media (min-width: 1024px) {
+  .contact-grid:not(.contact-grid--solo) { grid-template-columns: 1fr 1fr; }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.contact-info .section-title { margin-top: 0.25rem; } /* mt-1 */
+.contact-text {
+  font-family: var(--cw-font-body);
+  font-size: 15px;
+  line-height: 23px;
+  color: var(--cw-on-surface-variant);
+  max-width: 36rem; /* max-w-xl */
+  margin-top: 0.75rem; /* space-sm */
+}
+.contact-email-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem; /* space-md */
+}
+.contact-email {
+  font-family: var(--cw-font-display);
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--cw-on-surface);
+  text-decoration: none;
+  transition: color var(--cw-speed) var(--cw-ease);
+}
+.contact-email:hover { color: var(--cw-secondary); }
+.contact-copy {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  border-radius: var(--cw-radius);
+  background: var(--cw-primary);
+  color: var(--cw-on-primary);
+  cursor: pointer;
+  transition: all var(--cw-speed) var(--cw-ease);
+}
+.contact-copy:hover { background: var(--cw-secondary); }
+.contact-copy--copied { background: var(--cw-secondary); } /* 1.5s flash */
+.contact-copy .material-symbols-outlined { font-size: 16px; }
+.contact-note {
+  font-family: var(--cw-font-body);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--cw-on-surface-variant);
+  margin-top: 0.375rem; /* space-xs */
+}
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.25rem; /* space-md */
+}
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+.contact-detail__icon {
+  font-size: 18px;
+  color: var(--cw-secondary);
+  flex-shrink: 0;
+}
+.contact-detail__label {
+  font-family: var(--cw-font-body);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--cw-on-surface-variant);
+}
+.contact-detail__value {
+  font-family: var(--cw-font-body);
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--cw-on-surface);
+}
+
+/* the decorative map: fixed street art + center pin + label chip */
+.contact-map {
+  position: relative;
+  min-height: 300px;
+  border-radius: 0.25rem; /* rounded-xl token */
+  overflow: hidden;
+  border: 1px solid var(--cw-outline-variant);
+  box-shadow: var(--cw-shadow-xs);
+  background: var(--cw-surface-container);
+}
+.contact-map__art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.contact-map__pin {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--cw-radius-full);
+  background: var(--cw-primary);
+  color: var(--cw-on-primary);
+  box-shadow: var(--cw-shadow-md);
+}
+.contact-map__pin .material-symbols-outlined { font-size: 20px; }
+.contact-map__label {
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.75rem;
+  padding: 2px 12px;
+  border-radius: var(--cw-radius);
+  background: rgb(255 255 255 / 0.9);
+  backdrop-filter: blur(12px);
+  font-family: var(--cw-font-body);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--cw-on-surface);
+  box-shadow: var(--cw-shadow-xs);
+}
+
+
+/* live embedded map (data/edit_contact_section.json -> map.embed) - layered on top of
+   the placeholder art; if the embed can't load it stays transparent and
+   the art shows through, so the box never looks broken */
+.contact-map__embed {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+/* caption under the map (only when the JSON gives one) */
+.contact-map-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.contact-map-col .contact-map { flex: 1 1 auto; }
+.contact-map__caption {
+  font-family: var(--cw-font-body);
+  font-size: 0.85rem;
+  color: var(--cw-on-surface-variant);
+  margin-top: 4px;
+}
+
+/* ================================================================
+   Outputs page ("Publications & Outputs", pages/outputs.html) —
+   drawn by js/outputs.js from data/outputs/edit_publications_and_outputs_page.json.
+   ================================================================ */
+
+/* one output row — layout is drawn with base-template utilities in
+   js/outputs.js (hairline grid rows); no component rule here */
+
+/* middle column */
+.output-body {
+  flex: 1;
+  min-width: 0;
+}
+.output-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.375rem;
+  margin-bottom: 0.25rem;
+}
+
+/* coloured source chip — colours arrive as --chip-bg/--chip-fg from
+   the JSON (its "tones" block); defaults match the design pair */
+.output-chip {
+  display: inline-block;
+  padding: 2px 0.75rem;
+  border-radius: var(--cw-radius);
+  background: var(--chip-bg, var(--cw-secondary-container));
+  color: var(--chip-fg, var(--cw-on-secondary-fixed));
+  font-family: var(--cw-font-body);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+/* type tag — wears its category's colour from data/outputs/edit_publications_and_outputs_page.json
+   ("background" hex, text auto-picked for readability); without a
+   colour it stays grey */
+.output-tag {
+  display: inline-block;
+  padding: 2px 0.75rem;
+  border-radius: var(--cw-radius);
+  background: var(--tag-bg, var(--cw-surface-high));
+  color: var(--tag-fg, var(--cw-on-surface-variant));
+  font-family: var(--cw-font-body);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.output-title {
+  font-family: var(--cw-font-display);
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--cw-on-surface);
+}
+.output-byline {
+  font-family: var(--cw-font-body);
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--cw-on-surface-variant);
+  margin-top: 0.25rem;
+}
+
+/* arrow circle */
+.output-arrow {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--cw-radius);
+  background: var(--cw-primary);
+  color: var(--cw-on-primary);
+  transition: all var(--cw-speed) var(--cw-ease);
+}
+.output-arrow .material-symbols-outlined { font-size: 16px; }
+.output-item:hover .output-arrow {
+  background: var(--cw-secondary);
+}
+
+/* phones: the arrow leaves the row and becomes a big button
+   under the text (proper touch target, text gets full width) */
+@media (max-width: 639px) {
+  .output-arrow {
+    width: 100%;
+    height: 48px;
+  }
+  .output-arrow .material-symbols-outlined { font-size: 20px; }
+
+  /* title first, its two tags underneath, then the byline */
+  .output-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .output-title { order: 1; }
+  .output-tags {
+    order: 2;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  .output-byline { order: 3; }
+}
+
+/* line between rows (show/hide managed by js/outputs.js) */
+.output-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--cw-surface-high);
+}
+
+/* "View more" under the list — centred; reveals 10 more items each
+   click, hidden (via .hidden) once every match is shown (js/outputs.js) */
+.output-more {
+  display: none;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+.output-more:not(.hidden) {
+  display: flex;
+}
+
+/* closing call-to-action */
+.output-cta {
+  border-radius: 0.25rem;
+  background: var(--cw-surface-low);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .output-cta {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+  }
+}
+.output-cta__text { max-width: 42rem; }
+.output-cta__heading {
+  font-family: var(--cw-font-display);
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--cw-on-surface);
+}
+.output-cta__body {
+  font-family: var(--cw-font-body);
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--cw-on-surface-variant);
+  margin-top: 0.25rem;
+}
+.output-cta__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  flex-shrink: 0;
+}
+/* mobile: the whole card is stacked — heading, words and buttons
+   centre up (desktop keeps the left/right row) */
+@media (max-width: 639px) {
+  .output-cta__text { text-align: center; }
+  .output-cta__buttons { justify-content: center; }
+}
+
+
+/* ================================================================
+   TEAM — home "Meet the Team" grid + full "Our Team & Alumni" page
+   Drawn by js/team.js and js/teampage.js from data/edit_team_section.json
+   ================================================================ */
+
+/* --- Team grid (4-up on desktop, 1-up on phones) ---------------- */
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .team-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1280px) {
+  .team-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* --- The profile head (pages/profile.html) -------------------------
+   The one page type with a profile head: the portrait plate at the
+   left, the person's words and buttons beside it, their detail rows
+   under a hairline that spans both columns. Drawn by js/elements.js
+   (profilePage); the words come from data/team/profiles/<slug>.json. */
+.cw-profile {
+  display: grid;
+  grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+  gap: 2.5rem 3rem;
+  align-items: start;
+}
+.cw-profile__portrait {
+  border: 1px solid var(--cw-outline-variant);
+  background: var(--cw-surface-lowest);
+  box-shadow: var(--cw-shadow-xs);
+  padding: 0.75rem;
+}
+.cw-profile__words { min-width: 0; }
+
+/* --- The 3D model viewer ------------------------------------------
+   A .glb in the site's plate: drag to turn it, pinch or scroll to zoom.
+   The viewer itself is Google's <model-viewer>, fetched only when a page
+   carries a model (js/elements.js), so a page with no 3D pays nothing. */
+.cw-model { margin: 0; }
+.cw-model__plate {
+  position: relative;
+  padding: 0.75rem;
+  border: 1px solid var(--cw-outline-variant);
+  background: var(--cw-surface-lowest);
+  box-shadow: var(--cw-shadow-xs);
+}
+.cw-model__viewer {
+  display: block;
+  width: 100%;
+  height: var(--cw-model-height, 440px);
+  background: var(--cw-surface-container-low);
+  --progress-bar-color: var(--cw-primary);
+  --progress-bar-height: 2px;
+}
+
+/* The credit, written on the plate itself so it reads as part of the
+   model rather than the caption strip. */
+.cw-model__credit {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 2;
+  padding: 0.2rem 0.45rem;
+  background: rgba(20, 20, 18, 0.62);
+  color: #FAF9F5;
+  font-family: var(--cw-font-label);
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+/* The strip under the plate: the same caption row the photographs carry,
+   with a quiet link to the file itself, so a model can always be taken
+   away even where 3D cannot be drawn. The download stays in the right
+   corner; a long caption wraps in the space beside it. */
+.cw-model__foot {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 0.35rem 1rem;
+  padding: 0.75rem 0.25rem 0;
+}
+.cw-model__caption {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-family: var(--cw-font-body);
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--cw-on-surface-variant);
+}
+.cw-model__source {
+  flex-shrink: 0;
+  margin-left: auto;
+  text-align: right;
+  font-family: var(--cw-font-label);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cw-on-surface-variant);
+}
+.cw-model__download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--cw-speed) var(--cw-ease);
+}
+.cw-model__download:hover { color: var(--cw-secondary); }
+.cw-model__download .material-symbols-outlined { font-size: 15px; }
+
+/* --- Link cards ------------------------------------------------------
+   One link as a wide card, or several as a grid (js/elements.js →
+   cardsHtml). Each card is one door: the whole plate is the link, and a
+   link that leaves the site wears the buttons' arrow and prints the
+   address it leads to. */
+.cw-cards {
+  display: grid;
+  grid-template-columns: repeat(var(--cw-cards-cols, 3), minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.cw-cards--single { grid-template-columns: minmax(0, 1fr); }
+.cw-cards__note {
+  margin: 0 0 1.25rem;
+  font-family: var(--cw-font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--cw-on-surface-variant);
+}
+.cw-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: var(--cw-surface-lowest);
+  border: 1px solid var(--cw-outline-variant);
+  box-shadow: var(--cw-shadow-xs);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color var(--cw-speed) var(--cw-ease),
+    box-shadow var(--cw-speed) var(--cw-ease);
+}
+a.cw-card:hover { border-color: var(--cw-primary); box-shadow: var(--cw-shadow-md); }
+a.cw-card:hover .cw-card__title,
+a.cw-card:hover .cw-card__action { color: var(--cw-secondary); }
+a.cw-card:focus-visible { outline: 2px solid var(--cw-primary); outline-offset: 3px; }
+.cw-card__media {
+  display: block;
+  flex-shrink: 0;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--cw-surface-low);
+  border-bottom: 1px solid var(--cw-outline-variant);
+}
+.cw-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Every card preview is the same 4:3 frame. A picture fills it and crops
+   as needed; `fit: contain` keeps a whole cover or logo visible instead,
+   letterboxing it inside that frame. */
+.cw-card__media--contain { background: var(--cw-surface-low); }
+.cw-card__media--contain img { object-fit: contain; }
+.cw-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  gap: 0.4rem;
+  padding: 1rem 1.1rem 1.1rem;
+}
+.cw-card__label {
+  font-family: var(--cw-font-label);
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cw-secondary);
+}
+.cw-card__title {
+  font-family: var(--cw-font-display);
+  font-size: 21px;
+  line-height: 1.25;
+  color: var(--cw-on-surface);
+  transition: color var(--cw-speed) var(--cw-ease);
+}
+.cw-card__text {
+  font-family: var(--cw-font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--cw-on-surface-variant);
+}
+.cw-card__foot {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+  margin-top: auto;
+  padding-top: 0.75rem;
+}
+.cw-card__meta,
+.cw-card__action {
+  font-family: var(--cw-font-label);
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cw-on-surface-variant);
+}
+.cw-card__action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-left: auto;
+  white-space: nowrap;
+  transition: color var(--cw-speed) var(--cw-ease);
+}
+.cw-card__action .material-symbols-outlined { font-size: 15px; }
+/* one card: the picture on the left, the words on the right */
+.cw-card--wide { flex-direction: row; }
+.cw-card--wide .cw-card__media {
+  width: 40%;
+  max-width: 300px;
+  min-height: 200px;
+  height: auto;
+  aspect-ratio: auto;
+  align-self: stretch;
+  border-bottom: 0;
+  border-right: 1px solid var(--cw-outline-variant);
+}
+.cw-card--wide .cw-card__media img { height: 100%; }
+.cw-card--wide .cw-card__body { gap: 0.5rem; padding: 1.25rem 1.5rem; }
+.cw-card--wide .cw-card__title { font-size: 26px; }
+@media (max-width: 960px) {
+  .cw-cards:not(.cw-cards--single) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .cw-cards:not(.cw-cards--single) { grid-template-columns: minmax(0, 1fr); }
+  .cw-card--wide { flex-direction: column; }
+  .cw-card--wide .cw-card__media {
+    width: 100%;
+    max-width: none;
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+    border-right: 0;
+    border-bottom: 1px solid var(--cw-outline-variant);
+  }
+}
+
+/* --- Callouts -------------------------------------------------------
+   A special note in a colour of its choice (js/elements.js →
+   calloutHtml). The tone tints the ground, the edge and the label; the
+   words keep the page's ink. "dark" turns the whole plate over. */
+.cw-callout {
+  --cw-callout-bg: var(--cw-surface-low);
+  --cw-callout-line: var(--cw-outline-variant);
+  --cw-callout-edge: var(--cw-secondary);
+  --cw-callout-ink: var(--cw-on-surface);
+  display: flex;
+  gap: 0.9rem;
+  padding: 1.1rem 1.3rem 1.15rem;
+  background: var(--cw-callout-bg);
+  border: 1px solid var(--cw-callout-line);
+  border-left: 3px solid var(--cw-callout-edge);
+  color: var(--cw-callout-ink);
+}
+.cw-callout--info {
+  --cw-callout-bg: #e3edf3;
+  --cw-callout-line: #c3d7e3;
+  --cw-callout-edge: #457a97;
+}
+.cw-callout--green {
+  --cw-callout-bg: #d7ead0;
+  --cw-callout-line: #b9d3ad;
+  --cw-callout-edge: #3d7531;
+}
+.cw-callout--amber {
+  --cw-callout-bg: #f7e8bc;
+  --cw-callout-line: #e4cf95;
+  --cw-callout-edge: #97731e;
+}
+.cw-callout--red {
+  --cw-callout-bg: #ffdad6;
+  --cw-callout-line: #f0bbb5;
+  --cw-callout-edge: #a03d31;
+}
+.cw-callout--dark {
+  --cw-callout-bg: var(--cw-on-surface);
+  --cw-callout-line: var(--cw-on-surface);
+  --cw-callout-edge: var(--cw-surface);
+  --cw-callout-ink: var(--cw-surface);
+}
+.cw-callout__icon {
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--cw-callout-edge);
+}
+.cw-callout__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+.cw-callout__label {
+  font-family: var(--cw-font-label);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cw-callout-edge);
+}
+.cw-callout__text {
+  margin: 0;
+  font-family: var(--cw-font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--cw-callout-ink);
+  text-align: justify;
+}
+.cw-callout__text + .cw-callout__text { margin-top: 0.2rem; }
+.cw-callout--dark .cw-inline-link:hover > strong { text-decoration-color: currentColor; }
+/* The foot of the head: the rows and the folded groups, one block across
+   both columns, so a group opens flush under the last row instead of a
+   grid gap below it. */
+.cw-profile__foot { grid-column: 1 / -1; min-width: 0; }
+
+/* The honours line: a named chair, a fellowship, a prize — hung just
+   under the name in the serif italic, so it reads as a distinction
+   rather than as another label (the eyebrow is the label). */
+.cw-profile__honours {
+  /* the distinction hangs close under the name — the same 4px the
+     Director's card keeps */
+  margin-top: calc(0.45rem - 3px);
+  font-family: var(--cw-font-body);
+  font-style: italic;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  color: var(--cw-secondary);
+}
+
+/* The person's other doors: the appointment in bold, the places it is
+   held in under it, a line each — for the professor with a foot in three
+   faculties, and the student with one. */
+.cw-profile__affiliations { margin-top: 0.9rem; }
+.cw-profile__affiliation {
+  font-family: var(--cw-font-body);
+  font-weight: 700;
+  font-size: 1.0625rem;
+  line-height: 1.45;
+  color: var(--cw-on-surface);
+}
+.cw-profile__affiliationPlace {
+  font-family: var(--cw-font-body);
+  font-size: 1.0625rem;
+  line-height: 1.45;
+  color: var(--cw-on-surface-variant);
+}
+/* A second appointment sits a step below the first, so two of them read
+   as two doors rather than one long list. */
+.cw-profile__affiliationBlock + .cw-profile__affiliationBlock { margin-top: 0.75rem; }
+
+/* The head's own ways out: the same square icon buttons the team cards
+   carry (.member-link), one per action. The row keeps a little air below
+   the ribbon or address, and the squares keep the same gap as the cards. */
+.cw-profile__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.625rem;
+  margin-top: 0.75rem;
+}
+
+/* The ribbon: the one strong line under the name ("Now at Deltares,
+   Utrecht"). A sand strip with the primary rule standing on its left. */
+.cw-profile__ribbon {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 0.9rem;
+  border-left: 3px solid var(--cw-primary);
+  background: var(--cw-surface-container);
+  color: var(--cw-on-surface);
+  font-family: var(--cw-font-label);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* A student's supervisor, standing where a postdoc's pitch stands. */
+.cw-profile__people { margin-top: 1.25rem; }
+
+/* The small person cards (supervisor, group, project team). */
+.cw-people {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+/* A line of the block's own — "Co-supervised with the bio-materials
+   group", "Mentored by A, and working with B" — stands between the label
+   and the cards. */
+.cw-people__line {
+  margin: 0 0 1rem;
+  font-family: var(--cw-font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--cw-on-surface-variant);
+}
+.cw-person {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.75rem 0.5rem 0.5rem;
+  border: 1px solid var(--cw-outline-variant);
+  background: var(--cw-surface-lowest);
+  text-decoration: none;
+  min-width: 0;
+}
+.cw-person__photo {
+  display: block;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: var(--cw-surface-low);
+}
+.cw-person__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.cw-person__text { display: flex; flex-direction: column; min-width: 0; }
+.cw-person__name { font-family: var(--cw-font-body); font-size: 15px; line-height: 1.3; color: var(--cw-on-surface); }
+.cw-person__ext { font-size: 0.78em; margin-left: 0.28em; color: var(--cw-secondary); }
+.cw-person__role {
+  font-family: var(--cw-font-label);
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cw-on-surface-variant);
+}
+a.cw-person:hover { border-color: var(--cw-primary); }
+a.cw-person:hover .cw-person__name { color: var(--cw-secondary); }
+a.cw-person[data-profile-slug]:not([href]) { cursor: default; }
+
+/* The timeline: a dated path down a hairline rail. */
+.cw-timeline {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 1.5rem;
+  list-style: none;
+  border-left: 1px solid var(--cw-outline-variant);
+}
+.cw-timeline__step {
+  position: relative;
+  padding: 0 0 1.5rem 0;
+}
+.cw-timeline__step:last-child { padding-bottom: 0; }
+.cw-timeline__step::before {
+  content: "";
+  position: absolute;
+  left: -1.5rem;
+  top: 0.4rem;
+  width: 7px;
+  height: 7px;
+  margin-left: -4px;
+  background: var(--cw-primary);
+}
+.cw-timeline__when { display: block; margin-bottom: 0.15rem; }
+.cw-timeline__what { display: block; }
+.cw-timeline__note { display: block; margin-top: 0.2rem; }
+
+/* The short publication list (a profile's own papers). Every row is the
+   site's own output row (js/helpers.js → outputRowHtml): the list only
+   closes itself, since each row brings the hairline on top. The rows sit
+   flush with the rest of the page — the Outputs page insets its rows a
+   little, but on a profile the ledger lines up with the column. */
+.cw-pubs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid var(--cw-outline-variant);
+}
+.cw-pubs .output-item {
+  /* the number and the buttons sit the same 8px in from the column's
+     edges, with the words a close 16px from the buttons */
+  padding-left: 8px;
+  padding-right: 8px;
+  column-gap: 1rem;
+}
+
+/* Year pills above the list and the pager under it. The pills come from
+   the papers themselves, newest first; the pager opens three at a time
+   so a long career never runs the page off the screen. */
+.cw-pubs__years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-bottom: 1rem;
+}
+.cw-pubs__pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.cw-pubs__pager[hidden] { display: none; }
+.cw-pubs__step {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.8125rem; /* label-sm */
+  line-height: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 9px 1rem;
+  background: transparent;
+  color: var(--cw-on-surface);
+  border: 1px solid var(--cw-outline-variant);
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.cw-pubs__step:hover:not(:disabled) {
+  background: var(--cw-surface-low);
+  border-color: var(--cw-on-surface);
+}
+.cw-pubs__step:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.cw-pubs__count {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.8125rem;
+  line-height: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--cw-on-surface-variant);
+  white-space: nowrap;
+}
+
+/* A person with no portrait: one column, so the words keep the measure. */
+.cw-profile--no-portrait { grid-template-columns: minmax(0, 1fr); }
+
+/* The detail rows: label in the label voice, value in the reading
+   voice, one hairline between neighbours. */
+.cw-profile__details {
+  grid-column: 1 / -1;
+  margin-top: 0.5rem;
+  border-top: 1px solid var(--cw-outline-variant);
+}
+.cw-profile__row {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 1rem 2rem;
+  align-items: baseline;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--cw-outline-variant);
+}
+.cw-profile__row dt { margin: 0; }
+.cw-profile__row dd { margin: 0; }
+
+/* A value written as a list of lines — a degree's title, then the
+   university it was taken at — stacks in the same cell: the first line
+   carries the voice, the lines under it step back a shade. */
+.cw-profile__valueLine {
+  display: block;
+  color: var(--cw-on-surface-variant);
+}
+
+/* The folded groups: the facts a visitor asks for only now and then —
+   honours and recognition, previous appointments, education. Native
+   <details>, so a group opens on a click or from the keyboard with no
+   JavaScript, and the head stays the length it is until it is asked. */
+.cw-profile__more {
+  grid-column: 1 / -1;
+  margin-top: 0.5rem;
+  border-top: 1px solid var(--cw-outline-variant);
+}
+/* When the rows above already end in a hairline, the groups need no
+   second one. */
+.cw-profile__details + .cw-profile__more {
+  margin-top: 0;
+  border-top: 0;
+}
+.cw-profile__group { border-bottom: 1px solid var(--cw-outline-variant); }
+.cw-profile__group > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  cursor: pointer;
+  list-style: none;
+  transition: background-color var(--cw-speed) var(--cw-ease);
+}
+.cw-profile__group > summary::-webkit-details-marker { display: none; }
+.cw-profile__groupLabel {
+  font-family: var(--cw-font-label);
+  font-size: 0.8125rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cw-secondary);
+  transition: color var(--cw-speed) var(--cw-ease);
+}
+/* Hovering and opening both light the line up — the same tint every other
+   row on the site takes on hover — so it is never a mystery which group
+   the pointer is on, or which one is open. */
+.cw-profile__group > summary:hover,
+.cw-profile__group > summary:focus-visible,
+.cw-profile__group[open] > summary { background: var(--cw-surface-low); }
+.cw-profile__group > summary:hover .cw-profile__groupLabel,
+.cw-profile__group > summary:focus-visible .cw-profile__groupLabel,
+.cw-profile__group[open] > summary .cw-profile__groupLabel { color: var(--cw-on-surface); }
+.cw-profile__groupIcon {
+  font-size: 18px;
+  line-height: 1;
+  color: var(--cw-secondary);
+  transition: transform var(--cw-speed) var(--cw-ease), color var(--cw-speed) var(--cw-ease);
+}
+.cw-profile__group[open] .cw-profile__groupIcon {
+  transform: rotate(180deg);
+  color: var(--cw-primary);
+}
+.cw-profile__rows { margin: 0 0 0.25rem; }
+.cw-profile__rows .cw-profile__row:last-child { border-bottom: 0; }
+
+/* Inside an open group the rules between one row and the next are the
+   same warm grey, drawn fainter: they are the group's own lines, not the
+   list's, so they stay behind the rows they divide. Closed, the group
+   shows none of them at all. */
+.cw-profile__group[open] .cw-profile__rows .cw-profile__row {
+  border-bottom-color: rgba(202, 198, 189, 0.45);
+}
+
+/* The lines that belong to a row — a degree's thesis, the supervisor it
+   was done under — sit inside the same cell, under the value, so they
+   read as part of that entry and never as rows of their own. */
+.cw-profile__under {
+  margin: 0.5rem 0 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.4rem;
+}
+.cw-profile__under .cw-profile__row--under {
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 0.25rem 1rem;
+  padding: 0;
+  border-bottom: 0;
+}
+/* Their labels step down a size, so the entry keeps the loudest voice
+   and the lines under it read as belonging to it. */
+.cw-profile__under .cw-profile__row--under dt {
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 1023px) {
+  .cw-profile { grid-template-columns: 1fr; gap: 1.75rem; }
+  .cw-profile__portrait { max-width: 300px; }
+  .cw-profile__row { grid-template-columns: 1fr; gap: 0.25rem; padding: 0.75rem 0; }
+  .cw-profile__under .cw-profile__row--under { grid-template-columns: 1fr; gap: 0.2rem; }
+}
+
+/* Phones and tablets: the profile head centres its words, portrait,
+   address, actions and supervisor cards. The detail rows keep their
+   table alignment, and nothing changes at desktop width. */
+@media (max-width: 1023px) {
+  #profile-content .cw-profile__words { text-align: center; }
+  #profile-content .cw-profile__portrait { margin-left: auto; margin-right: auto; }
+  #profile-content .cw-profile__actions { justify-content: center; }
+  #profile-content .cw-profile__details { text-align: center; }
+  #profile-content .cw-profile__people .cw-people { justify-content: center; }
+  #profile-content .cw-people-block { text-align: center; }
+  #profile-content .cw-people-block .cw-people { justify-content: center; }
+  #profile-content .cw-people-block .cw-people__line { margin-left: auto; margin-right: auto; }
+}
+
+/* News articles: every button row centres on phones and tablets, so a
+   story added later needs no per-row flag. Desktop keeps the row's own
+   alignment. */
+@media (max-width: 1023px) {
+  #news-content .cw-button-row { justify-content: center; }
+}
+
+/* --- Member card — the site's photo plate: sharp, hairline, white --- */
+.member-card {
+  position: relative;   /* the whole card is the profile link (below) */
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 0;
+  border: 1px solid var(--cw-outline-variant);
+  background: var(--cw-surface-lowest);
+  box-shadow: var(--cw-shadow-xs);
+  overflow: hidden;
+  transition: transform var(--cw-speed) var(--cw-ease);
+}
+.member-card:hover { transform: translateY(-2px); }
+.member-card--alumni { background: var(--cw-surface-low); }
+
+/* The card's own link to the person's profile: an empty anchor
+   stretched over the card, so a click anywhere opens the profile.
+   Inside it, the email / CV / Scholar buttons (and the featured card's
+   square icon buttons) are lifted above it, so they still work. */
+.member-card__link {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.member-links,
+.member-card .member-actions .btn,
+.member-card .member-actions .member-link,
+.member-featured__email,
+.email-copy {
+  position: relative;
+  z-index: 1;
+}
+
+/* A button centres its text by default. The address is a copy button,
+   but it should sit on the card's left edge with the name and role. */
+.email-copy { text-align: left; }
+.email-copy:hover { text-decoration: underline; text-underline-offset: 0.15em; }
+
+.member-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+/* featured card: sharp plate, hairline border + shadow, photo left */
+.member-photo--ring {
+  border-radius: 0;
+  box-shadow: var(--cw-shadow-xs), 0 0 0 1px var(--cw-outline-variant);
+}
+/* alumni: grey until you hover the card */
+.member-photo--muted {
+  filter: grayscale(1);
+  opacity: 0.8;
+  transition: filter var(--cw-speed) var(--cw-ease), opacity var(--cw-speed) var(--cw-ease);
+}
+.member-card--alumni:hover .member-photo--muted {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+/* The head is flattened into the card's own column so the icon
+   buttons can drop below the bio (left on phones) and pin to the
+   bottom-right corner on wider screens. */
+.member-head { display: contents; }
+.member-names { display: flex; flex-direction: column; order: 1; }
+
+.member-name {
+  font-family: var(--cw-font-display);
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--cw-on-surface);
+}
+.member-role {
+  font-family: var(--cw-font-label);
+  font-size: 12.5px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cw-secondary);
+  margin-top: 0.375rem;
+}
+.member-text {
+  font-family: var(--cw-font-body);
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--cw-on-surface-variant);
+  margin-top: 0.5rem;
+  order: 2;
+}
+
+/* --- The little drawings ----------------------------------------
+   A square's icon is a drawing from assets/icons/ (social_icons/,
+   custom_icons/, system_icons/): js/helpers.js hands the element the
+   file's own url, and the mask below cuts it to shape, so the drawing
+   takes the colour of whatever it sits in - white on the black
+   squares, grey in an address line, and the hover tint with them. */
+.social-icon {
+  --social-icon: url("../assets/icons/system_icons/arrow_outward.svg");
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: currentColor;
+  -webkit-mask-image: var(--social-icon);
+  mask-image: var(--social-icon);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+/* --- The site's own system icons ----------------------------------
+   Arrows, pin, phone, mail and clock: the drawings in
+   assets/icons/system_icons, masked so they take the colour they sit
+   in. The span is 1em square, so the text-size classes already on the
+   icon (text-sm, text-[16px] …) keep sizing it. */
+.cw-icon {
+  --cw-icon: url("../assets/icons/system_icons/arrow_outward.svg");
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  background-color: currentColor;
+  -webkit-mask-image: var(--cw-icon);
+  mask-image: var(--cw-icon);
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  vertical-align: -0.12em;
+}
+.cw-icon--arrow-back { --cw-icon: url("../assets/icons/system_icons/arrow_back.svg"); }
+.cw-icon--arrow-forward { --cw-icon: url("../assets/icons/system_icons/arrow_forward.svg"); }
+.cw-icon--arrow-outward { --cw-icon: url("../assets/icons/system_icons/arrow_outward.svg"); }
+.cw-icon--location { --cw-icon: url("../assets/icons/system_icons/location.svg"); }
+.cw-icon--phone { --cw-icon: url("../assets/icons/system_icons/phone_left.svg"); }
+.cw-icon--mail { --cw-icon: url("../assets/icons/system_icons/mail.svg"); }
+.cw-icon--clock { --cw-icon: url("../assets/icons/system_icons/clock.svg"); }
+.cw-icon--menu { --cw-icon: url("../assets/icons/system_icons/menu.svg"); }
+.cw-icon--close { --cw-icon: url("../assets/icons/system_icons/close.svg"); }
+.cw-icon--expand-more { --cw-icon: url("../assets/icons/system_icons/expand_more.svg"); }
+.cw-icon--groups { --cw-icon: url("../assets/icons/system_icons/groups.svg"); }
+.cw-icon--download { --cw-icon: url("../assets/icons/system_icons/download.svg"); }
+.cw-icon--database { --cw-icon: url("../assets/icons/system_icons/database.svg"); }
+.cw-icon--chevron-left { --cw-icon: url("../assets/icons/system_icons/chevron_left.svg"); }
+.cw-icon--chevron-right { --cw-icon: url("../assets/icons/system_icons/chevron_right.svg"); }
+.cw-icon--lightbulb { --cw-icon: url("../assets/icons/system_icons/lightbulb.svg"); }
+.cw-icon--info { --cw-icon: url("../assets/icons/system_icons/info.svg"); }
+.cw-icon--check-circle { --cw-icon: url("../assets/icons/system_icons/check_circle.svg"); }
+.cw-icon--warning { --cw-icon: url("../assets/icons/system_icons/warning.svg"); }
+.cw-icon--error { --cw-icon: url("../assets/icons/system_icons/error.svg"); }
+.cw-icon--priority-high { --cw-icon: url("../assets/icons/system_icons/priority_high.svg"); }
+.cw-icon--event { --cw-icon: url("../assets/icons/system_icons/event.svg"); }
+.cw-icon--label { --cw-icon: url("../assets/icons/system_icons/label.svg"); }
+
+/* --- The icon row (email / CV / Scholar, or a lone LinkedIn) --- */
+/* Drops below the bio: left with a small gap on phones, pinned
+   bottom-right on wide screens. Every card puts its squares in this
+   wrapper — a person with several doors (LinkedIn + Instagram) gets them
+   side by side, never stacked. */
+.member-links {
+  order: 3;
+  margin-top: 0.5rem;
+}
+@media (min-width: 640px) {
+  .member-links {
+    order: 4;
+    align-self: flex-end;
+    margin-top: auto;
+    padding-top: 0.75rem;
+  }
+}
+.member-links {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+}
+.member-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  border-radius: 0;
+  background: var(--cw-primary);
+  color: var(--cw-on-primary);
+  text-decoration: none;
+  transition: background var(--cw-speed) var(--cw-ease);
+}
+.member-link:hover { background: var(--cw-secondary); }
+
+/* --- The little pills under a card ----------------------------- */
+.member-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-top: 0.75rem;
+  order: 4;
+}
+@media (min-width: 640px) {
+  .member-chips { order: 3; }
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0;
+  border: 1px solid var(--cw-outline-variant);
+  background: transparent;
+  color: var(--cw-on-surface-variant);
+  font-family: var(--cw-font-label);
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.chip--accent {
+  border-color: transparent;
+  background: var(--cw-secondary-container);
+  color: var(--cw-on-secondary-container);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* --- Featured lab-lead card (page only) ------------------------ */
+/* the wrapper only carries the gap below the card; the shadow box
+   inside does the framing (48px radius, like the original) */
+.member-card--featured {
+  display: block;
+  margin-bottom: 2rem;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  overflow: visible;
+}
+.member-card--featured:hover { transform: none; }
+/* spacing between photo and body comes from the grid gap alone */
+.member-card--featured .member-photo { margin-bottom: 0; }
+.member-featured {
+  border-radius: 0;
+  border: 1px solid var(--cw-outline-variant);
+  overflow: hidden;
+  background: var(--cw-surface-lowest);
+  box-shadow: var(--cw-shadow-md);
+}
+.member-featured__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  /* the plate sits the same distance from the card's top and bottom */
+  padding: 1.5rem 2rem;
+}
+@media (min-width: 768px) {
+  /* the plate keeps the card's left edge; the words start further in, so
+     the picture has more air on its right than on its left */
+  .member-featured__grid { grid-template-columns: 260px 1fr; gap: calc(4rem - 5px); padding: 2rem 3rem; }
+}
+/* The words start a shade above the plate's top edge, so the position
+   stands proud of the card rather than sinking beside the picture. */
+@media (min-width: 768px) {
+  .member-featured__body { margin-top: -0.5rem; }
+}
+.member-featured__eyebrow {
+  display: inline;
+  font-family: var(--cw-font-label);
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cw-secondary);
+}
+.member-featured__name {
+  font-family: var(--cw-font-display);
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  color: var(--cw-on-surface);
+  margin-top: 0.1rem;
+}
+@media (min-width: 768px) {
+  .member-featured__name { font-size: 40px; line-height: 46px; letter-spacing: -0.02em; }
+}
+.member-featured__subtitle {
+  font-family: var(--cw-font-label);
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cw-on-surface-variant);
+  margin-top: 0.375rem;
+}
+/* The distinction under the name — a named chair, a fellowship — in the
+   same serif italic the profile page uses, so the Director's card and
+   that person's profile read as one another. */
+.member-featured__honour {
+  font-family: var(--cw-font-body);
+  font-style: italic;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  color: var(--cw-secondary);
+  /* the distinction hangs close under the name — the introduction
+     follows it up by the same 3px */
+  margin-top: calc(0.45rem - 3px);
+}
+.member-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.member-bio p {
+  font-family: var(--cw-font-body);
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--cw-on-surface-variant);
+  /* the Director's paragraphs are set like the site's own — justified */
+  text-align: justify;
+}
+/* the lead paragraph reads a size larger (body-md), the rest body-sm */
+.member-bio p:first-child {
+  font-size: 18px;
+  line-height: 23px;
+}
+/* The address above the card's icon buttons — the same line the profile
+   head prints, so the Director's card and that person's profile read
+   alike. */
+.member-featured__email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  margin-top: calc(0.9rem - 5px);
+  font-family: var(--cw-font-body);
+  font-size: 18px;
+  line-height: 26.4px;
+  color: var(--cw-on-surface-variant);
+  text-decoration: none;
+  transition: color var(--cw-speed) var(--cw-ease);
+}
+.member-featured__email:hover { color: var(--cw-secondary); }
+.member-featured__email .material-symbols-outlined { font-size: 16px; }
+
+.member-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  /* the address above belongs with the buttons, so they sit right under
+     it — no gap of their own */
+  margin-top: 0;
+}
+
+/* --- The home page's two member cards --------------------------- */
+/* They carry the same stretched link as the team page's cards — an empty
+   anchor laid over the whole card — so a card opens that person's
+   profile. The link is handed an address only once the profile file is
+   known to exist (js/helpers.js wireArticleLinks), so a card for someone
+   without one stays quiet rather than pointing nowhere. */
+.home-member-card {
+  position: relative;
+  transition: all var(--cw-speed) var(--cw-ease);
+}
+.home-member-card:hover {
+  box-shadow: var(--cw-shadow-sm);
+  transform: translateY(-2px);
+}
+.home-member-card:hover img {
+  filter: grayscale(0) !important;
+}
+/* About slideshow: the photograph keeps its colour under the pointer. */
+[data-about-slide] {
+  transition: filter 700ms ease, opacity 700ms ease;
+}
+[data-about-slideshow]:hover [data-about-slide] {
+  filter: grayscale(0) contrast(1.08);
+}
+/* Profile head summary: centred on phones, unchanged (left) on desktop. */
+.cw-profile-summary { text-align: left; }
+@media (max-width: 639px) {
+  .cw-profile-summary { text-align: center; }
+}
+.home-member-card .member-card__link:focus-visible {
+  outline: 2px solid var(--cw-primary);
+  outline-offset: -2px;
+}
+/* featured card: pills sit a touch further from the bio */
+.member-card--featured .member-chips { margin-top: 1.25rem; }
+
+/* --- Phones: cards read as centred columns --------------------- */
+/* Below the same 640px line where the icon row re-pins, every card
+   centres its words, pills and icon buttons. Wider screens keep the
+   left-aligned, bottom-right-pinned layout. */
+@media (max-width: 639px) {
+  .member-card { text-align: center; }
+  .member-card .email-copy { text-align: center; }
+  .member-chips,
+  .member-links,
+  .member-actions { justify-content: center; }
+}
+
+/* --- Page intro + count label rows ----------------------------- */
+/* Matches the shared pageHero h1 on the other subpages exactly:
+   font-headline-lg text-[2.225rem] sm:text-[2.875rem]
+   md:text-[3.625rem] leading-[1.1] tracking-tight text-on-surface */
+.team-intro-heading {
+  font-family: var(--cw-font-display);
+  font-size: 2.225rem;
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  color: var(--cw-on-surface);
+}
+@media (min-width: 640px) {
+  .team-intro-heading {
+    font-size: 2.875rem;
+  }
+}
+@media (min-width: 768px) {
+  .team-intro-heading {
+    font-size: 3.625rem;
+  }
+}
+.team-label-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+.team-label-row__label {
+  font-family: var(--cw-font-label);
+  font-size: 0.8125rem; /* label-sm */
+  line-height: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cw-secondary);
+}
+.team-label-row__rule {
+  flex: 1;
+  height: 1px;
+  background: var(--cw-outline-variant);
+}
+.team-label-row__count {
+  font-family: var(--cw-font-label);
+  font-size: 0.8125rem;
+  line-height: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: var(--cw-on-surface-variant);
+}
+
+/* --- Role pills under each label row (phd / msc / ...) -------- */
+/* One bar under each section label, built by js/teampage.js from
+   the people's roleType values. Hides itself when nobody in that
+   list carries one. The pills reuse the page's .filter-btn look. */
+.team-role-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.375rem;
+  margin-top: -1rem; /* label row already leaves 2rem - pull to 1rem */
+  margin-bottom: 2rem;
+}
+.team-role-bar[hidden] { display: none; }
+
+/* --- Filter pills (labs ledger + team page) ---------------------
+   Sharp, hairline, uppercase, 34px tall. One rule serves the labs
+   page's kind pills (which wear their kind's colour through the
+   --kind-bg / --kind-fg vars) and the team page's member and role
+   filters, so every filter row on the site looks the same. */
+.filter-btn {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.8125rem; /* label-sm */
+  font-weight: 400;
+  line-height: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 9px 1rem;
+  background: #e5dfd0;
+  color: #494740;
+  border: 1px solid transparent;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.filter-btn:hover {
+  background: #d8ccb5;
+  color: #1b1c19;
+}
+.filter-btn.filter-btn--kind {
+  background: var(--kind-bg, transparent);
+  color: var(--kind-fg, #494740);
+  border-color: transparent;
+}
+.filter-btn.filter-btn--kind:hover {
+  background: var(--kind-bg, transparent);
+  color: var(--kind-fg, #494740);
+  filter: brightness(0.94);
+}
+.filter-btn.active,
+.filter-btn.filter-btn--kind.active,
+.filter-btn.filter-btn--kind.active:hover {
+  background: #1b1c19;
+  color: #fbf9f4;
+  border-color: #1b1c19;
+  filter: none;
+}
+
+/* --- Closing CTA band ------------------------------------------ */
+.cta-band {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  background: var(--cw-surface-low);
+}
+@media (min-width: 768px) {
+  .cta-band { flex-direction: row; align-items: center; }
+}
+.cta-band__heading {
+  font-family: var(--cw-font-display);
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--cw-on-surface);
+}
+.cta-band__text {
+  font-family: var(--cw-font-body);
+  font-size: 13px;
+  line-height: 19px;
+  color: var(--cw-on-surface-variant);
+  margin-top: 0.25rem;
+}
+
+/* --- Research areas ("Explore Our Research") ---------------------
+   Mount: #research-areas in index.html · header words in data/site.json
+   rows + picture panel in data/edit_research_section.json · drawn by js/research.js */
+.research-card {
+  background: var(--cw-surface-lowest);
+  border-radius: 0.25rem; /* rounded-xl */
+  box-shadow: var(--cw-shadow-md);
+  padding: 2rem; /* p-space-lg */
+}
+@media (min-width: 768px) {
+  .research-card { padding: 3rem; } /* md:p-space-xl */
+}
+
+/* header (small eyebrow + big words) */
+.research-head {
+  max-width: 56rem; /* max-w-4xl */
+  margin-bottom: 3rem; /* mb-space-xl */
+}
+.research-title {
+  font-family: var(--cw-font-display);
+  font-size: 28px;
+  line-height: 1.375; /* leading-snug: 38.5px @ 28 */
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: var(--cw-on-surface);
+  margin-top: 4px; /* mt-1 */
+}
+@media (min-width: 768px) {
+  .research-title { font-size: 40px; line-height: 46px; letter-spacing: -0.02em; }
+}
+
+/* split: numbered rows on the left, picture panel on the right */
+.research-split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem; /* gap-gutter */
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .research-split--panel { grid-template-columns: repeat(2, 1fr); } /* halves */
+}
+
+.research-list { display: flex; flex-direction: column; }
+.research-divider {
+  height: 1px;
+  width: 100%;
+  background: var(--cw-surface-high);
+}
+.research-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0.75rem; /* py-space-md px-space-sm */
+  border-radius: 0.25rem; /* rounded-lg */
+  text-decoration: none;
+  transition: background-color var(--cw-speed) var(--cw-ease);
+}
+.research-row:hover { background: var(--cw-surface-low); }
+.research-row__main {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* gap-space-sm */
+}
+.research-row__number {
+  font-family: var(--cw-font-mono);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em; /* 0.33px @ 11 */
+  color: var(--cw-secondary);
+}
+.research-row__title {
+  font-family: var(--cw-font-display);
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: 600;
+  letter-spacing: -0.01em; /* -0.19px @ 19 */
+  color: var(--cw-on-surface);
+  transition: transform var(--cw-speed) var(--cw-ease);
+}
+.research-row:hover .research-row__title { transform: translateX(4px); } /* translate-x-1 */
+.research-row__arrow {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  border-radius: var(--cw-radius);
+  background: var(--cw-primary);
+  color: var(--cw-on-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--cw-speed) var(--cw-ease);
+}
+.research-row__arrow .material-symbols-outlined { font-size: 16px; }
+.research-row:hover .research-row__arrow { background: var(--cw-secondary); }
+
+/* picture panel (photo + pill button + caption) */
+.research-panel {
+  position: relative;
+  min-height: 380px; /* min-h-[380px] */
+  border-radius: 0.25rem; /* rounded-lg */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25rem; /* p-space-md */
+  box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05), inset 0 1px 3px 0 rgb(0 0 0 / 0.1); /* shadow-inner */
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 1024px) {
+  .research-panel { height: 100%; } /* lg:h-full — fills the row beside the list */
+}
+.research-panel__overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  /* from-primary/70 (bottom) via transparent to-primary/20 (top) */
+  background: linear-gradient(to top, rgb(0 0 0 / 0.7), rgb(0 0 0 / 0) 50%, rgb(0 0 0 / 0.2));
+}
+.research-panel__top {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center; /* phones: centered */
+}
+@media (min-width: 640px) {
+  .research-panel__top { justify-content: flex-end; } /* sm+: right-aligned */
+}
+.research-panel__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem; /* gap-space-xs */
+  padding: 0.75rem 1.25rem; /* py-space-sm px-space-md */
+  border-radius: var(--cw-radius);
+  background: rgb(255 255 255 / 0.9); /* bg-white/90 */
+  backdrop-filter: blur(12px); /* backdrop-blur-md */
+  color: var(--cw-on-surface);
+  font-family: var(--cw-font-body);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  box-shadow: var(--cw-shadow-md);
+  transition: all var(--cw-speed) var(--cw-ease);
+}
+.research-panel__button:hover { background: var(--cw-secondary); color: var(--cw-on-primary); }
+.research-panel__button .material-symbols-outlined { font-size: 16px; }
+.research-panel__caption {
+  position: relative;
+  z-index: 10;
+  max-width: 24rem; /* max-w-sm */
+  color: #fff; /* text-white */
+}
+.research-panel__label {
+  font-family: var(--cw-font-body);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1em; /* tracking-widest: 1.1px @ 11 */
+  text-transform: uppercase;
+  color: var(--cw-primary-fixed-dim);
+}
+.research-panel__text {
+  font-family: var(--cw-font-body);
+  font-size: 13px;
+  line-height: 19px;
+  color: rgb(255 255 255 / 0.9); /* text-white/90 */
+  margin: 0;
+}
+
+/* ============================================================
+   Research area page (pages/research-area.html)
+   One template, one JSON: research.json -> areas[], chosen by
+   the URL (?area=slug). Blocks appear only when the JSON has
+   words for them.
+   ============================================================ */
+.area-eyebrow { display: block; margin-bottom: 4px; }
+.area-title {
+  font-family: var(--cw-font-display);
+  font-size: 28px;
+  line-height: 1.375; /* 38.5px @ 28 - matches .research-title */
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: var(--cw-on-surface);
+}
+@media (min-width: 768px) {
+  .area-title { font-size: 40px; line-height: 46px; letter-spacing: -0.02em; }
+}
+
+.area-figure {
+  margin: 1.5rem 0 0;
+  height: 220px;
+  border-radius: 24px; /* phones: gentle rounding, like the about tiles */
+  overflow: hidden;
+  background: var(--cw-surface-high);
+}
+.area-figure img { display: block; width: 100%; height: 100%; object-fit: cover; }
+@media (min-width: 640px) {
+  .area-figure { border-radius: 0.25rem; height: 320px; }
+}
+@media (min-width: 1024px) {
+  .area-figure { height: 420px; }
+}
+
+.area-intro {
+  margin-top: 1.25rem;
+  max-width: 42rem;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--cw-on-surface-variant);
+}
+.area-body { margin-top: 1.25rem; max-width: 42rem; }
+.area-body__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--cw-on-surface);
+}
+.area-body__text + .area-body__text { margin-top: 1rem; }
+
+.area-focus-label { margin-top: 2.5rem; }
+.area-focus {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+  max-width: 42rem;
+}
+.area-focus li {
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--cw-on-surface);
+}
+.area-focus li + li { margin-top: 0.5rem; }
+.area-focus li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 8px;
+  height: 8px;
+  border-radius: var(--cw-radius-full);
+  background: var(--cw-secondary);
+}
+
+.area-empty { text-align: center; padding: 3rem 0; }
+.area-empty .btn { margin-top: 1rem; }
+/* optional gallery: pictures with captions, between story and focus */
+.area-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+@media (min-width: 640px) {
+  .area-gallery { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+}
+.area-gallery__item { margin: 0; }
+.area-gallery__frame {
+  height: 220px;
+  border-radius: 24px; /* same gentle rounding as the hero on phones */
+  overflow: hidden;
+  background: var(--cw-surface-high);
+}
+@media (min-width: 640px) {
+  .area-gallery__frame { height: 240px; border-radius: 0.25rem; }
+}
+.area-gallery__frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.area-gallery__caption {
+  margin-top: 0.5rem;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--cw-on-surface-variant);
+}
+
+/* ============================================================
+   About Us (home section) — js/about.js draws it from
+   data/edit_about_section.json (words) + data/about/edit_about_us_page.json (text + pictures).
+   ============================================================ */
+.about { padding: 2rem; }
+@media (min-width: 768px) {
+  .about { padding: 3rem; }
+}
+
+.about-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem; /* space-md */
+  margin-top: 4px; /* mt-1 */
+}
+.about-title {
+  font-family: var(--cw-font-display);
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: var(--cw-on-surface);
+}
+@media (min-width: 768px) {
+  .about-title { font-size: 40px; line-height: 46px; letter-spacing: -0.02em; }
+}
+
+/* Read More pill: in the header from 640px up, right-aligned under
+   the content on phones. The shadow tweak keeps it pixel-identical
+   to the original utility pill; .btn's own 6px gap already matches. */
+.about-cta { box-shadow: var(--cw-shadow-sm); }
+.about-cta--head { display: none; flex-shrink: 0; }
+@media (min-width: 640px) {
+  .about-cta--head { display: inline-flex; }
+}
+.about-cta-mobile {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+@media (min-width: 640px) {
+  .about-cta-mobile { display: none; }
+}
+
+/* content grid: text left, pictures right (side by side from 1024) */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem; /* gap-gutter */
+  align-items: start;
+  margin-top: 2rem; /* mt-space-lg */
+}
+@media (min-width: 1024px) {
+  .about-grid { grid-template-columns: 1fr 1fr; }
+}
+.about-grid > :only-child { grid-column: 1 / -1; }
+
+.about-text { max-width: 48rem; /* max-w-3xl */ }
+.about-text p {
+  font-size: 15px;
+  line-height: 23px;
+  color: var(--cw-on-surface-variant);
+}
+.about-text p + p { margin-top: 0.75rem; /* space-sm */ }
+
+.about-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* gap-gutter */
+}
+.about-images__pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem; /* gap-gutter */
+}
+.about-tile {
+  position: relative;
+  min-height: 210px;
+  border-radius: 24px; /* phones: gentle rounding */
+  overflow: hidden;
+  box-shadow: var(--cw-shadow-sm);
+  transition: transform var(--cw-speed) var(--cw-ease);
+}
+.about-tile:hover { transform: translateY(-2px); }
+@media (min-width: 640px) {
+  .about-tile { border-radius: 0.25rem; }
+}
+.about-tile img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ============================================================
+   Pinned chip — the small flag on update cards (news-card)
+   and output rows when an item says "pinned": true.
+   js/helpers.js pinChipHtml draws it; the word comes from the
+   page's JSON (pinnedLabel, default "Pinned").
+   ============================================================ */
+.pin-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: var(--cw-radius);
+  background: var(--cw-surface-high);
+  color: var(--cw-secondary);
+  font-family: var(--cw-font-label);
+  font-size: 13px;
+  line-height: 14px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+/* the marker is the colour pin emoji — it keeps its own emoji face and
+   takes no letter-spacing of its own, so the chip's tracking stays on
+   the word while the gap sets the space before it */
+.pin-chip .pin-emoji {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+/* on update cards the chip lines up with the category pill above
+   the title (which carries the same 4px) */
+.news-card__body .pin-chip {
+  margin-bottom: 4px;
+}
+
+/* ============================================================
+   Featured chip — an item with "featured": true wears this tag,
+   and js/helpers.js featuredFirst() lifts it above pinned items.
+   The tag appears on update rows, home news cards and article
+   cards. Words: featured_tag_label (default "Featured").
+   Colour: featured_tag_background — set on the page, or on one
+   item to change just that tag. Text colour is picked for
+   contrast (js/helpers.js badgeText).
+   ============================================================ */
+.featured-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 8px;
+  border-radius: var(--cw-radius);
+  font-family: var(--cw-font-label);
+  font-size: 13px;
+  line-height: 14px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.featured-chip .featured-star {
+  font-size: 11px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+.news-card__body .featured-chip {
+  margin-bottom: 4px;
+}
+
+/* ============================================================
+   Labs & Stations page (pages/labs.html) — js/labs.js draws it
+   from data/labs/edit_labs.json. Category pills and the count sit above a
+   responsive grid of place cards.
+   ============================================================ */
+.labs-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem; /* space-xs */
+  margin-top: 2rem; /* mt-space-lg */
+}
+
+.labs-count {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* space-sm */
+  margin-bottom: 1.5rem; /* space-md */
+}
+.labs-count__rule {
+  flex: 1;
+  height: 1px;
+  background: var(--cw-outline-variant, #dcd8d0);
+}
+.labs-count__text {
+  font-family: var(--cw-font-body);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 500;
+  color: var(--cw-on-surface-variant);
+}
+
+.labs-grid {
+  /* masonry: cards pack column-first, so shorter cards leave no
+     empty gaps — 1 column on phones, 2 from 768px, 3 from 1024px */
+  columns: 1;
+  column-gap: 1.5rem; /* gap-gutter */
+}
+@media (min-width: 768px) {
+  .labs-grid { columns: 2; }
+}
+@media (min-width: 1024px) {
+  .labs-grid { columns: 3; }
+}
+.labs-grid > .lab-card {
+  break-inside: avoid; /* a card never splits across columns */
+  margin-bottom: 1.5rem; /* gap below each card (space between columns) */
+}
+.labs-grid > .section-message {
+  column-span: all; /* the empty message stretches across the columns */
+}
+
+/* place rows — layout is drawn with base-template utilities in
+   js/labs.js (hairline grid rows); no component rule here */
+
+.lab-card__figure {
+  margin: 0;
+  aspect-ratio: 16 / 10;
+}
+.lab-card__figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lab-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* space-xs */
+  padding: 1.5rem; /* space-md */
+  flex: 1;
+}
+
+.lab-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
+.lab-card__tag {
+  display: inline-block;
+  padding: 2px 0.75rem;
+  border-radius: var(--cw-radius);
+  background: var(--tag-bg, var(--cw-surface-high));
+  color: var(--tag-fg, var(--cw-on-surface-variant));
+  font-family: var(--cw-font-body);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+}
+
+/* The availability status chip ("Available", "In use") — same pill as
+   the kind chip, with a small dot. Colours come from the item's
+   status background via --tag-bg / --tag-fg. */
+.lab-card__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 0.75rem;
+  border-radius: var(--cw-radius);
+  background: var(--tag-bg, var(--cw-surface-high));
+  color: var(--tag-fg, var(--cw-on-surface-variant));
+  font-family: var(--cw-font-body);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+}
+.lab-card__status::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.75;
+}
+
+.lab-card__name {
+  font-family: var(--cw-font-display);
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  color: var(--cw-on-surface);
+}
+
+.lab-card__location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--cw-font-body);
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--cw-secondary);
+}
+.lab-card__location .material-symbols-outlined {
+  font-size: 16px;
+}
+
+.lab-card__text {
+  font-family: var(--cw-font-body);
+  font-size: 15px;
+  line-height: 23px;
+  color: var(--cw-on-surface-variant);
+}
+
+.lab-card__equipment {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-top: auto; /* chips line up across cards of different heights */
+}
+.lab-chip {
+  display: inline-block;
+  padding: 2px 0.625rem;
+  border-radius: var(--cw-radius);
+  background: var(--cw-surface-high);
+  color: var(--cw-on-surface-variant);
+  font-family: var(--cw-font-body);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+}
+
+/* Publications home section (js/papers.js) — type badge + venue */
+.pub-meta { display: flex; flex-wrap: wrap; gap: 0.375rem; margin-bottom: 0.25rem; }
+.pub-type {
+  display: inline-block;
+  padding: 2px 0.5rem;
+  border-radius: var(--cw-radius);
+  background: var(--tag-bg, var(--cw-surface-high));
+  color: var(--tag-fg, var(--cw-on-surface-variant));
+  font-family: var(--cw-font-body);
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.pub-venue {
+  display: inline-block;
+  padding: 2px 0.5rem;
+  border-radius: var(--cw-radius);
+  background: var(--cw-surface-high);
+  color: var(--cw-on-surface-variant);
+  font-family: var(--cw-font-body);
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+/* Footer: permanent credit line (not JSON-editable) */
+.footer-credit { color: inherit; text-decoration: none; transition: opacity var(--cw-speed) var(--cw-ease); }
+.footer-credit:hover { opacity: 0.7; text-decoration: underline; }
+
+/* Gallery images: gentle rounding to match the theme */
+.news-gallery-img { border-radius: 16px; }
+@media (min-width: 640px) { .news-gallery-img { border-radius: 24px; } }
+
+/* Content blocks (body / text / buttons / gallery) stack in JSON order */
+.news-block + .news-block { margin-top: 1.5rem; }
+
+/* News article buttons (reference-style: small uppercase, solid/outline) */
+.news-buttons { display: flex; flex-wrap: wrap; gap: 12px; }
+.news-buttons[data-align="center"] { justify-content: center; }
+.news-buttons[data-align="right"] { justify-content: flex-end; }
+.news-btn {
+  display: inline-block;
+  font-family: var(--cw-font-body);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: var(--cw-radius);
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.news-btn:hover { transform: scale(1.02); }
+.news-btn--solid { background: var(--cw-primary); color: var(--cw-on-primary); border: none; }
+.news-btn--outline { background: transparent; color: var(--cw-on-surface); border: 1px solid var(--cw-outline-variant); }
+
+/* News article hero image */
+.news-hero {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--cw-shadow-md);
+  background: var(--cw-surface-high);
+}
+.news-hero img {
+  display: block;
+  width: 100%;
+  height: clamp(240px, 42vw, 460px); /* keep the hero compact regardless of source shape */
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Phones: the decorative offset wireframe behind a photo plate runs past
+   the viewport edge and gets clipped, so it is left off below the tablet
+   break; the plate's own shadow still carries the frame. Tablets and
+   desktops keep the line. */
+@media (max-width: 767px) {
+  .cw-wireframe { display: none; }
+}
+
+/* The home header brand on a 360px phone: a touch smaller so "CLEAR
+   WATER LAB" stays on one line. 390px and up keep the original size. */
+@media (max-width: 389px) {
+  #site-name { font-size: 18px; letter-spacing: 0.08em; }
+}
+
+/* Home research picture block: one small mark per slide. A light strip
+   keeps the marks readable on both dark and pale photographs. */
+.research-slideshow-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  background: rgba(250, 249, 246, 0.85);
+  transform: translateX(-50%);
+}
+.research-slideshow-dot {
+  width: 18px;
+  height: 2px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: #1B1C19;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+.research-slideshow-dot:hover,
+.research-slideshow-dot[aria-current="true"] {
+  opacity: 1;
+}
+
+/* New unified slideshow dots (fraction + small square dots) */
+.slide-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: #1B1C19;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: opacity 0.2s ease, background 0.2s ease;
+}
+.slide-dot:hover,
+.slide-dot.is-active {
+  opacity: 1;
+}
+
+/* Dots that sit on the dark About plate. The default near-black box
+   disappears there, so the track turns a light ghost and the active
+   slide takes the cream accent used by the section's button. */
+#about .slide-dot {
+  background: #F5F2EB;
+  opacity: 0.32;
+}
+#about .slide-dot:hover {
+  opacity: 0.62;
+}
+#about .slide-dot.is-active {
+  background: #C7BAA0;
+  opacity: 1;
+}
+
+/* Home team PI slideshow dots: match research style but as small black boxes */
+.team-slideshow-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  background: rgba(250, 249, 246, 0.85);
+  transform: translateX(-50%);
+}
+.team-slideshow-dot {
+  width: 18px;
+  height: 2px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: #1B1C19;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+.team-slideshow-dot:hover,
+.team-slideshow-dot[aria-current="true"] {
+  opacity: 1;
+}
+
+/* --- Extra list styles (list_style) ------------------------------ */
+.cw-list--none {
+  list-style: none;
+  padding-left: 0;
+}
+.cw-list--roman { list-style-type: lower-roman; }
+.cw-list--roman-upper { list-style-type: upper-roman; }
+.cw-list--alpha { list-style-type: lower-alpha; }
+.cw-list--alpha-upper { list-style-type: upper-alpha; }
+.cw-list--square { list-style-type: square; }
+.cw-list--circle { list-style-type: circle; }
+
+.cw-list--dash,
+.cw-list--check,
+.cw-list--arrow,
+.cw-list--inline {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* A little extra indent for level 3 and deeper. */
+.cw-list--deep { margin-left: 1rem; }
+
+.cw-list--dash > li,
+.cw-list--check > li,
+.cw-list--arrow > li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+.cw-list--dash > li::before,
+.cw-list--check > li::before,
+.cw-list--arrow > li::before {
+  position: absolute;
+  left: 0;
+  color: var(--cw-secondary);
+  font-weight: 600;
+}
+.cw-list--dash > li::before { content: "\2014"; }
+.cw-list--check > li::before { content: "\2713"; }
+.cw-list--arrow > li::before { content: "\2192"; }
+
+.cw-list--inline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.cw-list--inline > li {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--cw-outline-variant);
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+.cw-list--inline > li + li { margin-top: 0; }

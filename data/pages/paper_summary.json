@@ -1,0 +1,93 @@
+{
+  "title": "Paper Summary: Carbon Retention in Boreal Soils",
+  "eyebrow": "Research summary",
+  "intro": "A plain-language summary of our recent study on how fungal networks hold carbon in boreal forest soils — what we asked, what we measured, and what it means.",
+  "choose_page_heading_alignment": "centered",
+
+  "add_tags": {
+    "tags": ["Soil carbon", "Boreal forest", "Mycology", "Open data"]
+  },
+
+  "add_paragraph": {
+    "heading": "The question",
+    "text": "Boreal soils store more carbon per square metre than any other terrestrial ecosystem, yet the mechanisms that keep that carbon in place are still poorly resolved. Our study asked a narrow question: **does fungal network continuity predict how long fresh plant carbon stays in the mineral soil?**\n\nWe paired a four-year labelling experiment with a survey of 36 forest plots across two latitudes."
+  },
+
+  "add_image": {
+    "image_path": "assets/images/about_us/soil.jpg",
+    "image_alt": "Soil cores laid out on a bench after sampling",
+    "image_caption": "Soil cores from the northern transect, sorted by depth before analysis.",
+    "image_credit": "CLEAR WATER LAB"
+  },
+
+  "add_focus_list": {
+    "heading": "Key findings",
+    "items_of_the_focus_list": [
+      "Fungal continuity explained 41% of the variation in mineral-associated carbon.",
+      "Fresh carbon moved into stable pools fastest where fungal networks were undisturbed.",
+      "Tillage reduced retention within a single season; recovery took at least three.",
+      "The relationship held across both latitudes, but weakened in sandy soils."
+    ]
+  },
+
+  "add_heading": {
+    "level": 2,
+    "heading_text": "How we measured it"
+  },
+
+  "add_table": {
+    "table_caption": "Sampling design across the two regions.",
+    "column_headers": ["Region", "Latitude", "Plots", "Depths sampled", "Years"],
+    "content_of_rows_separated_by_comma": [
+      ["North", "61°N", "18", "0–10 / 10–30 cm", "4"],
+      ["South", "58°N", "18", "0–10 / 10–30 cm", "4"]
+    ],
+    "align": ["left", "right", "right", "left", "right"]
+  },
+
+  "add_quote": {
+    "text": "The carbon was never really locked away — it was being held in place, season after season, by a network we could not see.",
+    "author_of_the_quote": "Michael Carter",
+    "position_of_the_author": "Principal Investigator"
+  },
+
+  "add_equation": {
+    "heading": "Retention model",
+    "formatted_equation": "R(t) = R_0 e^{-kt} + R_s(1 - e^{-kt})"
+  },
+
+  "add_special_note": {
+    "colour": "info",
+    "heading": "Data and code",
+    "text": "The labelled-core dataset, the model code and the sampling notebook are published under CC BY 4.0. See the dataset page for the DOI and file list."
+  },
+
+  "add_full_width_links": {
+    "heading": "Read the work",
+    "links": [
+      {
+        "label": "Journal article",
+        "link": "https://doi.org/10.1038/s41558-026-01984-2",
+        "note": "Open access"
+      },
+      {
+        "label": "Dataset",
+        "link": "@pages.dataset_release",
+        "note": "CC BY 4.0"
+      }
+    ]
+  },
+
+  "add_button": [
+    {
+      "label": "Read the paper",
+      "link": "https://doi.org/10.1038/s41558-026-01984-2",
+      "style": "fill"
+    },
+    {
+      "label": "Contact the authors",
+      "link": "@contact",
+      "style": "outline"
+    }
+  ]
+}

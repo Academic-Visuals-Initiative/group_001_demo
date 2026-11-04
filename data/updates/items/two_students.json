@@ -1,0 +1,32 @@
+{
+  "current_date": "2026-10-14",
+  "add_relevant_category_name": "Graduation",
+  "item_title": "Two student researchers graduate after a season in the field",
+  "item_introduction": "Aaliyah Thompson completes her undergraduate thesis on sensor drift, and Grace Kim finishes her project on field-kit instrument housings.",
+  "image_folder_name": "labba",
+  "add_author_names": [
+    "Michael Carter",
+    "Jasmine Brooks"
+  ],
+  "add_image": {
+    "image_path": "ph-13.jpg",
+    "image_alt": "A researcher preparing sampling equipment at a bench",
+    "image_caption": "Bench checks before the morning field shift."
+  },
+  "add_paragraph": [
+    "The lab marked the end of the field season with two graduations. **Aaliyah Thompson** submitted her undergraduate thesis on low-cost sensor calibration and drift monitoring, work that now underpins the dense particulate network the group runs across three sites.",
+    "**Grace Kim** completed her final-year project on field-kit design: sensor housings, labelling systems and the student-friendly assembly instructions that go out with every outreach kit. Her housings are already in use on the coastal campaign.",
+    "Both students joined as part of the lab's training programme, which pairs every new researcher with a bench mentor and a field mentor. Aaliyah continues with us as an MSc student; Grace starts an engineering degree in the spring.",
+    "The lab keeps a copy of both reports in the internal archive, and the kit drawings are released alongside the open-science sensor dataset."
+  ],
+  "add_tags": [
+    "graduation",
+    "students",
+    "training",
+    "sensors"
+  ],
+  "add_contact_information": {
+    "name": "Michael Carter",
+    "email": "michael.carter@clearwaterlab.org"
+  }
+}

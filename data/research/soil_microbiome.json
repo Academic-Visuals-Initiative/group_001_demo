@@ -1,0 +1,71 @@
+{
+  "title": "Soil Microbiome & Carbon Sequestration",
+  "keywords_for_the_page_and_card": "Soil biogeochemistry · Root exudates · Fungal networks · Boreal carbon",
+  "intro": "Boreal and alpine soils hold more carbon per square metre than any other terrestrial system. We ask what keeps it there — and what makes it leave.",
+  "show_the_page_heading": true,
+  "add_image": {
+    "image_path": "assets/images/research_areas_and_labs/home_research_areas_section/soil_microbiome_and_carbon_sequestration.jpg",
+    "image_alt": "Roots, fungi and soil carbon pathways"
+  },
+  "add_focus_list": [
+    "Root exudate chemistry under variable temperature",
+    "Fungal network continuity and mineral-associated carbon",
+    "Four-year isotope labelling in boreal forest plots",
+    "Soil core archives spanning two latitudes"
+  ],
+  "add_paragraph": "Fresh plant carbon enters the soil through roots and litter. Whether it stays there depends on a chemistry we are only beginning to resolve: how strongly organic molecules bind to mineral surfaces, how fungal networks redistribute them, and how disturbance changes the rules.\n\nOur field sites run from beech forest in southern Sweden to alpine heath above the tree line. We pair long-term labelling experiments with soil cores measured for carbon chemistry and microbial community structure.",
+  "add_gallery": {
+    "images": [
+      {
+        "image_path": "assets/images/about_us/soil.jpg",
+        "image_alt": "Soil cores laid out after sampling",
+        "image_caption": "Soil cores from the northern transect, sorted by depth."
+      }
+    ]
+  },
+  "add_content_to_page": [
+    {
+      "add_gallery": {
+        "heading": "From root to mineral surface",
+        "size": "4:3",
+        "columns": 3,
+        "images": [
+          {
+            "image_path": "assets/images/research_areas_and_labs/home_research_areas_section/soil_microbiome_and_carbon_sequestration.jpg",
+            "image_alt": "Diagram of the rhizosphere carbon pump",
+            "image_caption": "The rhizosphere carbon pump"
+          },
+          {
+            "image_path": "assets/images/about_us/soil.jpg",
+            "image_alt": "Soil cores on a bench",
+            "image_caption": "Depth-resolved soil cores"
+          },
+          {
+            "image_path": "assets/images/research_areas_and_labs/labs/icp_ms_suite.jpg",
+            "image_alt": "ICP-MS instrument suite",
+            "image_caption": "Trace-element analysis on the ICP-MS"
+          }
+        ]
+      }
+    },
+    {
+      "add_gallery": {
+        "heading": "Field campaigns",
+        "size": "natural",
+        "columns": 2,
+        "images": [
+          {
+            "image_path": "assets/images/about_us/action_5.jpg",
+            "image_alt": "Winter soil sampling",
+            "image_caption": "Winter sampling, Storglommen"
+          },
+          {
+            "image_path": "assets/images/about_us/action_1.jpg",
+            "image_alt": "Preparing sample bags",
+            "image_caption": "Preparing labels before the autumn campaign"
+          }
+        ]
+      }
+    }
+  ]
+}

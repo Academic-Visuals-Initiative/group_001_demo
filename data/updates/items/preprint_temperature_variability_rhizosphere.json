@@ -1,0 +1,60 @@
+{
+  "current_date": "2026-11-03",
+  "add_relevant_category_name": "Publication",
+  "is_featured": true,
+  "item_title": "Preprint: the problem with average soil temperature",
+  "item_introduction": "Priya Nair's new model suggests a warmer average matters less than how often the soil crosses freezing.",
+  "add_author_names": [
+    "Priya Nair",
+    "Michael Carter"
+  ],
+  "add_image": {
+    "image_path": "assets/images/about_us/soil.jpg",
+    "image_alt": "Hands holding a sample of dark surface soil",
+    "image_caption": "Surface soil from the northern warming plots, sampled after the 2026 thaw."
+  },
+  "add_paragraph": [
+    "Most soil-carbon models summarise a year with one number: the mean temperature. Priya Nair's preprint, posted this week on **EGUsphere**, argues that the mean hides the part a root actually experiences — how often the soil crosses 0 °C, and how fast it swings between freeze and thaw.",
+    "The model was tuned on four years of labelling data from the **Storglommen** plots and a new hourly temperature record from three depths. It reproduces the measured carbon loss only when the freeze–thaw cycle is included: plots with the same annual mean but more crossings lost up to **37% more fresh root carbon** over a season.",
+    "“We are not saying mean warming is irrelevant,” Nair said. “We are saying it is an incomplete summary.” The preprint is open for discussion until January, and the labelled-core data behind it is already on the open-data portal."
+  ],
+  "add_gallery": {
+    "layout": "grid",
+    "columns": 2,
+    "size": "16x9",
+    "images": [
+      {
+        "image_path": "assets/images/about_us/action_1.jpg",
+        "image_alt": "Researchers working at a laboratory bench",
+        "image_caption": "Preparing the labelled cores for isotope analysis.",
+        "credit": "CLEAR WATER LAB"
+      },
+      {
+        "image_path": "assets/images/research_areas_and_labs/labs/icp_ms_suite.jpg",
+        "image_alt": "ICP-MS instrument in the clean laboratory",
+        "image_caption": "The ICP-MS run that closes each labelling campaign.",
+        "credit": "TerraNova Media"
+      }
+    ]
+  },
+  "add_tags": [
+    "preprint",
+    "soil-carbon",
+    "freeze-thaw",
+    "rhizosphere"
+  ],
+  "add_full_width_links": {
+    "heading": "Preprint",
+    "links": [
+      {
+        "label": "10.5194/egusphere-2026-118",
+        "link": "https://doi.org/10.5194/egusphere-2026-118",
+        "note": "Open for discussion until January 2027"
+      }
+    ]
+  },
+  "add_contact_information": {
+    "name": "Priya Nair",
+    "email": "priya.nair@clearwaterlab.org"
+  }
+}

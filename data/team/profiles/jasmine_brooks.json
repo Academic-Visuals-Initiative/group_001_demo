@@ -1,0 +1,169 @@
+{
+  "name_as_exactly_as_in_category_file": "Jasmine Brooks",
+  "summary": "Chitin-mycelium composites, biodegradable polymers & material testing for field-deployable instruments.",
+  "honorary_title_or_titles": "Swedish Research Council Starting Grant",
+  "add_affiliations": [
+    {
+      "affiliation": "Research Lead",
+      "affiliation_info": [
+        "CLEAR WATER LAB, Department of Engineering"
+      ]
+    }
+  ],
+  "add_single_line_information": [
+    {
+      "label": "Department",
+      "value": "Department of Engineering"
+    },
+    {
+      "label": "In the lab since",
+      "value": "2020"
+    },
+    {
+      "label": "Main focus",
+      "value": "Chitin-mycelium composites"
+    },
+    {
+      "label": "Bench",
+      "value": "Materials lab"
+    }
+  ],
+  "orcid": "https://orcid.org/0000-0002-1825-0097",
+  "googlescholar": "https://scholar.google.com/citations?user=jasmine-brooks",
+  "linkedin": "https://linkedin.com/in/jasmine-brooks",
+  "github": "https://github.com/jasmine-brooks",
+  "cv": "assets/documents/cv/millercv.pdf",
+  "add_expandable_information": [
+    {
+      "expandable_information_row_label": "Education",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "PhD, 2018",
+          "expandable_item_right_column_primary_information": [
+            "PhD in Fibre and Polymer Technology",
+            "KTH Royal Institute of Technology"
+          ],
+          "expandable_item_right_column_secondary_information": [
+            {
+              "label": "Thesis",
+              "value": "Chitin-mycelium composites for short-lived building elements"
+            },
+            {
+              "label": "Supervisor",
+              "value": "Prof. L. Ekström (KTH), Dr. P. Nyman (RISE)"
+            }
+          ]
+        },
+        {
+          "expandable_item_left_column_info": "MSc, 2013",
+          "expandable_item_right_column_primary_information": [
+            "MSc in Materials Science",
+            "KTH Royal Institute of Technology"
+          ]
+        }
+      ]
+    },
+    {
+      "expandable_information_row_label": "Honours & recognition",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "2022",
+          "expandable_item_right_column_primary_information": "Swedish Research Council Starting Grant"
+        },
+        {
+          "expandable_item_left_column_info": "2023",
+          "expandable_item_right_column_primary_information": "KTH Innovator of the Year"
+        }
+      ]
+    },
+    {
+      "expandable_information_row_label": "Previous appointments",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "2016 – 2020",
+          "expandable_item_right_column_primary_information": "Postdoctoral researcher, KTH Royal Institute of Technology"
+        },
+        {
+          "expandable_item_left_column_info": "2013 – 2016",
+          "expandable_item_right_column_primary_information": "Research engineer, RISE Research Institutes of Sweden"
+        }
+      ]
+    }
+  ],
+  "add_paragraph": [
+    "Jasmine leads the materials bench, where the lab grows its own composites: chitin from shellfish waste, bound by mycelium, pressed into sheets that behave a little like plywood and rot like a leaf.",
+    "The group's ==biodegradable polymer== work began as a way to stop shipping instrument housings to remote sites that nobody would ever collect. It has since grown its own life.",
+    "Jasmine runs the lab's material testing too — every sheet is measured for strength, water uptake and how long it takes a soil community to take it apart."
+  ],
+  "add_focus_list": [
+    "Chitin-mycelium composites",
+    "Biodegradable polymers",
+    "Material testing & durability",
+    "Instrument housings"
+  ],
+  "add_a_timeline": {
+    "heading": "Path",
+    "items_of_the_timeline": [
+      {
+        "timeline_item_date": "2020",
+        "timeline_item_title": "Joined CLEAR WATER LAB",
+        "timeline_item_text": "Started the materials bench."
+      },
+      {
+        "timeline_item_date": "2022",
+        "timeline_item_title": "The first pressed sheet",
+        "timeline_item_text": "Chitin from shellfish waste, bound by mycelium."
+      },
+      {
+        "timeline_item_date": "2023",
+        "timeline_item_title": "Instrument housings",
+        "timeline_item_text": "The composites replace housings nobody was ever going to collect."
+      },
+      {
+        "timeline_item_date": "2024",
+        "timeline_item_title": "Durability testing, in soil",
+        "timeline_item_text": "Every sheet measured for strength, water uptake and how long it takes a soil community to take it apart."
+      }
+    ]
+  },
+  "add_people": {
+    "heading": "Works closely with",
+    "intro": "Deployment with the field-systems team; degradation studies with the soil microbiology group.",
+    "people": [
+      {
+        "name": "Carlos Mendoza"
+      },
+      {
+        "name": "Prof. Katherine Bennett",
+        "position": "Professor"
+      }
+    ]
+  },
+  "publications": true,
+  "add_gallery": {
+    "heading": "From the field",
+    "layout": "grid",
+    "columns": 2,
+    "size": "4x3",
+    "images": [
+      {
+        "image_path": "ph-13.jpg",
+        "image_alt": "",
+        "image_caption": "Sheets drying before testing",
+        "credit": "CLEAR WATER LAB"
+      },
+      {
+        "image_path": "ph-04.png",
+        "image_alt": "",
+        "image_caption": "A composite housing at the alpine site",
+        "credit": "CLEAR WATER LAB"
+      }
+    ]
+  },
+  "add_tags": [
+    "bio-materials",
+    "mycelium",
+    "polymers",
+    "chitin"
+  ]
+}

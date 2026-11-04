@@ -1,0 +1,49 @@
+{
+  "current_date": "2026-10-22",
+  "add_relevant_category_name": "Project",
+  "item_title": "A ninth trap station closes the estuary transect",
+  "item_introduction": "The new mooring at the southern site means the restoration programme now samples the whole salinity gradient every month.",
+  "add_author_names": [
+    "Sofia Rossi",
+    "Dr. Emily Morgan"
+  ],
+  "add_image": {
+    "image_path": "assets/images/research_areas_and_labs/labs/water_quality_field_kit.jpg",
+    "image_alt": "A researcher taking a field measurement at the water's edge",
+    "image_caption": "A field check at the southern estuary before the mooring went in."
+  },
+  "add_paragraph": [
+    "The southern site was always the awkward one: fresh enough at the head of the creek to behave differently from the other eight stations, but too shallow for the original mooring design. The new frame sits in **3.8 metres** at high water, with three traps at 1.5, 3 and 6 metres above the bed.",
+    "That completes the along-estuary transect. Every month the programme now samples the full salinity gradient, from the brackish head to the mouth, with the same trap design and the same laboratory protocol.",
+    "The first full sample round is scheduled for the next spring tide. Data will join the open sediment-flux release after six months, once the trap blanks and laboratory controls have been checked."
+  ],
+  "add_gallery": {
+    "layout": "grid",
+    "columns": 2,
+    "size": "16x9",
+    "images": [
+      {
+        "image_path": "assets/images/research_areas_and_labs/labs/estuary_mangrove_nursery.jpg",
+        "image_alt": "Mangrove nursery beds beside an estuary channel",
+        "image_caption": "Nursery beds near the new station.",
+        "credit": "CLEAR WATER LAB"
+      },
+      {
+        "image_path": "assets/images/about_us/action_3.jpg",
+        "image_alt": "Researchers working at the water's edge",
+        "image_caption": "Checking the mooring on the first low tide.",
+        "credit": "TerraNova Media"
+      }
+    ]
+  },
+  "add_tags": [
+    "mangrove",
+    "sediment-traps",
+    "blue-carbon",
+    "fieldwork"
+  ],
+  "add_contact_information": {
+    "name": "Sofia Rossi",
+    "email": "hello@clearwaterlab.org"
+  }
+}

@@ -1,0 +1,5 @@
+# Crawling and AI indexing are allowed.
+# Attribution terms still apply — see LICENSE-NOTICE.txt.
+
+User-agent: *
+Allow: /

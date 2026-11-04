@@ -1,0 +1,183 @@
+{
+  "name_as_exactly_as_in_category_file": "Prof. Katherine Bennett",
+  "alternative_names_used_in_publications_or_other_outputs": [
+    "Katherine B",
+    "Katherine B. Hoztel"
+  ],
+  "honorary_title_or_titles": "AAAS Fellow",
+  "add_affiliations": [
+    {
+      "affiliation": "Adjunct Professor",
+      "affiliation_info": [
+        "Department of Microbiology and Immunology, University of British Columbia"
+      ]
+    }
+  ],
+  "add_single_line_information": [
+    {
+      "label": "Department",
+      "value": "Department of Engineering"
+    },
+    {
+      "label": "In the lab since",
+      "value": "2018"
+    },
+    {
+      "label": "Main focus",
+      "value": "Mycelium networks & nutrient cycling"
+    },
+    {
+      "label": "Also known for",
+      "value": "the soil core archive"
+    }
+  ],
+  "add_expandable_information": [
+    {
+      "expandable_information_row_label": "Education",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "PhD, 2011",
+          "expandable_item_right_column_primary_information": [
+            "PhD in Soil Microbiology",
+            "University of British Columbia"
+          ],
+          "expandable_item_right_column_secondary_information": [
+            {
+              "label": "Thesis",
+              "value": "Microbial controls on nitrogen retention in temperate forest soils"
+            },
+            {
+              "label": "Supervisor",
+              "value": "Prof. D. Whitfield (UBC), Prof. A. Beaulieu (McGill)"
+            }
+          ]
+        },
+        {
+          "expandable_item_left_column_info": "BSc, 2005",
+          "expandable_item_right_column_primary_information": [
+            "BSc in Biology",
+            "McGill University"
+          ]
+        }
+      ]
+    },
+    {
+      "expandable_information_row_label": "Honours & recognition",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "2016",
+          "expandable_item_right_column_primary_information": "UBC Killam Teaching Prize"
+        },
+        {
+          "expandable_item_left_column_info": "2019",
+          "expandable_item_right_column_primary_information": "Canadian Society of Soil Science, Early Career Award"
+        }
+      ]
+    },
+    {
+      "expandable_information_row_label": "Previous appointments",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "2012 – 2018",
+          "expandable_item_right_column_primary_information": "Faculty, University of British Columbia"
+        }
+      ]
+    }
+  ],
+  "googlescholar": "https://scholar.google.com/citations?user=katherine-bennett",
+  "linkedin": "https://linkedin.com/in/katherine-bennett",
+  "github": "https://github.com/katherine-bennett",
+  "cv": "assets/documents/cv/millercv.pdf",
+  "add_paragraph": [
+    "Katherine joined the lab in 2018 from the University of British Columbia. She works on the fungal networks that thread through alpine soils — how they trade nutrients with plants, and what happens to that trade when the ground thaws earlier each year.",
+    "She keeps the lab's ==soil core archive==: more than nine thousand cores, dried, catalogued and open to any group that wants to ask them a new question.",
+    "Much of her work is done at the bench, but she still runs the autumn coring campaign herself — 'the archive is only as good as the day it was cut', as she puts it."
+  ],
+  "add_focus_list": [
+    "Mycelium networks & nutrient cycling",
+    "Alpine soil core archive",
+    "Fungal-to-bacterial ratios",
+    "Permafrost thaw microbiology"
+  ],
+  "add_a_timeline": {
+    "heading": "Path",
+    "items_of_the_timeline": [
+      {
+        "timeline_item_date": "2012 – 2018",
+        "timeline_item_title": "Faculty, University of British Columbia",
+        "timeline_item_text": "Soil microbiology and the fungal networks threading alpine soils."
+      },
+      {
+        "timeline_item_date": "2018",
+        "timeline_item_title": "Joined CLEAR WATER LAB",
+        "timeline_item_text": "Brought the soil core archive with her."
+      },
+      {
+        "timeline_item_date": "2021",
+        "timeline_item_title": "The archive passes nine thousand cores",
+        "timeline_item_text": "Dried, catalogued and open to any group that wants to ask them a new question."
+      },
+      {
+        "timeline_item_date": "2023",
+        "timeline_item_title": "Permafrost thaw microbiology",
+        "timeline_item_text": "What happens to the nutrient trade when the ground thaws earlier each year."
+      }
+    ]
+  },
+  "add_people": {
+    "heading": "Works closely with",
+    "people": [
+      {
+        "name": "Michael Carter",
+        "position": "Principal Investigator"
+      },
+      {
+        "name": "Carlos Mendoza",
+        "position": "Field Systems Engineer"
+      }
+    ]
+  },
+  "add_publication_or_more": {
+    "per_page": 1,
+    "show_year_filter": false,
+    "publication_section_title": "Selected publications",
+    "publication_titles": [
+      {
+        "publication_title_to_include": "Deep Rhizosphere Carbon Retention Under Intensified Alpine Temperature Oscillations"
+      },
+      {
+        "publication_title_to_include": "A single custom publication",
+        "year": 2026,
+        "where": "Journal of Custom Research",
+        "authors": "Michael Carter, Prof. Katherine Bennett",
+        "link": "assets/documents/publications_and_outputs/publications/pdf.pdf"
+      }
+    ]
+  },
+  "add_gallery": {
+    "heading": "From the field",
+    "layout": "grid",
+    "columns": 2,
+    "size": "4x3",
+    "images": [
+      {
+        "image_path": "ph-10.jpg",
+        "image_alt": "",
+        "image_caption": "Cores from the autumn campaign, drying in the archive",
+        "credit": "CLEAR WATER LAB"
+      },
+      {
+        "image_path": "ph-14.jpg",
+        "image_alt": "",
+        "image_caption": "Prepared water and soil samples",
+        "credit": "CLEAR WATER LAB"
+      }
+    ]
+  },
+  "add_tags": [
+    "mycelium",
+    "nutrient-cycling",
+    "soil-cores",
+    "microbiology"
+  ]
+}

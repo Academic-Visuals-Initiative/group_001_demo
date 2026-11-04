@@ -1,0 +1,30 @@
+{
+  "featured_section": {
+    "subheading": "Funding & partnerships",
+    "heading": "Supported by",
+    "intro": "Our work is funded through competitive research grants and supported by long-term institutional and industry partnerships.",
+    "rotation_time_milliseconds": 4000,
+    "logos": [
+      {
+        "image_path": "nsf.svg",
+        "logo_alt": "National Science Foundation"
+      },
+      {
+        "image_path": "nih.svg",
+        "logo_alt": "National Institutes of Health"
+      },
+      {
+        "image_path": "doe.svg",
+        "logo_alt": "U.S. Department of Energy"
+      },
+      {
+        "image_path": "nasa.svg",
+        "logo_alt": "National Aeronautics and Space Administration"
+      },
+      {
+        "image_path": "dod.svg",
+        "logo_alt": "U.S. Department of Defense"
+      }
+    ]
+  }
+}

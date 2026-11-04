@@ -1,0 +1,40 @@
+{
+  "title": "Research Technician — Sensor Networks",
+  "add_relevant_category_name": "Technician",
+  "duration": "2 year position",
+  "date": "2026-09-15",
+  "summary": "Build, calibrate and service the lab's open-hardware sensor fleet, from bench prototypes to coastal deployments.",
+  "add_content_to_page": [
+    {
+      "add_paragraph": [
+        "You will work with the sensor team to assemble, calibrate and repair turbidity, conductivity and nitrate instruments deployed across the Oslofjord and alpine networks. The role is split between the electronics bench in Oslo and short field trips to service stations.",
+        "We are looking for someone with practical electronics experience, comfortable with a multimeter and a soldering iron, and happy to keep careful calibration records. Experience with embedded C or Python is an advantage; a background in environmental science is not required.",
+        "The position is funded for two years, with the possibility of extension. ==Applications close 30 November 2026==."
+      ]
+    },
+    {
+      "add_button": [
+        {
+          "label": "Apply now",
+          "link": "mailto:carlos.mendoza@clearwaterlab.org?subject=Research%20Technician%20application",
+          "style": "solid"
+        },
+        {
+          "label": "Sensor programme",
+          "link": "@area:sensor_networks",
+          "style": "outline"
+        }
+      ]
+    }
+  ],
+  "add_tags": [
+    "Electronics",
+    "Calibration",
+    "Field service",
+    "Open hardware"
+  ],
+  "add_contact_information": {
+    "name": "Carlos Mendoza",
+    "email": "carlos.mendoza@clearwaterlab.org"
+  }
+}

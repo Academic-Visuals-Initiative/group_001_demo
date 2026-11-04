@@ -1,0 +1,66 @@
+{
+  "title": "Coastal & Mangrove Restoration",
+  "keywords_for_the_page_and_card": "Blue carbon · Mangrove ecology · Sediment accretion · Community science",
+  "intro": "Mangrove forests protect coastlines, store carbon and support fisheries. We measure whether restoration actually restores those functions — and at what pace.",
+  "show_the_page_heading": true,
+  "add_image": {
+    "image_path": "assets/images/research_areas_and_labs/home_research_areas_section/coastal_and_mangrove_restoration.jpg",
+    "image_alt": "Mangrove restoration and coastal protection diagram"
+  },
+  "add_focus_list": [
+    "Sediment-trap monitoring of accretion and carbon burial",
+    "Community-run nurseries in three Southeast Asian estuaries",
+    "Blue-carbon accounting with local partners",
+    "Post-restoration recovery of fish and invertebrate communities"
+  ],
+  "add_paragraph": "Coastal restoration is often measured in hectares planted. We measure what those hectares do: how fast sediment accumulates, how much organic carbon it buries, and whether the nursery-reared seedlings survive their first two monsoon seasons.\n\nOur pilot began in 2021 with one estuary and now spans three, with 120,000 propagules raised annually by community cooperatives. Every site is monitored with the same sediment-trap protocol so the numbers can be compared.",
+  "add_gallery": {
+    "images": [
+      {
+        "image_path": "assets/images/research_areas_and_labs/home_research_areas_section/coastal_and_mangrove_restoration.jpg",
+        "image_alt": "Mangrove restoration diagram",
+        "image_caption": "Restoration design at the estuary scale."
+      }
+    ]
+  },
+  "add_content_to_page": [
+    {
+      "add_gallery": {
+        "heading": "Restoration in practice",
+        "size": "3:2",
+        "columns": 2,
+        "images": [
+          {
+            "image_path": "assets/images/research_areas_and_labs/home_research_areas_section/coastal_and_mangrove_restoration.jpg",
+            "image_alt": "Mangrove planting scheme",
+            "image_caption": "Planting schemes and hydrological restoration"
+          },
+          {
+            "image_path": "assets/images/about_us/mangrove.jpg",
+            "image_alt": "Mangrove seedlings",
+            "image_caption": "Seedlings at the community nursery"
+          }
+        ]
+      }
+    },
+    {
+      "add_gallery": {
+        "heading": "Field team",
+        "size": "natural",
+        "columns": 2,
+        "images": [
+          {
+            "image_path": "assets/images/about_us/action_4.jpg",
+            "image_alt": "Community nursery work",
+            "image_caption": "Nursery visit with community partners"
+          },
+          {
+            "image_path": "assets/images/about_us/main.gif",
+            "image_alt": "Field footage from the coast",
+            "image_caption": "Seagrass and mangrove survey footage"
+          }
+        ]
+      }
+    }
+  ]
+}

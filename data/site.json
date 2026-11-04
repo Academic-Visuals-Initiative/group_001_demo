@@ -1,0 +1,102 @@
+{
+  "add_title_to_show_in_search_engines": "CLEAR WATER LAB — Environmental Chemistry at TerraNova Institute",
+  "favicon_path": "logo-mark.svg",
+  "add_a_small_introduction_to_show_in_search_engines": "CLEAR WATER LAB is an environmental chemistry research group at TerraNova Institute in Oslo. We study how carbon, nutrients and contaminants move through soil, air and water — and build the instruments that measure them.",
+  "metadata": {
+    "keywords": "environmental chemistry, soil carbon, mangrove restoration, atmospheric particles, biodegradable polymers, sensor networks, TerraNova Institute",
+    "author": "CLEAR WATER LAB",
+    "og_type": "website"
+  },
+  "navigation_bar_logo_name_and_subtitle": {
+    "add_your_group_name": "CLEAR WATER LAB",
+    "subtitle": "Environmental Chemistry ",
+    "image_path": "logo-mark.svg"
+  },
+  "navigation_bar_items": [
+    {
+      "navigation_bar_about_label": "About",
+      "is_enabled": true
+    },
+    {
+      "navigation_bar_research_areas_label": "Research",
+      "link": "#research-areas",
+      "is_enabled": true
+    },
+    {
+      "navigation_bar_team_label": "Team",
+      "is_enabled": true
+    },
+    {
+      "navigation_bar_publications_label": "Publications",
+      "is_enabled": true
+    },
+    {
+      "navigation_bar_news_label": "News",
+      "is_enabled": true
+    },
+    {
+      "navigation_bar_join_label": "Join",
+      "is_enabled": true
+    },
+    {
+      "navigation_bar_facilities_label": "Labs",
+      "link": "pages/labs.html",
+      "is_enabled": false
+    },
+    {
+      "navigation_bar_contact_label": "Contact",
+      "is_enabled": true
+    }
+  ],
+  "show_home_page_sections": {
+    "home_page_about_section": {
+      "is_enabled": true
+    },
+    "home_page_research_section": {
+      "is_enabled": true
+    },
+    "home_page_team_section": {
+      "is_enabled": true
+    },
+    "home_page_join_section": {
+      "is_enabled": true
+    },
+    "home_page_featured_section": {
+      "is_enabled": true
+    },
+    "home_page_contact_section": {
+      "is_enabled": true
+    },
+    "home_page_news_and_updates_section": {
+      "is_enabled": true
+    }
+  },
+  "edit_footer": {
+    "footer_logo": "logo.svg",
+    "logo_alt": "CLEAR WATER LAB",
+    "logo_text_line_1": "TerraNova Institute",
+    "logo_text_line_2": "Department of Environmental Chemistry",
+    "logo_text_line_3": "Oslo, Norway",
+    "footer_right_side_line_1": "© **CLEAR WATER LAB** 2026. All rights reserved.",
+    "footer_right_side_line_2": "Last updated Nov 2026",
+    "footer_right_side_line_3": "Field photography by TerraNova Media"
+  },
+  "footer_social_icons": [
+    {
+      "icon": "googlescholar_old",
+      "link": "https://scholar.google.com/citations?user=clearwaterlab"
+    },
+    {
+      "icon": "university",
+      "link": "https://terranova.example.edu/environmental-chemistry"
+    },
+    {
+      "icon": "assets/icons/system_icons/link.svg",
+      "link": "https://github.com/clearwaterlab"
+    },
+    {
+      "icon": "",
+      "link": "mailto:hello@clearwaterlab.org"
+    }
+  ]
+}

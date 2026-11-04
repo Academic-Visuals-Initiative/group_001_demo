@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "@home",
+    "@about",
+    "@team",
+    "@outputs",
+    "@updates",
+    "@positions",
+    "@labs"
+  ],
+  "home_sections": [
+    "@home.about",
+    "@home.areas",
+    "@home.team",
+    "@home.publications",
+    "@home.news",
+    "@home.join",
+    "@home.contact"
+  ],
+  "json_pages": [
+    "@research.<file name>",
+    "@news.<file name>",
+    "@updates.<file name>",
+    "@positions.<file name>",
+    "@join.<file name>",
+    "@profiles.<slug>",
+    "@pages.<file name>",
+    "@your_folder.your_file"
+  ],
+  "examples": [
+    "@research.soil_microbiome",
+    "@updates.new_paper_in_nature_climate_change_on_rhizosphere_carbon_retention",
+    "@positions.phd_student",
+    "@join.postdoctoral_fellow",
+    "@profiles.michael_carter",
+    "@pages.paper_summary",
+    "@books.my_books"
+  ]
+}

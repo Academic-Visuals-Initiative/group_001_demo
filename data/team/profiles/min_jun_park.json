@@ -1,0 +1,159 @@
+{
+  "name_as_exactly_as_in_category_file": "Min-jun Park",
+  "summary": "Bio-acoustics, sensor fusion & open data pipelines for environmental monitoring.",
+  "add_affiliations": [
+    {
+      "affiliation": "Research Lead",
+      "affiliation_info": [
+        "CLEAR WATER LAB, Department of Engineering"
+      ]
+    }
+  ],
+  "add_single_line_information": [
+    {
+      "label": "In the lab since",
+      "value": "2019"
+    },
+    {
+      "label": "Main focus",
+      "value": "Bio-acoustics & open data"
+    },
+    {
+      "label": "Tools",
+      "value": "The lab's data pipeline"
+    }
+  ],
+  "orcid": "https://orcid.org/0000-0001-2345-6789",
+  "googlescholar": "https://scholar.google.com/citations?user=min-jun-park",
+  "linkedin": "https://linkedin.com/in/min-jun-park",
+  "github": "https://github.com/minjun-park",
+  "cv": "assets/documents/cv/millercv.pdf",
+  "add_expandable_information": [
+    {
+      "expandable_information_row_label": "Education",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "PhD, 2017",
+          "expandable_item_right_column_primary_information": [
+            "PhD in Environmental Informatics",
+            "University of Tokyo"
+          ],
+          "expandable_item_right_column_secondary_information": [
+            {
+              "label": "Thesis",
+              "value": "Bio-acoustic monitoring of freshwater ecosystems with sparse sensor networks"
+            },
+            {
+              "label": "Supervisor",
+              "value": "Prof. H. Mori (University of Tokyo), Prof. Y. Sasaki (Kyoto University)"
+            }
+          ]
+        },
+        {
+          "expandable_item_left_column_info": "MSc, 2013",
+          "expandable_item_right_column_primary_information": [
+            "MSc in Civil Engineering",
+            "Kyoto University"
+          ]
+        }
+      ]
+    },
+    {
+      "expandable_information_row_label": "Honours & recognition",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "2022",
+          "expandable_item_right_column_primary_information": "Open Science Award, AGU"
+        }
+      ]
+    },
+    {
+      "expandable_information_row_label": "Previous appointments",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "2017 – 2019",
+          "expandable_item_right_column_primary_information": "Postdoctoral researcher, University of Tokyo"
+        }
+      ]
+    }
+  ],
+  "add_paragraph": [
+    "Min-jun turns the lab's raw output — months of sound, temperature, flux and imagery — into data somebody else can use. The ==bio-acoustics== work is his: classifying a season of recordings into the species that made them.",
+    "He built the pipeline that publishes the lab's sensor telemetry as a FAIR-compliant open dataset, and maintains the tools that let a field team hand over a season's data in an afternoon.",
+    "He is happiest when a model is small, documented and reproducible, and least happy when a sensor's clock has drifted."
+  ],
+  "add_focus_list": [
+    "Bio-acoustics & species classification",
+    "Sensor fusion",
+    "Open data pipelines",
+    "Reproducible analysis"
+  ],
+  "add_a_timeline": {
+    "heading": "Path",
+    "items_of_the_timeline": [
+      {
+        "timeline_item_date": "2019",
+        "timeline_item_title": "Joined CLEAR WATER LAB",
+        "timeline_item_text": "Took on the lab's data pipeline."
+      },
+      {
+        "timeline_item_date": "2021",
+        "timeline_item_title": "The open telemetry dataset",
+        "timeline_item_text": "A season of sensor readings, published as FAIR-compliant open data."
+      },
+      {
+        "timeline_item_date": "2023",
+        "timeline_item_title": "The bio-acoustics classifier",
+        "timeline_item_text": "A season of recordings sorted into the species that made them."
+      }
+    ]
+  },
+  "add_people": {
+    "heading": "Works closely with",
+    "people": [
+      {
+        "name": "Carlos Mendoza",
+        "position": "Field Systems Engineer"
+      },
+      {
+        "name": "Dr. Emily Morgan",
+        "position": "Postdoctoral Researcher"
+      }
+    ]
+  },
+  "publications": true,
+  "add_gallery": {
+    "heading": "From the field",
+    "layout": "grid",
+    "columns": 2,
+    "size": "4x3",
+    "images": [
+      {
+        "image_path": "ph-14.jpg",
+        "image_alt": "",
+        "image_caption": "Samples heading for the bench",
+        "credit": "CLEAR WATER LAB"
+      },
+      {
+        "image_path": "ph-07.jpg",
+        "image_alt": "",
+        "image_caption": "An acoustic recorder between deployments",
+        "credit": "CWL Field Team"
+      }
+    ]
+  },
+  "add_3d_model": {
+    "model_path": "demo-cube.glb",
+    "heading": "In 3D",
+    "model_caption": "The housing, drawn to scale — drag to turn it, scroll to zoom.",
+    "model_credit": "CLEAR WATER LAB",
+    "height": 460,
+    "show_autorotate": true
+  },
+  "add_tags": [
+    "bio-acoustics",
+    "open-data",
+    "sensor-fusion",
+    "software"
+  ]
+}

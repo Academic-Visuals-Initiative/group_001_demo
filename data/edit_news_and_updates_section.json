@@ -1,0 +1,60 @@
+{
+  "news_section": {
+    "subheading": "From the field",
+    "heading": "News & updates",
+    "intro": "Field notes, new papers and open data from the lab.",
+    "max_items": 3,
+    "updated_label": "Updated {date}",
+    "card_button_label": "Read update",
+    "button": {
+      "label": "All updates",
+      "link": "@updates"
+    },
+    "add_news_items": [
+      {
+        "individual_news_item_file_name": "new_paper_in_nature_climate_change_on_rhizosphere_carbon_retention"
+      },
+      {
+        "individual_news_item_file_name": "mangrove_restoration_pilot_expands_to_three_new_estuaries"
+      },
+      {
+        "individual_news_item_file_name": "open_science_sensor_dataset_released_2_456_tb"
+      },
+      {
+        "individual_news_item_file_name": "two_students"
+      },
+      {
+        "individual_news_item_file_name": "field_season_opens_across_14_alpine_coastal_biomes"
+      },
+      {
+        "individual_news_item_file_name": "labba"
+      },
+      {
+        "individual_news_item_file_name": "bulibulibuli"
+      },
+      {
+        "individual_news_item_file_name": "preprint_temperature_variability_rhizosphere"
+      },
+      {
+        "individual_news_item_file_name": "applications_open_research_technician"
+      },
+      {
+        "individual_news_item_file_name": "nord03_calibration_archive_released"
+      },
+      {
+        "individual_news_item_file_name": "ninth_sediment_trap_station_online"
+      },
+      {
+        "current_date": "2026-03-12",
+        "add_relevant_category_name": "Project",
+        "is_pinned": true,
+        "is_featured": true,
+        "item_title": "EU Horizon grant awarded for urban river monitoring",
+        "item_introduction": "€2.4M over four years to deploy open sensor networks along three European river corridors.",
+        "image_path": "assets/images/about_us/action_4.jpg",
+        "image_alt": "The project team meeting around a table",
+        "image_caption": "The consortium's first planning meeting, Oslo."
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "current_date": "2026-07-09",
+  "add_relevant_category_name": "Dataset",
+  "item_title": "Open-science sensor dataset released (2.456 TB)",
+  "item_introduction": "Five years of autonomous IoT bio-sensing telemetry, published under a FAIR-compliant open licence.",
+  "add_author_names": [
+    "Min-jun Park",
+    "Carlos Mendoza",
+    "Michael Carter",
+    "Jasmine Brooks"
+  ],
+  "add_image": {
+    "image_path": "assets/images/research_areas_and_labs/labs/environmental_sensor_development_lab.jpg",
+    "image_alt": "Electronics benches in the sensor development lab",
+    "image_caption": "The lab where the sensor fleet is built, calibrated and repaired."
+  },
+  "add_paragraph": [
+    "CLEAR WATER LAB today announced the public release of its complete autonomous sensor telemetry archive — **2.456 terabytes** of continuous bio-sensing data collected across eight field stations over five years.",
+    "The archive encompasses **847 sensor-years** of data from the lab's autonomous IoT network, which spans alpine, boreal, temperate, and tropical biomes. Parameters include dissolved oxygen, pH, conductivity, turbidity, nitrate, dissolved organic carbon fluorescence, and partial pressure of CO₂, all at 15-minute resolution.",
+    "The dataset is published via Zenodo (DOI: {10.5281/zenodo.10891234|https://doi.org/10.5281/zenodo.10891234}) and mirrored on the AWS Open Data registry. It is organized using the `SensorML 2.0` standard and includes comprehensive metadata following the FAIR principles.",
+    "This release embodies the lab's commitment to **open science** and FAIR data principles. All data, code, and documentation are permanently archived and version-controlled."
+  ],
+  "add_tags": [
+    "dataset",
+    "open-science",
+    "sensor-networks",
+    "FAIR",
+    "zenodo"
+  ],
+  "add_full_width_links": {
+    "heading": "DOI:",
+    "links": [
+      {
+        "label": "10.5281/zenodo.10891234",
+        "link": "https://doi.org/10.5281/zenodo.10891234"
+      }
+    ]
+  },
+  "add_contact_information": {
+    "name": "Min-jun Park",
+    "email": "minjun.park@clearwaterlab.org"
+  },
+  "add_gallery": {
+    "layout": "grid",
+    "columns": 2,
+    "size": "16x9",
+    "images": [
+      {
+        "image_path": "assets/images/research_areas_and_labs/labs/station_nord_03_coastal_observatory_01.jpg",
+        "image_alt": "The coastal observatory building on the shore",
+        "image_caption": "Station Nord-03, one of the eight stations in the archive",
+        "credit": "CLEAR WATER LAB"
+      },
+      {
+        "image_path": "assets/images/research_areas_and_labs/labs/water_quality_field_kit.jpg",
+        "image_alt": "A researcher taking a field measurement at the water's edge",
+        "image_caption": "A field calibration check at the shore",
+        "credit": "Carlos Mendoza"
+      }
+    ]
+  }
+}

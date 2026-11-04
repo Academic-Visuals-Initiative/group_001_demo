@@ -1,0 +1,109 @@
+{
+  "name_as_exactly_as_in_category_file": "Nia Johnson",
+  "summary": "Water quality monitoring, catchment policy & open science for environmental governance.",
+  "add_affiliations": [
+    {
+      "affiliation": "Senior Consultant",
+      "affiliation_info": [
+        "United Nations Environment Programme",
+        "Former PhD Student, CLEAR WATER LAB"
+      ]
+    }
+  ],
+  "ribbon": "Now Senior Consultant, United Nations Environment Programme.",
+  "add_single_line_information": [
+    {
+      "label": "Degree",
+      "value": "PhD, 2019"
+    },
+    {
+      "label": "In the lab",
+      "value": "2015 – 2019"
+    },
+    {
+      "label": "Supervisor",
+      "value": "Michael Carter"
+    },
+    {
+      "label": "Working on",
+      "value": "Water quality & catchment policy"
+    }
+  ],
+  "email": "nia.johnson@unep.org",
+  "cv": "assets/documents/cv/millercv.pdf",
+  "googlescholar": "https://scholar.google.com/citations?user=nia-johnson",
+  "linkedin": "https://linkedin.com/in/nia-johnson",
+  "add_expandable_information": [
+    {
+      "expandable_information_row_label": "Education",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "PhD, 2019",
+          "expandable_item_right_column_primary_information": [
+            "PhD in Environmental Science",
+            "Department of Engineering, CLEAR WATER LAB"
+          ],
+          "expandable_item_right_column_secondary_information": [
+            {
+              "label": "Thesis",
+              "value": "Water quality dynamics in smallholder agricultural catchments"
+            },
+            {
+              "label": "Supervisor",
+              "value": "Michael Carter"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "add_paragraph": [
+    "Nia's PhD, finished in 2019, followed water quality through smallholder catchments — farmland, streams and the people who depend on both.",
+    "She now works as a Senior Consultant with the United Nations Environment Programme, turning exactly that kind of measurement into guidance that ministries can act on.",
+    "She was the first person in the lab to insist that every field dataset be published openly, and the habit stuck."
+  ],
+  "add_focus_list": [
+    "Water quality & land use",
+    "Catchment monitoring",
+    "Science policy"
+  ],
+  "add_a_timeline": {
+    "heading": "Where they went",
+    "items_of_the_timeline": [
+      {
+        "timeline_item_date": "2015",
+        "timeline_item_title": "Joined the lab as a PhD student",
+        "timeline_item_text": "Water quality in smallholder catchments — farmland, streams and the people who depend on both."
+      },
+      {
+        "timeline_item_date": "2019",
+        "timeline_item_title": "PhD awarded",
+        "timeline_item_text": "The first person here to insist every field dataset be published openly."
+      },
+      {
+        "timeline_item_date": "Now",
+        "timeline_item_title": "Senior Consultant, United Nations Environment Programme",
+        "timeline_item_text": "Turning measurement into guidance that ministries can act on."
+      }
+    ]
+  },
+  "add_gallery": {
+    "heading": "From the field",
+    "layout": "grid",
+    "columns": 1,
+    "size": "4x3",
+    "images": [
+      {
+        "image_path": "ph-07.jpg",
+        "image_alt": "",
+        "image_caption": "A sampling station from the catchment survey",
+        "credit": "CWL Field Team"
+      }
+    ]
+  },
+  "add_tags": [
+    "alumni",
+    "water-quality",
+    "policy"
+  ]
+}

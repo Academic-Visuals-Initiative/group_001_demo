@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/home.css?v=20261030t" />
+  <link rel="stylesheet" href="../css/style.css?v=20261030t" />
+  <style>
+    /* Slideshow dots (sharp squares, T02 tokens) for pages that use one. */
+    .slide-dot {
+      display: block;
+      background: #cac6bd;              /* outline-variant */
+      transition: background-color 0.2s ease;
+    }
+    .slide-dot:hover { background: #7a776f; }   /* outline */
+    .slide-dot.is-active { background: #1b1c19; } /* on-surface */
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md antialiased">
+  <header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="relative z-10 h-20 w-full max-w-[1260px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between">
+
+      <!-- Brand -->
+      <div class="flex items-center gap-space-md">
+        <img class="h-9 w-auto" alt="" data-site-logo style="display:none">
+        <a class="flex flex-col" href="../index.html">
+          <span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-bold" id="site-name"></span>
+          <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary" id="site-subtitle"></span>
+        </a>
+      </div>
+
+      <!-- Back to Home -->
+      <a class="inline-flex items-center justify-center gap-space-xs bg-primary text-on-primary hover:bg-secondary transition-all font-label-md text-label-md uppercase tracking-[0.15em] px-space-lg py-space-sm max-sm:px-0 max-sm:w-9 max-sm:h-9" href="../index.html">
+        <span class="cw-icon cw-icon--arrow-back text-[20px] sm:text-[16px]" aria-hidden="true"></span>
+        <span class="hidden sm:inline">Back to Home</span>
+      </a>
+
+    </div>
+  </header>
+
+  <main class="pt-20 pb-24">
+
+    <!-- A free-standing page, designed entirely in JSON. The address
+         names the file: page.html?page=facilities ->
+         data/pages/facilities.json. The file holds a few hero words
+         and then any content elements, in the order they should print
+         (VOCABULARY §15). The mount holds no words — every band is
+         optional, and a page with no hero words simply opens at its
+         first element. -->
+    <div id="page-content">
+      <noscript>
+        <p class="section-message px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-xl">Enable JavaScript to view this page, or go back to the <a href="../index.html">home page</a>.</p>
+      </noscript>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer"></footer>
+
+  <script src="../js/helpers.js?v=20261105a"></script>
+<script src="../js/site.js?v=20261030t"></script>
+  <script src="../js/elements.js?v=20261104a"></script>
+  <script src="../js/page.js?v=20261030t"></script>
+
+  <script src="../js/footer.js?v=20261030t"></script>
+</body>
+</html>

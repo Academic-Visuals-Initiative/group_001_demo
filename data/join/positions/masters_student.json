@@ -1,0 +1,20 @@
+{
+  "title": "Masters Student",
+  "add_relevant_category_name": "Masters",
+  "duration": "1–2 year thesis",
+  "summary": "A two-year MSc project measuring sediment accretion and blue-carbon burial in restored mangrove plots.",
+  "add_content_to_page": [
+    {
+      "add_paragraph": [
+        "This MSc project sits within the coastal and mangrove workstream. You will help run the sediment-trap network in one of our three partner estuaries, process cores in the Oslo lab, and contribute to the annual blue-carbon accounting report.",
+        "We are looking for a student with a background in environmental science, geography or chemistry who is comfortable with fieldwork in a tropical coastal setting. Training in sediment analysis and R is provided."
+      ]
+    }
+  ],
+  "add_tags": [
+    "Blue carbon",
+    "Coastal ecology",
+    "Field methods"
+  ],
+  "is_hiring": false
+}

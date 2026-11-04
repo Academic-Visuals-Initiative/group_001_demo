@@ -1,0 +1,161 @@
+{
+  "name_as_exactly_as_in_category_file": "Dr. Emily Morgan",
+  "honorary_title_or_titles": "Marie Sklodowska-Curie Fellow",
+  "add_affiliations": [
+    {
+      "affiliation": "Visiting Researcher",
+      "affiliation_info": [
+        "Institute of Physics, University of Belgrade"
+      ]
+    }
+  ],
+  "summary": "Aerosol tracing, particulate flux & low-cost air-quality sensors.",
+  "add_single_line_information": [
+    {
+      "label": "Department",
+      "value": "Department of Engineering"
+    },
+    {
+      "label": "In the lab since",
+      "value": "2022"
+    },
+    {
+      "label": "Main focus",
+      "value": "Aerosol flux & air-quality sensors"
+    }
+  ],
+  "email": "emily.morgan@clearwaterlab.org",
+  "cv": "assets/documents/cv/millercv.pdf",
+  "googlescholar": "https://scholar.google.com/citations?user=emily-morgan",
+  "linkedin": "https://linkedin.com/in/emily-morgan",
+  "github": "https://github.com/emily-morgan",
+  "add_expandable_information": [
+    {
+      "expandable_information_row_label": "Education",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "PhD, 2018",
+          "expandable_item_right_column_primary_information": [
+            "PhD in Atmospheric Physics",
+            "University of Belgrade"
+          ],
+          "expandable_item_right_column_secondary_information": [
+            {
+              "label": "Thesis",
+              "value": "Aerosol optical properties over the western Balkans"
+            },
+            {
+              "label": "Supervisor",
+              "value": "Prof. M. Petrović (University of Belgrade)"
+            }
+          ]
+        },
+        {
+          "expandable_item_left_column_info": "MSc, 2013",
+          "expandable_item_right_column_primary_information": [
+            "MSc in Environmental Engineering",
+            "University of Novi Sad"
+          ]
+        }
+      ]
+    },
+    {
+      "expandable_information_row_label": "Honours & recognition",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "2018",
+          "expandable_item_right_column_primary_information": "Marie Sklodowska-Curie Individual Fellowship"
+        },
+        {
+          "expandable_item_left_column_info": "2021",
+          "expandable_item_right_column_primary_information": "Best Paper Award, European Aerosol Conference"
+        }
+      ]
+    },
+    {
+      "expandable_information_row_label": "Previous appointments",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "2018 – 2022",
+          "expandable_item_right_column_primary_information": "Atmospheric measurement campaigns, Balkans and High Arctic"
+        }
+      ]
+    }
+  ],
+  "add_paragraph": [
+    "Emily works on the air the lab's field sites breathe: what is suspended in it, where it came from, and how far it travels before it settles. She runs the aerosol-flux group.",
+    "She is building the lab's ==low-cost sensor calibration set== — a reference rig that lets a hundred cheap particulate sensors be trusted against one carefully maintained instrument.",
+    "Before joining CLEAR WATER LAB she spent four years on atmospheric measurement campaigns in the Balkans and the High Arctic."
+  ],
+  "add_focus_list": [
+    "Aerosol tracing & particulate flux",
+    "Low-cost air-quality sensors",
+    "Sensor calibration & drift",
+    "Urban & alpine air quality"
+  ],
+  "add_a_timeline": {
+    "heading": "Path",
+    "items_of_the_timeline": [
+      {
+        "timeline_item_date": "2018 – 2022",
+        "timeline_item_title": "Atmospheric measurement campaigns",
+        "timeline_item_text": "Four years in the Balkans and the High Arctic."
+      },
+      {
+        "timeline_item_date": "2022",
+        "timeline_item_title": "Joined CLEAR WATER LAB",
+        "timeline_item_text": "Started the aerosol-flux group."
+      },
+      {
+        "timeline_item_date": "2024",
+        "timeline_item_title": "The low-cost sensor calibration set",
+        "timeline_item_text": "A hundred cheap particulate sensors, trusted against one maintained instrument."
+      }
+    ]
+  },
+  "add_people": {
+    "heading": "Works closely with",
+    "people": [
+      {
+        "name": "Carlos Mendoza",
+        "position": "Field Systems Engineer"
+      },
+      {
+        "name": "Min-jun Park",
+        "position": "Research Lead"
+      }
+    ]
+  },
+  "add_publication_or_more": {
+    "publication_section_title": "Recent publications",
+    "publications_collection_file_name": "conference_2026",
+    "per_page": 1,
+    "show_year_filter": true
+  },
+  "add_gallery": {
+    "heading": "From the field",
+    "layout": "grid",
+    "columns": 2,
+    "size": "4x3",
+    "images": [
+      {
+        "image_path": "ph-15.jpg",
+        "image_alt": "",
+        "image_caption": "Setting the particulate rig up on the transect",
+        "credit": "CWL Field Team"
+      },
+      {
+        "image_path": "ph-07.jpg",
+        "image_alt": "",
+        "image_caption": "The station between campaigns",
+        "credit": "CWL Field Team"
+      }
+    ]
+  },
+  "add_tags": [
+    "aerosols",
+    "air-quality",
+    "sensors",
+    "atmosphere"
+  ]
+}

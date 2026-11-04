@@ -1,0 +1,18 @@
+{
+  "title": "Visiting Researcher",
+  "add_relevant_category_name": "Visiting",
+  "duration": "1–12 months",
+  "summary": "A funded residency for researchers working on environmental sensing, coastal chemistry or open-data methods.",
+  "add_content_to_page": [
+    {
+      "add_paragraph": [
+        "We host academics and research staff for collaborative sabbaticals and joint projects. Access to laboratories, field stations and computing resources is provided throughout the stay."
+      ]
+    }
+  ],
+  "add_tags": [
+    "Visiting researcher",
+    "Collaboration",
+    "Open data"
+  ]
+}

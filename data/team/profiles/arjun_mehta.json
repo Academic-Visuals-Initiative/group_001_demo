@@ -1,0 +1,109 @@
+{
+  "name_as_exactly_as_in_category_file": "Dr. Arjun Mehta",
+  "summary": "Catchment nutrient transport modelling, hydrological forecasting & water-quality prediction.",
+  "add_affiliations": [
+    {
+      "affiliation": "Environmental Modeller",
+      "affiliation_info": [
+        "Deltares, Utrecht",
+        "Former PhD Student, CLEAR WATER LAB"
+      ]
+    }
+  ],
+  "ribbon": "Now Environmental Modeller at Deltares, Utrecht.",
+  "add_single_line_information": [
+    {
+      "label": "Degree",
+      "value": "PhD, 2020"
+    },
+    {
+      "label": "In the lab",
+      "value": "2016 – 2020"
+    },
+    {
+      "label": "Supervisor",
+      "value": "Michael Carter"
+    },
+    {
+      "label": "Working on",
+      "value": "Flood-risk & water-quality forecasting"
+    }
+  ],
+  "email": "arjun.mehta@deltares.nl",
+  "cv": "assets/documents/cv/millercv.pdf",
+  "googlescholar": "https://scholar.google.com/citations?user=arjun-mehta",
+  "linkedin": "https://linkedin.com/in/arjun-mehta",
+  "add_expandable_information": [
+    {
+      "expandable_information_row_label": "Education",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "PhD, 2020",
+          "expandable_item_right_column_primary_information": [
+            "PhD in Environmental Engineering",
+            "Department of Engineering, CLEAR WATER LAB"
+          ],
+          "expandable_item_right_column_secondary_information": [
+            {
+              "label": "Thesis",
+              "value": "Transport modelling of nutrient fluxes from hillslope to catchment"
+            },
+            {
+              "label": "Supervisor",
+              "value": "Michael Carter"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "add_paragraph": [
+    "Arjun did his PhD in the lab between 2016 and 2020, modelling how nutrients move from hillslope soils into the catchment's streams. His ==transport model== is still the one the lab reaches for.",
+    "He now works as an Environmental Modeller at Deltares in Utrecht, on flood-risk and water-quality forecasting for river basins across Europe.",
+    "He still co-authors with the group — and still answers questions about his old model with more patience than it deserves."
+  ],
+  "add_focus_list": [
+    "Catchment nutrient transport",
+    "Hydrological modelling",
+    "Water-quality forecasting"
+  ],
+  "add_a_timeline": {
+    "heading": "Where they went",
+    "items_of_the_timeline": [
+      {
+        "timeline_item_date": "2016",
+        "timeline_item_title": "Joined the lab as a PhD student",
+        "timeline_item_text": "Modelling how nutrients move from hillslope soils into the catchment's streams."
+      },
+      {
+        "timeline_item_date": "2020",
+        "timeline_item_title": "PhD awarded",
+        "timeline_item_text": "The transport model is still the one the lab reaches for."
+      },
+      {
+        "timeline_item_date": "Now",
+        "timeline_item_title": "Environmental Modeller, Deltares",
+        "timeline_item_text": "Utrecht — and still co-authoring with the group."
+      }
+    ]
+  },
+  "add_gallery": {
+    "heading": "From the field",
+    "layout": "grid",
+    "columns": 1,
+    "size": "4x3",
+    "images": [
+      {
+        "image_path": "ph-13.jpg",
+        "image_alt": "",
+        "image_caption": "Stream sampling during the 2019 campaign",
+        "credit": "CWL Field Team"
+      }
+    ]
+  },
+  "add_tags": [
+    "alumni",
+    "modelling",
+    "catchments"
+  ]
+}

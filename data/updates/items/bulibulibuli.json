@@ -1,0 +1,49 @@
+{
+  "current_date": "2026-02-11",
+  "add_relevant_category_name": "Project",
+  "item_title": "118,000 propagules later, the nursery season closes",
+  "item_introduction": "Three coastal cooperatives beat their first-season target, with 94% of seedlings reaching transplant size.",
+  "add_author_names": [
+    "Jasmine Brooks",
+    "Dr. Emily Morgan"
+  ],
+  "add_image": {
+    "image_path": "assets/images/research_areas_and_labs/labs/estuary_mangrove_nursery.jpg",
+    "image_alt": "Mangrove nursery beds beside an estuary channel",
+    "image_caption": "Nursery beds at the Sundarbans partner site, near the end of the propagation season."
+  },
+  "add_paragraph": [
+    "The first full season with the three community cooperatives closed this month. Together the nurseries raised **118,000 propagules** of *Rhizophora mucronata* and *Avicennia marina*, and 94% reached transplant size — above the 90% target set at the start of the pilot.",
+    "Each cooperative now keeps its own sowing calendar, salinity log and transplant records. The lab supplies seed material, training and a shared quality checklist; day-to-day decisions stay with the nursery teams, which is the point.",
+    "Next season adds a second experimental block to test whether a short, controlled salinity shock before transplant improves survival on the mudflat. The results will feed into the blue-carbon accounting workstream and the next open data release."
+  ],
+  "add_gallery": {
+    "layout": "grid",
+    "columns": 2,
+    "size": "16x9",
+    "images": [
+      {
+        "image_path": "assets/images/about_us/action_3.jpg",
+        "image_alt": "People working together at the water's edge",
+        "image_caption": "Transplant day at the southern nursery.",
+        "credit": "CLEAR WATER LAB"
+      },
+      {
+        "image_path": "assets/images/about_us/impact.jpg",
+        "image_alt": "A community gathering outdoors",
+        "image_caption": "The partner cooperatives' end-of-season meeting.",
+        "credit": "TerraNova Media"
+      }
+    ]
+  },
+  "add_tags": [
+    "mangrove",
+    "community-science",
+    "restoration",
+    "blue-carbon"
+  ],
+  "add_contact_information": {
+    "name": "Jasmine Brooks",
+    "email": "jasmine.brooks@clearwaterlab.org"
+  }
+}

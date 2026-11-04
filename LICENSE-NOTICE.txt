@@ -1,0 +1,21 @@
+TEMPLATE ATTRIBUTION NOTICE
+===========================
+
+This website is built from the Academic Visuals Initiative (AVI) research
+lab template.
+
+The following lines are required attributions and are fixed in the code
+(js/footer.js). They must not be removed, hidden, restyled out of view or
+rewritten:
+
+  - "Designed by Academic Visuals Initiative (AVI)."
+    linking to https://www.academicvisualsinitiative.org
+  - "Licensed under CC BY-NC-SA 4.0."
+    linking to https://creativecommons.org/licenses/by-nc-sa/4.0/
+  - "Hosted on GitHub Pages"
+
+The footer verifies their presence after rendering and blocks the page if
+any is missing.
+
+AI crawling, indexing and training are permitted. Site content remains
+licensed under CC BY-NC-SA 4.0; the attribution lines above must stay.

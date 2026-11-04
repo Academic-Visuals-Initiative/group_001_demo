@@ -1,0 +1,42 @@
+{
+  "team_section": {
+    "subheading": "The people behind the data",
+    "heading_main": "CLEAR WATER",
+    "heading_sub": "Chemists, ecologists and instrumentation engineers",
+    "heading_golden": "LAB",
+    "quote": "Every measurement begins with a question someone outside the lab asked — and ends with an answer they can use.",
+    "text": "We are a team of environmental chemists, field ecologists and engineers. Our work is collaborative by design: teams share field campaigns, data pipelines and a stubborn commitment to reproducibility.",
+    "images": {
+      "photos": [
+        {
+          "image_path": "team3",
+          "image_alt": "Field team assembling sampling gear on the Oslofjord shore",
+          "image_credit": "TerraNova Media",
+          "image_caption": "Oslofjord field campaign",
+          "extra_text": "Autumn 2025"
+        },
+        {
+          "image_path": "team2",
+          "image_alt": "Researchers visiting a mangrove nursery",
+          "image_credit": "TerraNova Media",
+          "image_caption": "Mangrove nursery visit",
+          "extra_text": "Sundarbans, 2024"
+        },
+        {
+          "image_path": "team1",
+          "image_alt": "Soil sampling in a beech forest",
+          "image_credit": "CLEAR WATER LAB",
+          "image_caption": "Soil sampling, Hallandsåsen",
+          "extra_text": "Spring 2025"
+        }
+      ],
+      "rotation_time_milliseconds": 5000,
+      "// aspect_ratio — any ratio works; aspect-[16/9] is the default": "",
+      "aspect_ratio": "aspect-[16/9]"
+    },
+    "button": {
+      "label": "Meet the full team",
+      "link": "@team"
+    }
+  }
+}

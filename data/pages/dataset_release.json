@@ -1,0 +1,100 @@
+{
+  "title": "Boreal Soil Carbon Dataset, 2022–2026",
+  "eyebrow": "Dataset",
+  "intro": "Plot-level soil carbon measurements, fungal continuity scores and supporting metadata from the boreal transect study. Released under CC BY 4.0.",
+  "kicker": "Version 1.2 · 12 files",
+  "meta": "DOI: 10.5281/zenodo.14231884",
+
+  "add_content_to_page": [
+    {
+      "add_tags": {
+        "tags": ["Dataset", "Soil carbon", "CC BY 4.0"]
+      }
+    },
+    {
+      "add_paragraph": "The archive contains the labelled-core measurements, the plot survey, the calibration log and the analysis scripts used in the paper. Every table is provided both as CSV and as a documented R data frame. Column names follow the paper's supplementary glossary."
+    },
+    {
+      "add_table": {
+        "heading": "Files in this release",
+        "column_headers": ["File", "Rows", "Description"],
+        "content_of_rows_separated_by_comma": [
+          ["cores.csv", "864", "Labelled-core measurements, by depth and date"],
+          ["plots.csv", "36", "Plot location, region and soil texture"],
+          ["fungal_scores.csv", "36", "Continuity score and scoring notes"],
+          ["calibration.csv", "112", "Reference logger, against field units"],
+          ["README.md", "1", "Column dictionary and licence"]
+        ],
+        "align": ["left", "right", "left"]
+      }
+    },
+    {
+      "add_special_note": {
+        "colour": "green",
+        "heading": "How to cite",
+        "text": "Carter, M., Mendoza, C., & Park, M. (2026). *Boreal Soil Carbon Dataset, 2022–2026* (Version 1.2) [Data set]. doi:10.5281/zenodo.14231884"
+      }
+    },
+    {
+      "add_heading": {
+        "level": 2,
+        "heading_text": "Methods summary"
+      }
+    },
+    {
+      "add_list": {
+        "add_items_to_list": [
+          "**Sampling** — 36 plots, two depths, four annual campaigns.",
+          "**Labelling** — 13C pulse labelling at a subset of eight plots.",
+          "**Fungal score** — visual hyphal continuity index, three observers.",
+          "**Uncertainty** — reported as standard deviation across cores."
+        ]
+      }
+    },
+    {
+      "add_heading": {
+        "level": 2,
+        "heading_text": "Known limitations"
+      }
+    },
+    {
+      "add_list": {
+        "add_items_to_list": [
+          "**Coverage** — two latitudes only; sandy soils under-represented.",
+          "**Seasonality** — spring campaigns only; winter stocks not sampled.",
+          "**Observer effect** — fungal scores carry a ±1 index-point spread."
+        ]
+      }
+    },
+    {
+      "add_full_width_links": {
+        "heading": "Access",
+        "links": [
+          {
+            "label": "Download all files",
+            "link": "https://doi.org/10.5281/zenodo.14231884",
+            "note": "ZIP, 84 MB"
+          },
+          {
+            "label": "Read the paper",
+            "link": "https://doi.org/10.5281/zenodo.14231884",
+            "note": "Open access"
+          },
+          {
+            "label": "Contact the data steward",
+            "link": "@contact",
+            "note": "Questions about the archive"
+          }
+        ]
+      }
+    },
+    {
+      "add_button": {
+        "label": "Download dataset",
+        "link": "https://doi.org/10.5281/zenodo.14231884",
+        "style": "fill",
+        "icon": "download"
+      }
+    }
+  ]
+}

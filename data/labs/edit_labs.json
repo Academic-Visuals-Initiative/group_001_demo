@@ -1,0 +1,200 @@
+{
+  "labs_page": {
+    "subheading": "Facilities",
+    "heading": "Labs, Stations & Instruments",
+    "intro": "From clean benches in Oslo to autonomous observatories at the edge of the sea — the places where samples are taken, the instruments we share, and the measurements that never stop.",
+    "divider_label": "Where We Work",
+    "back_button_label": "Back to Home"
+  },
+  "categories_in_labs": [
+    {
+      "category_name": "Lab",
+      "background_colour": "#e3dfd0"
+    },
+    {
+      "category_name": "Station",
+      "background_colour": "#e7e2d3"
+    },
+    {
+      "category_name": "Instrument",
+      "background_colour": "#dcd6c6"
+    }
+  ],
+  "lab_item_availabilities": [
+    {
+      "lab_item_availability_label": "Available",
+      "background_colour": "#d7ead0"
+    },
+    {
+      "lab_item_availability_label": "Unavailable",
+      "background_colour": "#ffdad6"
+    }
+  ],
+  "lab_items": [
+    {
+      "category": "Lab",
+      "name": "Marine Biogeochemistry Lab",
+      "images": "coastal_biogeochemistry_lab.jpg",
+      "image_alt": "Benches and analytical equipment in the marine biogeochemistry lab",
+      "image_caption": "The main wet lab at the Marine Sciences Building.",
+      "location": "Marine Sciences Building, Oslo",
+      "intro": "Wet chemistry, sediment processing and nutrient analysis under one roof, with a dedicated clean bench for trace metals.",
+      "since": 2016,
+      "tags": [
+        "Sediment chemistry",
+        "Nutrients",
+        "Trace metals"
+      ]
+    },
+    {
+      "category": "Lab",
+      "name": "Soil & Rhizosphere Laboratory",
+      "images": "assets/images/about_us/soil.jpg",
+      "image_alt": "Soil cores laid out for processing",
+      "image_caption": "Depth-resolved cores before chemical analysis.",
+      "location": "Marine Sciences Building, Oslo",
+      "intro": "Cold storage and sample preparation for soil cores, root material and long-term archive material.",
+      "since": 2017,
+      "tags": [
+        "Soil carbon",
+        "Root exudates",
+        "Sample archive"
+      ]
+    },
+    {
+      "category": "Station",
+      "name": "Station Nord-03 Coastal Observatory",
+      "images": [
+        {
+          "image_path": "station_nord_03_coastal_observatory_01.jpg",
+          "image_caption": "The observatory platform at low tide."
+        },
+        {
+          "image_path": "station_nord_03_coastal_observatory_02.jpg",
+          "image_caption": "Instrument housing and solar power."
+        }
+      ],
+      "image_alt": "Coastal observatory platform in the Oslofjord",
+      "location": "Inner Oslofjord, 59.85°N",
+      "intro": "A year-round coastal node measuring temperature, salinity, turbidity and dissolved oxygen every fifteen minutes.",
+      "since": 2021,
+      "tags": [
+        "Coastal monitoring",
+        "Telemetry",
+        "Oslofjord"
+      ]
+    },
+    {
+      "category": "Station",
+      "name": "Storglommen Alpine Station",
+      "images": "storglombreen_alpine_field_station.jpg",
+      "image_alt": "Alpine field station below a glacier",
+      "image_caption": "The station at 1,410 metres, late season.",
+      "location": "Jotunheimen, 1,410 m a.s.l.",
+      "intro": "Snowpack, soil-temperature and carbon-flux measurements from an off-grid site that runs through the polar winter.",
+      "since": 2019,
+      "tags": [
+        "Alpine",
+        "Snow chemistry",
+        "Off-grid"
+      ]
+    },
+    {
+      "category": "Instrument",
+      "name": "ICP-MS Suite",
+      "images": [
+        {
+          "image_path": "icp_ms_suite.jpg",
+          "image_caption": "Inductively coupled plasma mass spectrometer."
+        }
+      ],
+      "image_alt": "ICP-MS instrument in a clean laboratory",
+      "location": "Marine Sciences Building, room 214",
+      "intro": "Trace-element analysis for water, sediment and tissue samples, booked through the shared instrument calendar.",
+      "since": 2017,
+      "availability": "Available",
+      "tags": [
+        "Trace metals",
+        "Water quality",
+        "Shared instrument"
+      ]
+    },
+    {
+      "category": "Instrument",
+      "name": "Water-Quality Field Kit",
+      "images": "water_quality_field_kit.jpg",
+      "image_alt": "Portable water-quality measurement kit",
+      "image_caption": "The shared field kit, ready for deployment.",
+      "location": "Field store, Marine Sciences Building",
+      "intro": "Portable meters, sample bottles and calibration standards for day trips and partner-led monitoring.",
+      "since": 2022,
+      "availability": "Available",
+      "tags": [
+        "Field kit",
+        "Water quality",
+        "Loan"
+      ]
+    },
+    {
+      "category": "Lab",
+      "name": "Atmospheric Particulate Laboratory",
+      "images": "atmospheric_particulate_lab.jpg",
+      "image_alt": "Aerosol sampling and filter preparation equipment",
+      "image_caption": "Filter handling and gravimetric analysis for the aerosol programme.",
+      "location": "Marine Sciences Building, room 118",
+      "intro": "A filtered-air bench for PM2.5 and PM10 sample handling, gravimetry and isotopic preparation, with a dedicated balance room next door.",
+      "since": 2019,
+      "tags": [
+        "Aerosols",
+        "Air quality",
+        "Isotopes"
+      ]
+    },
+    {
+      "category": "Lab",
+      "name": "Environmental Sensor Development Lab",
+      "images": "environmental_sensor_development_lab.jpg",
+      "image_alt": "Electronics benches and sensor prototypes",
+      "image_caption": "Prototype boards and calibration rigs for the sensor programme.",
+      "location": "Marine Sciences Building, room 006",
+      "intro": "Electronics benches, a humidity-controlled assembly corner and a calibration tank for turbidity, conductivity and nitrate sensors.",
+      "since": 2020,
+      "tags": [
+        "Open hardware",
+        "Electronics",
+        "Calibration"
+      ]
+    },
+    {
+      "category": "Station",
+      "name": "Sundarbans Nursery & Estuary Station",
+      "images": "estuary_mangrove_nursery.jpg",
+      "image_alt": "Mangrove nursery beds beside an estuary channel",
+      "image_caption": "Community nursery beds at the Sundarbans partner site.",
+      "location": "Sundarbans, Bangladesh",
+      "intro": "A community-run nursery and estuarine sampling base supporting the restoration pilot, with monthly sediment-trap and porewater sampling.",
+      "since": 2024,
+      "tags": [
+        "Mangrove",
+        "Community partnership",
+        "Blue carbon"
+      ]
+    },
+    {
+      "category": "Instrument",
+      "name": "Automated DNA Sequencer",
+      "images": "automated_dna_sequencer.jpg",
+      "image_alt": "Benchtop automated DNA sequencer",
+      "image_caption": "The shared benchtop sequencer used for microbial community work.",
+      "location": "Marine Sciences Building, room 221",
+      "intro": "A shared benchtop sequencer for amplicon and metagenomic libraries from soil, sediment and water filters, booked through the instrument calendar.",
+      "since": 2021,
+      "availability": "Available",
+      "tags": [
+        "Microbial ecology",
+        "Sequencing",
+        "Shared instrument"
+      ]
+    }
+  ]
+}

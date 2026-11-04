@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+<script>
+    (function(){var t='light';try{t=localStorage.getItem('theme')||'light'}catch(e){}document.documentElement.setAttribute('data-theme',t)})();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+fetch("../data/site.json", { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).then(function (site) {
+  var title = site && (site.add_title_to_show_in_search_engines != null
+    ? site.add_title_to_show_in_search_engines
+    : site.title) != null
+    ? String(site.add_title_to_show_in_search_engines != null
+      ? site.add_title_to_show_in_search_engines
+      : site.title).trim()
+    : "";
+  var name = "";
+  try {
+    var raw = new URLSearchParams(location.search).get("url");
+    if (raw) name = decodeURIComponent(raw.split("/").pop() || "").split("#")[0];
+  } catch (e) { name = ""; }
+  document.title = name && title ? name + " \u2014 " + title : (name || title || "");
+  var favSource = site && (site.add_name_or_path_to_image_to_favicon != null
+    ? site.add_name_or_path_to_image_to_favicon
+    : site.favicon);
+  if (favSource != null && String(favSource).trim()) {
+    var fv = String(favSource).trim();
+    var href = /^(https?:)?\/\//.test(fv) || fv.charAt(0) === "/" || fv.indexOf("../") === 0
+      ? fv
+      : "../" + (fv.indexOf("/") > -1
+        ? fv
+        : "assets/logos/main_website/" + (/\.[a-z0-9]+$/i.test(fv) ? fv : fv + ".svg"));
+    var link = document.createElement("link");
+    link.rel = "icon";
+    link.href = href;
+    document.head.appendChild(link);
+  }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <style>
+    :root { --bg: #fff; --text: #111; --text-muted: #666; --border: #ddd; --surface: #f6f6f6; }
+    [data-theme="dark"] { --bg: #0a0a0a; --text: #f0f0f0; --text-muted: #a3a3a3; --border: #333; --surface: #1c1c1c; }
+    * { box-sizing: border-box; margin: 0; padding: 0 }
+    html, body { height: 100% }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); display: flex; justify-content: center; align-items: flex-start; padding: 14px; -webkit-font-smoothing: antialiased }
+    .viewer {
+      width: 100%; max-width: 1260px;
+      height: calc(100dvh - 28px);
+      background: var(--surface); border: 1px solid var(--border);
+      display: flex; flex-direction: column; overflow: hidden;
+    }
+    .toolbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 14px; background: var(--bg); border-bottom: 1px solid var(--border); flex: none }
+    .toolbar a, .toolbar button {
+      font-family: 'Inter', sans-serif; font-size: 12px; text-transform: uppercase;
+      letter-spacing: 0.5px; text-decoration: none; background: var(--bg);
+      border: 1px solid var(--border); padding: 6px 14px; cursor: pointer; color: var(--text);
+      white-space: nowrap;
+    }
+    .toolbar a:hover, .toolbar button:hover { background: var(--surface) }
+    .toolbar-spacer { flex: 1 }
+    .pages { flex: 1; min-height: 0; padding: 24px; overflow: auto; display: flex; flex-direction: column; align-items: center; gap: 20px; background: var(--surface) }
+    .page-wrap { background: #fff; box-shadow: 0 4px 20px rgba(0,0,0,0.10); max-width: 100%; flex: none }
+    .page-wrap canvas { display: block; max-width: 100%; }
+    .no-download canvas { user-select: none; -webkit-user-select: none; -webkit-user-drag: none; }
+    .loading { padding: 60px 20px; text-align: center; color: var(--text-muted); font-size: 13px }
+    @media (max-width: 600px) {
+      body { padding: 0 }
+      .viewer { height: 100dvh; border: 0 }
+      .toolbar { padding: 8px 10px }
+      .toolbar a, .toolbar button { padding: 6px 10px; font-size: 11px }
+      .pages { padding: 12px; gap: 12px }
+    }
+  </style>
+</head>
+<body>
+  <div class="viewer">
+    <div class="toolbar">
+      <a href="../" id="backBtn">Back</a>
+      <span class="toolbar-spacer"></span>
+      <a href="#" id="downloadBtn" download>Download</a>
+    </div>
+    <div class="pages" id="pages">
+      <div class="loading" id="loading">Loading PDF…</div>
+    </div>
+  </div>
+  <script>
+    /* Back: return to the page the PDF was opened from (profile, outputs,
+       team page…). Opened directly or from outside the site → home page. */
+    var backBtn = document.getElementById('backBtn');
+    if (backBtn) {
+      backBtn.addEventListener('click', function (e) {
+        var ref = document.referrer || '';
+        if (ref && ref.indexOf(location.origin) === 0 && window.history.length > 1) {
+          e.preventDefault();
+          window.history.back();
+        }
+      });
+    }
+
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+    var pagesEl = document.getElementById('pages');
+    var loadingEl = document.getElementById('loading');
+    var downloadBtn = document.getElementById('downloadBtn');
+
+    var pdfUrl = '../assets/pdfs/default.pdf';
+    var params = new URLSearchParams(location.search);
+    if (params.get('url')) pdfUrl = params.get('url');
+
+    var fileName = decodeURIComponent(pdfUrl.split('/').pop() || 'PDF').split('#')[0];
+    var noDownload = params.get('download') === '0';
+    if (downloadBtn && noDownload) {
+      downloadBtn.remove();
+      downloadBtn = null;
+    }
+    if (noDownload && pagesEl) {
+      /* No Save image / Save page route from the page itself, and no
+         drag-out of a rendered page. Browsers still own screenshots and
+         their own menus, but the page offers no download control. */
+      pagesEl.classList.add('no-download');
+      pagesEl.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+      pagesEl.addEventListener('dragstart', function (e) { e.preventDefault(); });
+      document.addEventListener('keydown', function (e) {
+        if (!(e.ctrlKey || e.metaKey)) return;
+        var key = String(e.key || '').toLowerCase();
+        if (key === 's' || key === 'p') e.preventDefault();
+      });
+    }
+    if (downloadBtn) {
+      downloadBtn.href = pdfUrl;
+      downloadBtn.setAttribute('download', fileName || 'document.pdf');
+    }
+
+    fetch(pdfUrl)
+      .then(function (response) {
+        if (!response.ok) throw new Error('Could not load the PDF (' + response.status + ')');
+        return response.arrayBuffer();
+      })
+      .then(function (buffer) {
+        return pdfjsLib.getDocument({ data: buffer }).promise;
+      })
+      .then(function (pdf) {
+        if (loadingEl) loadingEl.style.display = 'none';
+
+        var pad = parseFloat(getComputedStyle(pagesEl).paddingLeft) || 0;
+        var available = Math.max(300, pagesEl.clientWidth - pad * 2);
+        var dpr = Math.max(1, window.devicePixelRatio || 1);
+
+        var queue = Promise.resolve();
+        for (var i = 1; i <= pdf.numPages; i += 1) {
+          (function (pageNum) {
+            queue = queue.then(function () {
+              return pdf.getPage(pageNum).then(function (page) {
+                var natural = page.getViewport({ scale: 1 });
+                var cssWidth = Math.min(available, 1000);
+                var cssHeight = cssWidth * (natural.height / natural.width);
+                var viewport = page.getViewport({
+                  scale: (cssWidth / natural.width) * dpr
+                });
+
+                var wrap = document.createElement('div');
+                wrap.className = 'page-wrap';
+                var canvas = document.createElement('canvas');
+                canvas.style.width = cssWidth + 'px';
+                canvas.style.height = cssHeight + 'px';
+                canvas.width = Math.max(1, Math.floor(viewport.width));
+                canvas.height = Math.max(1, Math.floor(viewport.height));
+                wrap.appendChild(canvas);
+                pagesEl.appendChild(wrap);
+
+                var ctx = canvas.getContext('2d');
+                return page.render({ canvasContext: ctx, viewport: viewport }).promise;
+              });
+            });
+          })(i);
+        }
+        return queue.then(function () {
+          pagesEl.scrollTop = 0;
+        });
+      })
+      .catch(function (err) {
+        if (loadingEl) loadingEl.textContent = err.message || 'Could not load this PDF.';
+        console.error('[pdf]', err);
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+{
+  "main_category_name": "alumni",
+  "left_side_divider_label": "Alumni",
+  "main_category_tag_label": "Alumni",
+  "right_side_divider_label_if_there_is_one_person": "alumnus",
+  "right_side_divider_label_if_there_is_more_than_one_person": "alumni",
+  "sub_categories": [
+    {
+      "sub_category_name": "phd",
+      "sub_category_tag_label": "PhD Students"
+    },
+    {
+      "sub_category_name": "postdoc",
+      "sub_category_tag_label": "Postdocs"
+    },
+    {
+      "sub_category_name": "msc",
+      "sub_category_tag_label": "MSc Students"
+    }
+  ],
+  "add_people_to_category_defined_above": [
+    {
+      "add_name": "Dr. Arjun Mehta",
+      "position": "PhD · 2020",
+      "relevant_sub_category_name": "phd",
+      "image_path": "assets/images/team_and_alumni/arjun_mehta.jpg",
+      "text": "Now Environmental Modeller at Deltares, Utrecht.",
+      "add_email": "arjun.mehta@deltares.nl",
+      "cv_name_or_path_to_cv": "assets/documents/cv/millercv.pdf",
+      "googlescholar": "https://scholar.google.com/citations?user=arjun-mehta",
+      "orcid": "https://orcid.org/0000-0002-1825-0097",
+      "linkedin": "https://linkedin.com/in/arjun-mehta"
+    },
+    {
+      "add_name": "Dr. Sofia Rossi",
+      "position": "Postdoc · 2021",
+      "relevant_sub_category_name": "postdoc",
+      "show_in_home_team": false,
+      "image_path": "assets/images/team_and_alumni/sofia_rossi.jpg",
+      "text": "Now Group Leader, Max Planck Institute for Marine Microbiology.",
+      "add_email": "sofia.rossi@mpi-bremen.de",
+      "cv_name_or_path_to_cv": "assets/documents/cv/millercv.pdf",
+      "googlescholar": "https://scholar.google.com/citations?user=sofia-rossi",
+      "orcid": "https://orcid.org/0000-0002-1825-0097",
+      "linkedin": "https://linkedin.com/in/sofia-rossi"
+    },
+    {
+      "add_name": "Luke Weber",
+      "position": "MSc · 2022",
+      "relevant_sub_category_name": "msc",
+      "image_path": "assets/images/team_and_alumni/luke_weber.jpg",
+      "text": "Now Data Scientist at Swiss Federal Institute of Aquatic Science.",
+      "add_email": "luke.weber@eawag.ch",
+      "cv_name_or_path_to_cv": "assets/documents/cv/millercv.pdf",
+      "googlescholar": "https://scholar.google.com/citations?user=luke-weber",
+      "orcid": "https://orcid.org/0000-0001-2345-6789",
+      "linkedin": "https://linkedin.com/in/luke-weber"
+    },
+    {
+      "add_name": "Nia Johnson",
+      "position": "PhD · 2019",
+      "relevant_sub_category_name": "phd",
+      "image_path": "assets/images/team_and_alumni/nia_johnson.jpg",
+      "text": "Now Senior Consultant, United Nations Environment Programme.",
+      "add_email": "nia.johnson@unep.org",
+      "cv_name_or_path_to_cv": "assets/documents/cv/millercv.pdf",
+      "googlescholar": "https://scholar.google.com/citations?user=nia-johnson",
+      "orcid": "https://orcid.org/0000-0002-1825-0097",
+      "linkedin": "https://linkedin.com/in/nia-johnson"
+    },
+    {
+      "add_name": "Dr. Mia Lin",
+      "position": "Postdoc · 2023",
+      "relevant_sub_category_name": "postdoc",
+      "show_in_home_team": false,
+      "image_path": "assets/images/team_and_alumni/mia_lin.jpg",
+      "text": "Now Assistant Professor, Tsinghua University, Beijing.",
+      "add_email": "mia.lin@tsinghua.edu.cn",
+      "cv_name_or_path_to_cv": "assets/documents/cv/millercv.pdf",
+      "googlescholar": "https://scholar.google.com/citations?user=mia-lin",
+      "orcid": "https://orcid.org/0000-0002-1825-0097",
+      "linkedin": "https://linkedin.com/in/mia-lin"
+    }
+  ]
+}

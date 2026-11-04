@@ -1,0 +1,66 @@
+{
+  "title": "Postdoctoral Fellow",
+  "add_relevant_category_name": "Postdoc",
+  "duration": "2-3 year position",
+  "date": "2026-09-15",
+  "summary": "A three-year postdoc building the next generation of in-situ nutrient and contaminant sensors for our alpine and coastal observatories.",
+  "add_content_to_page": [
+    {
+      "add_image": {
+        "image_path": "ph-10.jpg",
+        "image_alt": ""
+      }
+    },
+    {
+      "add_paragraph": [
+        "The successful candidate will design and deploy the next generation of **in-situ sensor platforms** for trace contaminant monitoring across the lab's alpine and coastal observatories. The position sits within the ==Open Science Sensor Network== project and offers unusual freedom to shape your own research direction.",
+        "We are looking for a PhD in *environmental chemistry*, *analytical chemistry* or a related field, with a strong publication record and hands-on experience with `field instrumentation`. Experience with machine-learning-assisted signal processing is welcome but not required.",
+        "You will supervise two PhD students and one technician, and there is dedicated funding for conference travel and one short international secondment per year."
+      ]
+    },
+    {
+      "add_button": [
+        {
+          "label": "Apply now",
+          "link": "mailto:michael.carter@clearwaterlab.org?subject=Postdoctoral%20Fellow%20application",
+          "style": "solid"
+        }
+      ]
+    },
+    {
+      "add_paragraph": [
+        "Applications are reviewed **rolling until the position is filled**. For informal enquiries, {email Michael Carter|mailto:michael.carter@clearwaterlab.org} before applying."
+      ]
+    },
+    {
+      "add_gallery": {
+        "layout": "grid",
+        "columns": 2,
+        "size": "16x9",
+        "images": [
+          {
+            "image_path": "ph-10.jpg",
+            "image_alt": "",
+            "image_caption": "Sensor node deployment at Storglombreen",
+            "credit": "CLEAR WATER LAB"
+          },
+          {
+            "image_path": "ph-13.jpg",
+            "image_alt": "",
+            "image_caption": "Analytical chemistry laboratory, Station Nord-03",
+            "credit": "Dr. Emily Morgan"
+          }
+        ]
+      }
+    }
+  ],
+  "add_tags": [
+    "Sensor networks",
+    "Environmental chemistry",
+    "Field instrumentation"
+  ],
+  "add_contact_information": {
+    "name": "Michael Carter",
+    "email": "michael.carter@clearwaterlab.org"
+  }
+}

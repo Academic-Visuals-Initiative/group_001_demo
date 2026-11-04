@@ -1,0 +1,53 @@
+{
+  "positions_page": {
+    "subheading": "Join the lab",
+    "divider_label": "The Roles",
+    "heading": "Open positions",
+    "intro": "We hire across soil biogeochemistry, atmospheric measurement and sensor engineering. We look for people who are comfortable in the field, careful with data and generous with ideas.",
+    "back_button_label": "Back to Home",
+    "button_label": "View position",
+    "categories": [
+      {
+        "label": "Postdoc",
+        "background_colour": "#e7e2d3"
+      },
+      {
+        "label": "PhD",
+        "background_colour": "#e5dfd0"
+      },
+      {
+        "label": "Masters",
+        "background_colour": "#e7e2d3"
+      },
+      {
+        "label": "Undergraduate",
+        "background_colour": "#e5dfd0"
+      },
+      {
+        "label": "Visiting",
+        "background_colour": "#e7e2d3"
+      },
+      {
+        "label": "Technician",
+        "background_colour": "#e5dfd0"
+      }
+    ],
+    "file_names": [
+      "postdoctoral_fellow",
+      "phd_student",
+      "masters_student",
+      "undergraduate_student",
+      "visiting_researcher",
+      "visiting_student",
+      "research_technician"
+    ],
+    "note": {
+      "heading": "How we hire",
+      "text": "Applications are reviewed as they arrive until a position is filled. We read every letter ourselves, and we are happy to answer informal questions before you apply.",
+      "button": {
+        "label": "Contact us",
+        "link": "@contact"
+      }
+    }
+  }
+}

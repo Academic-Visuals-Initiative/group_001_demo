@@ -1,0 +1,41 @@
+{
+  "current_date": "2026-11-01",
+  "add_relevant_category_name": "Opportunity",
+  "is_pinned": true,
+  "item_title": "Hiring: a technician to keep 74 sensors honest",
+  "item_introduction": "Two-year post in the sensor group, split between the Oslo bench and nine coastal and alpine stations. Applications close 30 November.",
+  "add_author_names": [
+    "Carlos Mendoza",
+    "Michael Carter"
+  ],
+  "add_paragraph": [
+    "There are **74 instruments** in the field network and every one of them drifts. The job is to notice before the data does: bench tests, reference comparisons, firmware updates and the occasional cold boat trip to a station that has stopped reporting.",
+    "The post is split roughly 60/40 between the electronics lab in Oslo and field service. You would work with Carlos Mendoza on the turbidity and nitrate fleet, keep the calibration archive current, and train students on the shared field kits. A clean driving licence and a tolerance for November weather are both useful.",
+    "The position runs for two years from **February 2027**, with the possibility of extension. Full responsibilities and the application contact are on the positions page."
+  ],
+  "add_button": {
+    "center_small": true,
+    "items": [
+      {
+        "label": "View the position",
+        "link": "@positions.research_technician",
+        "style": "solid"
+      },
+      {
+        "label": "Ask a question",
+        "link": "mailto:carlos.mendoza@clearwaterlab.org?subject=Research%20Technician%20question",
+        "style": "outline"
+      }
+    ]
+  },
+  "add_tags": [
+    "hiring",
+    "sensors",
+    "technician",
+    "field-service"
+  ],
+  "add_contact_information": {
+    "name": "Carlos Mendoza",
+    "email": "carlos.mendoza@clearwaterlab.org"
+  }
+}

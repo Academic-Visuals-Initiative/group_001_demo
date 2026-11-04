@@ -1,0 +1,81 @@
+{
+  "name_as_exactly_as_in_category_file": "Grace Kim",
+  "summary": "Field kit design & assembly for school outreach, sensor housings & student-friendly instrumentation.",
+  "add_affiliations": [
+    {
+      "affiliation": "High School Student",
+      "affiliation_info": [
+        "CLEAR WATER LAB, Department of Engineering"
+      ]
+    }
+  ],
+  "add_single_line_information": [
+    {
+      "label": "Programme",
+      "value": "Upper Secondary School, Science Programme"
+    },
+    {
+      "label": "Placement",
+      "value": "Summer 2026"
+    },
+    {
+      "label": "Project",
+      "value": "Field kits & instrument assembly"
+    }
+  ],
+  "add_expandable_information": [
+    {
+      "expandable_information_row_label": "Education",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "Upper Secondary, expected 2027",
+          "expandable_item_right_column_primary_information": [
+            "Science Programme",
+            "Second year, in progress"
+          ]
+        }
+      ]
+    }
+  ],
+  "supervisor_label": "Mentored by",
+  "supervisor_text": "Also working with the outreach group on the school kits.",
+  "image": {
+    "zoom_on": false
+  },
+  "supervisor": [
+    {
+      "name": "Carlos Mendoza",
+      "position": "Field Systems Engineer"
+    }
+  ],
+  "add_paragraph": [
+    "Grace is here for a summer, building the kits the lab sends out with schools. Each one is a small grey box with a temperature probe, a light sensor and a set of instructions a fifteen-year-old can follow without being talked down to.",
+    "She designed the **assembly sheet** herself, after discovering that the lab's own instructions assumed a person who already knew which end of a screwdriver to hold.",
+    "In the autumn she goes back to her second year of upper secondary school, with a project on air quality in the school grounds and an unreasonable amount of confidence about cable strain relief."
+  ],
+  "add_focus_list": [
+    "Field kits & assembly",
+    "Outreach & school visits",
+    "Sensor housings"
+  ],
+  "add_a_timeline": {
+    "heading": "Path",
+    "items_of_the_timeline": [
+      {
+        "timeline_item_date": "2025",
+        "timeline_item_title": "Air quality project, upper secondary school",
+        "timeline_item_text": "Measuring the school grounds."
+      },
+      {
+        "timeline_item_date": "2026",
+        "timeline_item_title": "Joined CLEAR WATER LAB",
+        "timeline_item_text": "A summer placement on the field kits."
+      }
+    ]
+  },
+  "add_tags": [
+    "outreach",
+    "instrumentation",
+    "schools"
+  ]
+}

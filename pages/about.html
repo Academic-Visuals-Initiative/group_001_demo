@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/home.css?v=20261030t" />
+  <link rel="stylesheet" href="../css/style.css?v=20261030t" />
+  <style>
+    /* Carousel dots under the "Our Lab in Action" plate (sharp squares,
+       T02 tokens — same rules the research-area plate uses) */
+    .slide-dot {
+      display: block;
+      background: #cac6bd;              /* outline-variant */
+      transition: background-color 0.2s ease;
+    }
+    .slide-dot:hover { background: #7a776f; }   /* outline */
+    .slide-dot.is-active { background: #1b1c19; } /* on-surface */
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md antialiased">
+  <header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="relative z-10 h-20 w-full max-w-[1260px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between">
+
+      <!-- Brand -->
+      <div class="flex items-center gap-space-md">
+        <img class="h-9 w-auto" alt="" data-site-logo style="display:none">
+        <a class="flex flex-col" href="../index.html">
+          <span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-bold" id="site-name"></span>
+          <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary" id="site-subtitle"></span>
+        </a>
+      </div>
+
+      <!-- Back to Home -->
+      <a class="inline-flex items-center justify-center gap-space-xs bg-primary text-on-primary hover:bg-secondary transition-all font-label-md text-label-md uppercase tracking-[0.15em] px-space-lg py-space-sm max-sm:px-0 max-sm:w-9 max-sm:h-9" href="../index.html">
+        <span class="cw-icon cw-icon--arrow-back text-[20px] sm:text-[16px]" aria-hidden="true"></span>
+        <span class="hidden sm:inline">Back to Home</span>
+      </a>
+
+    </div>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- Every band below is drawn from data/about/edit_about_us_page.json by js/aboutpage.js.
+         The shells hold the backgrounds and the spacing only — no words.
+
+         The band at the top is the page header, movement 01 — it carries
+         its numeral like the rest and pads itself like the movements
+         rather than on the chrome spacing.
+
+         Rhythm after it: light (02) → light (03) → dark (04, the quote)
+         → light (05, the approach) → dark (06, the metrics) → light (07)
+         → dark close.
+
+         Each band pads itself the same way top and bottom — pt-16 lg:pt-20
+         pb-16 lg:pb-20, i.e. 64/80px, light and dark alike — so the space
+         between one band's content and the next is always the same 128px
+         (160px on desktop), and a colour change lands exactly halfway
+         between the two. Change one band and change them all, or the
+         rhythm goes uneven. -->
+
+    <!-- Header · Who We Are -->
+    <section class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop pt-16 lg:pt-20 pb-16 lg:pb-20" id="about-hero">
+      <noscript>
+        <p class="section-message">Enable JavaScript to see this page, or go back to the <a href="../index.html">home page</a>.</p>
+      </noscript>
+    </section>
+
+    <!-- 02 · Meet Our Principal Investigator (words from data/about/edit_about_us_page.json).
+         Dark, so the band carries its own bottom padding: the 80/112px
+         rhythm below it still comes from section 03. -->
+    <section class="w-full bg-[#1B1C19] pt-16 lg:pt-20 pb-16 lg:pb-20 px-margin md:px-margin-tablet lg:px-margin-desktop" id="about-pi"></section>
+
+    <!-- 03 · What We Do (areas from data/edit_research_section.json). Ends against the
+         dark quote, so it carries the bottom padding. -->
+    <section class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop pt-16 lg:pt-20 pb-16 lg:pb-20" id="about-areas"></section>
+
+    <!-- 04 · A Quote from Our PI — dark. A quiet band, so it pads itself
+         the same top and bottom (pt-20 lg:pt-28 pb-20 lg:pb-28) and reads
+         as an even block of dark. -->
+    <section class="w-full bg-[#1B1C19] pt-16 lg:pt-20 pb-16 lg:pb-20 px-margin md:px-margin-tablet lg:px-margin-desktop" id="about-quote"></section>
+
+    <!-- 05 · Our Approach — light, with the dark quote above it and the
+         dark metrics below, so it carries the bottom padding. -->
+    <section class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop pt-16 lg:pt-20 pb-16 lg:pb-20" id="about-approach"></section>
+
+    <!-- 06 · Our Impact in Numbers — the dark chapter closes -->
+    <section class="w-full bg-[#1B1C19] pt-16 lg:pt-20 pb-16 lg:pb-20 px-margin md:px-margin-tablet lg:px-margin-desktop" id="about-plate"></section>
+
+    <!-- 07 · Our Lab in Action — ends against the dark close, so it carries
+         the bottom padding. -->
+    <section class="w-full px-margin md:px-margin-tablet lg:px-margin-desktop pt-16 lg:pt-20 pb-16 lg:pb-20" id="about-action"></section>
+
+    <!-- closing CTA (dark) -->
+    <section class="w-full bg-[#1B1C19] pt-16 lg:pt-20 pb-16 lg:pb-20 px-margin md:px-margin-tablet lg:px-margin-desktop" id="about-cta"></section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer"></footer>
+
+  <script src="../js/helpers.js?v=20261105a"></script>
+<script src="../js/site.js?v=20261030t"></script>
+  <script src="../js/elements.js?v=20261104a"></script>
+  <script src="../js/aboutpage.js?v=20261105a"></script>
+  <script src="../js/footer.js?v=20261030t"></script>
+</body>
+</html>

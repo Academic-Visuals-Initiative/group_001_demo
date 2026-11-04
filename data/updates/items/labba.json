@@ -1,0 +1,26 @@
+{
+  "current_date": "2026-04-07",
+  "add_relevant_category_name": "Project",
+  "item_title": "The sediment trap that no longer needs a calm day",
+  "item_introduction": "A one-piece body and a reusable collar cut deployment time by a third and removed the joint that failed most often.",
+  "add_author_names": [
+    "Sofia Rossi",
+    "Prof. Katherine Bennett",
+    "Carlos Mendoza"
+  ],
+  "add_paragraph": [
+    "The old trap had a glued collar. In two seasons it failed **eleven times**, usually in exactly the conditions where a failure is least convenient. The replacement is a single printed body with a collar that unscrews by hand and can be reused across deployments.",
+    "The practical numbers matter more than the design: deployment time fell from **34 minutes to 21** per station, and the trap can now be serviced from a small boat without lifting the whole mooring aboard. Material use per trap is down by 40%.",
+    "All nine stations switched over during the spring round. The design files, print settings and field-service checklist will be released with the next version of the sediment-flux dataset, once the first inter-comparison against the old design is complete."
+  ],
+  "add_tags": [
+    "sediment-traps",
+    "instrumentation",
+    "open-hardware",
+    "coastal"
+  ],
+  "add_contact_information": {
+    "name": "Sofia Rossi",
+    "email": "hello@clearwaterlab.org"
+  }
+}

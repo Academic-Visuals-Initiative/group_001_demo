@@ -1,0 +1,21 @@
+{
+  "team_page": {
+    "subheading": "Team",
+    "heading": "Our Team & Alumni",
+    "intro": "The chemists, ecologists and engineers who run the lab's field programmes — plus the alumni who have taken its methods into agencies, universities and industry.",
+    "back_button_label": "Back to Home",
+    "closing": {
+      "heading": "Want to join the team?",
+      "text": "We're always recruiting curious researchers. Explore open positions for postdocs, students and visitors.",
+      "button": {
+        "label": "Open positions",
+        "link": "@positions",
+        "icon": "arrow_outward"
+      }
+    }
+  },
+  "main_category_file_names": [
+    "current",
+    "alumni"
+  ]
+}

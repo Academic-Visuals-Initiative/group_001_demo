@@ -1,0 +1,91 @@
+{
+  "name_as_exactly_as_in_category_file": "Aaliyah Thompson",
+  "summary": "Low-cost sensor calibration & drift monitoring for dense particulate networks.",
+  "honorary_title_or_titles": "Marie Sklodowska-Curie Fellow",
+  "add_affiliations": [
+    {
+      "affiliation": "Undergraduate Researcher",
+      "affiliation_info": [
+        "Department of Engineering, CLEAR WATER LAB"
+      ]
+    }
+  ],
+  "add_single_line_information": [
+    {
+      "label": "Programme",
+      "value": "BSc Environmental Engineering"
+    },
+    {
+      "label": "Started",
+      "value": "2025"
+    },
+    {
+      "label": "Expected",
+      "value": "2026"
+    },
+    {
+      "label": "Project",
+      "value": "Sensor calibration & drift"
+    }
+  ],
+  "add_expandable_information": [
+    {
+      "expandable_information_row_label": "Education",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "BSc, expected 2026",
+          "expandable_item_right_column_primary_information": [
+            "BSc in Environmental Engineering",
+            "Third year, in progress"
+          ]
+        }
+      ]
+    },
+    {
+      "expandable_information_row_label": "Honours & recognition",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "2025",
+          "expandable_item_right_column_primary_information": "Undergraduate Research Award, Department of Engineering"
+        }
+      ]
+    }
+  ],
+  "supervisor": [
+    {
+      "name": "Dr. Emily Morgan",
+      "position": "Postdoctoral Researcher"
+    }
+  ],
+  "add_paragraph": [
+    "Aaliyah spends her afternoons in the calibration room, where a hundred cheap particulate sensors sit on a rack and are told, gently and repeatedly, what clean air is. She is measuring how far each one drifts — and how long you can trust one before it has to be brought back.",
+    "Her project is a small piece of Emily's **reference rig**, and the part that decides whether the lab's dense network is measuring air or measuring itself.",
+    "She is in the third year of her BSc and joined the lab for the instrumentation, having been the person who fixed the weather station at her secondary school."
+  ],
+  "add_focus_list": [
+    "Low-cost sensor calibration",
+    "Drift & co-location",
+    "Particulate matter",
+    "Rack testing"
+  ],
+  "add_a_timeline": {
+    "heading": "Path",
+    "items_of_the_timeline": [
+      {
+        "timeline_item_date": "2023 –",
+        "timeline_item_title": "BSc Environmental Engineering",
+        "timeline_item_text": "Third year."
+      },
+      {
+        "timeline_item_date": "2025",
+        "timeline_item_title": "Joined CLEAR WATER LAB",
+        "timeline_item_text": "Calibrating the low-cost particulate sensors."
+      }
+    ]
+  },
+  "add_tags": [
+    "sensors",
+    "air-quality",
+    "calibration"
+  ]
+}

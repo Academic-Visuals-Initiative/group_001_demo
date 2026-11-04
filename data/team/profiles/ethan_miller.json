@@ -1,0 +1,127 @@
+{
+  "name_as_exactly_as_in_category_file": "Ethan Miller",
+  "summary": "Gap-filling methods for long alpine sensor records, uncertainty quantification & open data pipelines.",
+  "add_affiliations": [
+    {
+      "affiliation": "MSc Student",
+      "affiliation_info": [
+        "Department of Engineering, CLEAR WATER LAB"
+      ]
+    }
+  ],
+  "add_single_line_information": [
+    {
+      "label": "Programme",
+      "value": "MSc Environmental Engineering"
+    },
+    {
+      "label": "Started",
+      "value": "2025"
+    },
+    {
+      "label": "Expected",
+      "value": "2027"
+    },
+    {
+      "label": "Thesis",
+      "value": "Gap-filling methods for long alpine sensor records"
+    }
+  ],
+  "add_expandable_information": [
+    {
+      "expandable_information_row_label": "Education",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "BSc, 2021",
+          "expandable_item_right_column_primary_information": [
+            "BSc in Geoinformatics",
+            "University of Bergen"
+          ],
+          "expandable_item_right_column_secondary_information": [
+            {
+              "label": "Supervisor",
+              "value": "Prof. I. Solberg (University of Bergen)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "expandable_information_row_label": "Honours & recognition",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "2021",
+          "expandable_item_right_column_primary_information": "Best Student Paper, Nordic Geoinformatics Conference"
+        }
+      ]
+    },
+    {
+      "expandable_information_row_label": "Previous appointments",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "2021 – 2025",
+          "expandable_item_right_column_primary_information": "Data analyst, municipal water utility"
+        }
+      ]
+    }
+  ],
+  "supervisor": [
+    {
+      "name": "Prof. Katherine Bennett",
+      "position": "Professor"
+    },
+    {
+      "name": "Min-jun Park",
+      "position": "Research Lead"
+    }
+  ],
+  "add_paragraph": [
+    "Ethan works on the holes in the lab's data — the days a sensor iced over, the week the logger's battery gave out, the month the network was down. A gap of six hours is a shrug; the same gap in February is a season of soil respiration nobody measured.",
+    "He is comparing how different gap-filling methods behave on the lab's **long alpine records**, and how much of what they invent looks like weather and how much looks like noise. His MSc builds directly on the method Luke Weber wrote here in 2022.",
+    "He came to the lab from a water utility, where he spent four years turning half-broken SCADA exports into reports somebody would sign."
+  ],
+  "add_focus_list": [
+    "Gap-filling & imputation",
+    "Sensor time series",
+    "Uncertainty in long records",
+    "Open data pipelines"
+  ],
+  "add_a_timeline": {
+    "heading": "Path",
+    "items_of_the_timeline": [
+      {
+        "timeline_item_date": "2018 – 2021",
+        "timeline_item_title": "BSc Geoinformatics",
+        "timeline_item_text": "University of Bergen."
+      },
+      {
+        "timeline_item_date": "2021 – 2025",
+        "timeline_item_title": "Data analyst, municipal water utility",
+        "timeline_item_text": "Monitoring networks, and their gaps."
+      },
+      {
+        "timeline_item_date": "2025",
+        "timeline_item_title": "Joined CLEAR WATER LAB",
+        "timeline_item_text": "MSc on gap-filling long sensor records."
+      }
+    ]
+  },
+  "add_gallery": {
+    "heading": "In the field",
+    "layout": "grid",
+    "columns": 2,
+    "size": "4x3",
+    "images": [
+      {
+        "image_path": "ph-13.jpg",
+        "image_caption": "Checking the coastal array before winter."
+      }
+    ]
+  },
+  "add_tags": [
+    "time-series",
+    "data",
+    "sensors",
+    "open-data"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "current_date": "2026-08-21",
+  "add_relevant_category_name": "Project",
+  "is_pinned": true,
+  "is_featured": true,
+  "item_title": "Mangrove restoration pilot expands to three new estuaries",
+  "item_introduction": "Coastal & mangrove workstream adds sediment-trap monitoring and community nursery partnerships.",
+  "add_author_names": [
+    "Dr. Emily Morgan",
+    "Prof. Katherine Bennett",
+    "Jasmine Brooks",
+    "Min-jun Park"
+  ],
+  "add_image": {
+    "image_path": "assets/images/about_us/mangrove.jpg",
+    "image_alt": "Mangrove trees along a coastal channel",
+    "image_caption": "Mangrove stands at one of the three new estuary sites"
+  },
+  "add_paragraph": [
+    "The CLEAR WATER LAB's coastal & mangrove workstream announced a major expansion of its **restoration pilot program**, adding three new estuarine sites across Southeast Asia and the Caribbean.",
+    "The expansion introduces two methodological innovations: a network of **28 sediment-trap stations** that will quantify accretion rates and organic carbon burial at monthly resolution, and formal partnerships with **three coastal community cooperatives** that establish community-run nurseries producing 120,000 propagules annually.",
+    "The project is funded through a blended finance structure combining a **€3.2M EU Horizon grant**, corporate carbon offtake agreements, and philanthropic matching."
+  ],
+  "add_tags": [
+    "project",
+    "mangrove",
+    "restoration",
+    "blue-carbon",
+    "community-science"
+  ],
+  "add_contact_information": {
+    "name": "Dr. Emily Morgan",
+    "email": "emily.morgan@clearwaterlab.org"
+  },
+  "background_colour": "#d4e4d0",
+  "label": "Mangrove"
+}

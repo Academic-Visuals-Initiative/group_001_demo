@@ -1,0 +1,52 @@
+{
+  "current_date": "2026-06-18",
+  "add_relevant_category_name": "Project",
+  "item_title": "Fourteen sites, four teams, one very long equipment list",
+  "item_introduction": "The summer campaign opened this week across the alpine and coastal networks — with the first deployments of the rebuilt nitrate kits.",
+  "add_author_names": [
+    "Dr. Emily Morgan",
+    "Sofia Rossi",
+    "Priya Nair",
+    "Carlos Mendoza"
+  ],
+  "add_image": {
+    "image_path": "assets/images/research_areas_and_labs/labs/storglombreen_alpine_field_station.jpg",
+    "image_alt": "The alpine field station below a snow-covered mountain",
+    "image_caption": "Storglommen station at the start of the 2026 summer campaign."
+  },
+  "add_paragraph": [
+    "The alpine crew reached **Storglommen** on Monday to find the access track still partly snow-covered and the station's south-facing sensor mast bent by the winter. They spent the first day digging out the snowpack array and the second rebuilding the mast.",
+    "On the coast, the monthly sediment-trap round began at **Station Nord-03** and the two southern estuary sites. The new biofouling-compensation firmware went into all six turbidity sensors without a failure, which is better than last year's three-out-of-six.",
+    "This season also sees the first field deployment of the low-cost nitrate kits built over winter. Twelve units go out across the network, with a calibration check against the laboratory method at each site. Daily field notes stay on the internal dashboard; public updates follow as each site comes online."
+  ],
+  "add_gallery": {
+    "layout": "grid",
+    "columns": 2,
+    "size": "16x9",
+    "images": [
+      {
+        "image_path": "assets/images/research_areas_and_labs/labs/station_nord_03_coastal_observatory_02.jpg",
+        "image_alt": "The coastal station in its mountain setting",
+        "image_caption": "Station Nord-03 after the winter service.",
+        "credit": "CLEAR WATER LAB"
+      },
+      {
+        "image_path": "assets/images/research_areas_and_labs/labs/environmental_sensor_development_lab.jpg",
+        "image_alt": "Electronics benches in the sensor lab",
+        "image_caption": "The last bench check before the nitrate kits went out.",
+        "credit": "Carlos Mendoza"
+      }
+    ]
+  },
+  "add_tags": [
+    "fieldwork",
+    "alpine",
+    "coastal",
+    "sensors",
+    "summer-campaign"
+  ],
+  "add_contact_information": {
+    "name": "Dr. Emily Morgan",
+    "email": "emily.morgan@clearwaterlab.org"
+  }
+}

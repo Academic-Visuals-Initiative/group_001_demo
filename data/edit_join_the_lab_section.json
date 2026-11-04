@@ -1,0 +1,14 @@
+{
+  "join_section": {
+    "subheading": "Join the lab",
+    "heading": "Come do science with us",
+    "subline": "Postdocs · PhD students · Field engineers",
+    "intro": "We hire across soil biogeochemistry, atmospheric measurement and sensor engineering. We look for people who are comfortable in the field, careful with data and generous with ideas.",
+    "available_label": "Positions open",
+    "not_hiring_label": "No open positions right now",
+    "button": {
+      "label": "See open positions",
+      "link": "@positions"
+    }
+  }
+}

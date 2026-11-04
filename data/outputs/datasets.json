@@ -1,0 +1,75 @@
+{
+  "list_name": "dataset",
+  "label": "Datasets",
+  "small_tag_label_shown_in_single_items_in_main_list": "Dataset",
+  "background_colour": "#dfe7d2",
+  "primary_button_label": "Open dataset",
+  "secondary_button_label": "Documentation",
+  "add_items_to_list": [
+    {
+      "people": [
+        "Min-jun Park",
+        "Carlos Mendoza"
+      ],
+      "venue": "TerraNova Open Data",
+      "year": 2026,
+      "status": "Open access",
+      "is_featured": true,
+      "title": "Oslofjord coastal observatory: hourly water-quality series, 2021–2026",
+      "details": "Five years of temperature, salinity, turbidity and dissolved oxygen from Station Nord-03, with calibration records and quality flags.",
+      "link": "https://data.terranova.example.edu/datasets/oslofjord-nord03",
+      "added_date": "18.07.2026"
+    },
+    {
+      "people": [
+        "Michael Carter",
+        "Priya Nair"
+      ],
+      "venue": "TerraNova Open Data",
+      "year": 2025,
+      "status": "Open access",
+      "title": "Boreal soil carbon fractionation and isotope labelling experiment",
+      "details": "Plot-level carbon fractions, root biomass and δ13C measurements from the four-year labelling campaign.",
+      "link": "https://data.terranova.example.edu/datasets/boreal-soil-carbon",
+      "added_date": "09.09.2025"
+    },
+    {
+      "people": [
+        "Jasmine Brooks"
+      ],
+      "venue": "TerraNova Open Data",
+      "year": 2024,
+      "status": "Open access",
+      "title": "Seawater degradation trials for chitin-based films",
+      "details": "Mass-loss, oxygen-demand and fragmentation measurements for twelve film formulations over twelve months.",
+      "link": "https://data.terranova.example.edu/datasets/chitin-seawater-trials",
+      "added_date": "02.04.2024"
+    },
+    {
+      "people": [
+        "Sofia Rossi",
+        "Katherine Bennett"
+      ],
+      "venue": "TerraNova Open Data",
+      "year": 2025,
+      "status": "Open access",
+      "title": "Oslofjord sediment-trap fluxes, 2022–2025",
+      "details": "Monthly accretion, organic carbon and nitrogen fluxes from nine sediment-trap stations, with trap photographs and laboratory blanks.",
+      "link": "https://data.terranova.example.edu/datasets/oslofjord-sediment-traps",
+      "added_date": "26.11.2025"
+    },
+    {
+      "people": [
+        "Carlos Mendoza",
+        "Min-jun Park"
+      ],
+      "venue": "TerraNova Open Data",
+      "year": 2026,
+      "status": "Open access",
+      "title": "Station Nord-03 sensor calibration records, 2021–2026",
+      "details": "Reference-instrument comparisons, drift corrections and maintenance logs for every sensor deployed at the coastal observatory.",
+      "link": "https://data.terranova.example.edu/datasets/nord03-calibration",
+      "added_date": "18.07.2026"
+    }
+  ]
+}

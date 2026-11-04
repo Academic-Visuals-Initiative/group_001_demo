@@ -1,0 +1,73 @@
+{
+  "contact_section": {
+    "subheading": "Get in touch",
+    "heading": "Contact the lab",
+    "intro": "For collaborations, media enquiries, sample requests or student visits — write to us and a person, not a form robot, will reply.",
+    "cards": [
+      {
+        "card_subheading": "Main office",
+        "card_heading": "TerraNova Institute",
+        "card_text_line_1_label": "Address",
+        "card_text_line_2_label": "Phone",
+        "card_text_line_3_label": "Email",
+        "card_text_line_4_label": "Hours",
+        "card_text_line_1": [
+          "Marine Sciences Building",
+          "TerraNova Institute",
+          "0349 Oslo, Norway"
+        ],
+        "card_text_line_2": "+47 22 84 19 60",
+        "card_text_line_3": "hello@clearwaterlab.org",
+        "card_text_line_4": "Mon–Fri, 09:00–17:00 CET",
+        "add_icon_name_or_path_to_line_1_icon": "location",
+        "add_icon_name_or_path_to_line_2_icon": "phone_left",
+        "add_icon_name_or_path_to_line_3_icon": "mail",
+        "add_icon_name_or_path_to_line_4_icon": "clock"
+      }
+    ],
+    "panel": "map",
+    "form": {
+      "contact_us_form_title": "Send us a message",
+      "contact_us_form_subtitle": "For collaborators, journals, students and partners.",
+      "edit_input_fields_of_contact_form": {
+        "edit_name_field": {
+          "edit_name_field_label": "Full name",
+          "name_field_place_holder_text": "Prof. / Dr. / Researcher"
+        },
+        "edit_email_field": {
+          "edit_email_field_label": "Email address",
+          "email_field_place_holder_text": "name@institution.edu"
+        },
+        "edit_subject_field": {
+          "edit_subject_field_label": "Subject",
+          "subject_field_place_holder_text": "e.g. Research collaboration"
+        },
+        "edit_message_field": {
+          "edit_message_field_label": "Message",
+          "message_field_place_holder_text": "Outline your research question, site visit or sample request…"
+        }
+      },
+      "add_special_note": "Your details stay within the lab — we never share contact information.",
+      "button_label": "Send enquiry",
+      "message_to_show_when_sent_was_successful": "Thanks — your enquiry has been sent. We reply within two working days.",
+      "message_to_show_when_sent_was_unsuccessful": "Something went wrong — please email us at hello@clearwaterlab.org instead."
+    },
+    "emailjs": {
+      "service_id": "service_oz6dham",
+      "template_id": "template_642vvza",
+      "public_key": "XvEyqyn9armH2UceH"
+    },
+    "map": {
+      "embed": "Nordic Science Park, Oslo, Norway",
+      "map_title": "TerraNova Institute — Marine Sciences",
+      "link": "https://www.google.com/maps?q=Nordic+Science+Park%2C+Oslo%2C+Norway",
+      "edit_label_of_open_map_link": "Open in Maps"
+    },
+    "image": {
+      "image_path": "1.jpg",
+      "image_alt": "The Marine Sciences Building at TerraNova Institute",
+      "add_image_caption": "Marine Sciences Building, Oslo",
+      "add_image_credit": "TerraNova Media"
+    }
+  }
+}

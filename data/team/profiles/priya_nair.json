@@ -1,0 +1,128 @@
+{
+  "name_as_exactly_as_in_category_file": "Priya Nair",
+  "honorary_title_or_titles": "MacDowell Fellow",
+  "summary": "Root exudate chemistry under temperature variability, microbial carbon use & labelled-isotope tracing.",
+  "add_affiliations": [
+    {
+      "affiliation": "PhD Student",
+      "affiliation_info": [
+        "Department of Engineering, CLEAR WATER LAB"
+      ]
+    }
+  ],
+  "add_single_line_information": [
+    {
+      "label": "Programme",
+      "value": "PhD Environmental Engineering"
+    },
+    {
+      "label": "Department",
+      "value": "Department of Engineering"
+    },
+    {
+      "label": "Started",
+      "value": "2023"
+    },
+    {
+      "label": "Expected",
+      "value": "2027"
+    },
+    {
+      "label": "Thesis",
+      "value": "Exudate chemistry and carbon retention under temperature variability"
+    }
+  ],
+  "email": "priya.nair@clearwaterlab.org",
+  "cv": "assets/documents/cv/millercv.pdf",
+  "googlescholar": "https://scholar.google.com/citations?user=priya-nair",
+  "linkedin": "https://linkedin.com/in/priya-nair",
+  "add_expandable_information": [
+    {
+      "expandable_information_row_label": "Education",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "BSc, 2022",
+          "expandable_item_right_column_primary_information": [
+            "BSc in Environmental Sciences",
+            "University of Lisbon"
+          ],
+          "expandable_item_right_column_secondary_information": [
+            {
+              "label": "Supervisor",
+              "value": "Prof. M. Duarte (University of Lisbon)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "expandable_information_row_label": "Honours & recognition",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "2023",
+          "expandable_item_right_column_primary_information": "MacDowell Fellowship Award"
+        }
+      ]
+    }
+  ],
+  "supervisor": [
+    {
+      "name": "Michael Carter",
+      "position": "Principal Investigator"
+    }
+  ],
+  "add_paragraph": [
+    "Priya is tracing what roots actually release. Her PhD follows the exudates that leak from living roots into the soil around them — sugars, organic acids, amino acids — and asks how a temperature that swings, rather than one that simply rises, changes what the microbial community gets to eat.",
+    "She works on the lab's warming experiment at Station Nord-03, where the plots have been held at +4 °C (steady) and +4 °C (variable) since 2019. The comparison is the point of her thesis: **variability may matter more than the mean**.",
+    "Before the lab she spent a year as a research assistant in Lisbon, sieving and running carbon analyses until she knew the method well enough to distrust it."
+  ],
+  "add_focus_list": [
+    "Root exudate chemistry",
+    "Microbial carbon use",
+    "Temperature variability",
+    "Labelled-isotope tracing"
+  ],
+  "add_a_timeline": {
+    "heading": "Path",
+    "items_of_the_timeline": [
+      {
+        "timeline_item_date": "2019 – 2022",
+        "timeline_item_title": "BSc Environmental Sciences",
+        "timeline_item_text": "University of Lisbon."
+      },
+      {
+        "timeline_item_date": "2022 – 2023",
+        "timeline_item_title": "Research assistant",
+        "timeline_item_text": "Soil carbon analysis, Instituto Superior Técnico."
+      },
+      {
+        "timeline_item_date": "2023",
+        "timeline_item_title": "Joined CLEAR WATER LAB",
+        "timeline_item_text": "Started a PhD on root exudates."
+      },
+      {
+        "timeline_item_date": "2024",
+        "timeline_item_title": "First alpine field season",
+        "timeline_item_text": "Sampling the warming plots at Station Nord-03."
+      }
+    ]
+  },
+  "add_gallery": {
+    "heading": "From the bench",
+    "layout": "grid",
+    "columns": 2,
+    "size": "4x3",
+    "images": [
+      {
+        "image_path": "ph-07.jpg",
+        "image_caption": "The extraction bench, after a long week."
+      }
+    ]
+  },
+  "add_tags": [
+    "exudates",
+    "soil-carbon",
+    "warming",
+    "isotopes"
+  ]
+}

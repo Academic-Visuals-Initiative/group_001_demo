@@ -1,0 +1,113 @@
+{
+  "name_as_exactly_as_in_category_file": "Michael Carter",
+  "summary": "Soil biogeochemistry, carbon sequestration & rhizosphere phenotyping.",
+  "add_affiliations": [
+    {
+      "affiliation": "Affiliate Faculty Member",
+      "affiliation_info": [
+        "Center for Computational Medicine and Bioinformatics",
+        "Department of Ecology and Evolutionary Biology"
+      ]
+    },
+    {
+      "affiliation": "Visiting Professor",
+      "affiliation_info": [
+        "Department of Environmental Systems Science, ETH Zürich"
+      ]
+    }
+  ],
+  "add_single_line_information": [
+    {
+      "label": "Department",
+      "value": "Department of Engineering"
+    },
+    {
+      "label": "In the lab since",
+      "value": "2016"
+    },
+    {
+      "label": "Main focus",
+      "value": "Rhizosphere carbon retention"
+    },
+    {
+      "label": "Field sites",
+      "value": "Alpine transect, Station Nord-03"
+    }
+  ],
+  "orcid": "https://orcid.org/0000-0002-1825-0097",
+  "googlescholar": "https://scholar.google.com/citations?user=michael-carter",
+  "linkedin": "https://linkedin.com/in/michael-carter",
+  "github": "https://github.com/michael-carter",
+  "cv": "assets/documents/cv/millercv.pdf",
+  "add_expandable_information": [
+    {
+      "expandable_information_row_label": "Education",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "PhD, 2009",
+          "expandable_item_right_column_primary_information": [
+            "PhD in Soil Science",
+            "Swedish University of Agricultural Sciences",
+            "🎖️ Best Thesis Award"
+          ],
+          "expandable_item_right_column_secondary_information": [
+            {
+              "label": "Thesis",
+              "value": "Soil organic matter turnover in boreal forest soils"
+            },
+            {
+              "label": "Supervisor",
+              "value": "Prof. E. Nyberg (SLU), Prof. J. Okonkwo (Uppsala University)"
+            }
+          ]
+        },
+        {
+          "expandable_item_left_column_info": "MSc, 2005",
+          "expandable_item_right_column_primary_information": [
+            "MSc in Environmental Science",
+            "Uppsala University"
+          ]
+        }
+      ]
+    },
+    {
+      "expandable_information_row_label": "Honours & recognition",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "2018",
+          "expandable_item_right_column_primary_information": "Swedish Research Council Consolidator Grant"
+        },
+        {
+          "expandable_item_left_column_info": "2021",
+          "expandable_item_right_column_primary_information": "EGU Outstanding Scientist, Soil System Sciences"
+        },
+        {
+          "expandable_item_left_column_info": "2023",
+          "expandable_item_right_column_primary_information": "Elected Fellow, Royal Society of Chemistry"
+        }
+      ]
+    },
+    {
+      "expandable_information_row_label": "Previous appointments",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "2010 – 2016",
+          "expandable_item_right_column_primary_information": "Postdoctoral researcher and group leader, ETH Zürich"
+        },
+        {
+          "expandable_item_left_column_info": "2009 – 2010",
+          "expandable_item_right_column_primary_information": "Research associate, SLU Uppsala"
+        }
+      ]
+    }
+  ],
+  "add_paragraph": [
+    "Michael founded CLEAR WATER LAB in 2016 after six years at ETH Zürich. His group studies how carbon moves through soil — from root-scale chemistry to catchment-scale fluxes — and builds the field instrumentation needed to measure it continuously.",
+    "He leads the lab's Alpine monitoring network and serves as principal investigator on two EU-funded projects on soil carbon sequestration.",
+    "His current focus is the ==rhizosphere==: the narrow zone around living roots where exudates, microbes and minerals meet — and where, as the lab's warming experiment suggests, **temperature variability matters more than mean warming**."
+  ],
+  "publications": true,
+  "per_page": 2,
+  "show_year_filter": false,
+  "publication_section_title": "Selected publications"
+}

@@ -1,0 +1,182 @@
+{
+  "main_category_name": "current",
+  "left_side_divider_label": "The People",
+  "main_category_tag_label": "Current members",
+  "right_side_divider_label_if_there_is_one_person": "member",
+  "right_side_divider_label_if_there_is_more_than_one_person": "members",
+  "sub_categories": [
+    {
+      "sub_category_name": "pi",
+      "sub_category_tag_label": "Principal Investigator"
+    },
+    {
+      "sub_category_name": "professor",
+      "sub_category_tag_label": "Professors"
+    },
+    {
+      "sub_category_name": "postdoc",
+      "sub_category_tag_label": "Postdocs"
+    },
+    {
+      "sub_category_name": "lead",
+      "sub_category_tag_label": "Research Leads"
+    },
+    {
+      "sub_category_name": "engineer",
+      "sub_category_tag_label": "Engineers"
+    },
+    {
+      "sub_category_name": "phd",
+      "sub_category_tag_label": "PhD Students"
+    },
+    {
+      "sub_category_name": "msc",
+      "sub_category_tag_label": "MSc Students"
+    },
+    {
+      "sub_category_name": "undergrad",
+      "sub_category_tag_label": "Undergraduates"
+    },
+    {
+      "sub_category_name": "highschool",
+      "sub_category_tag_label": "High School Students"
+    }
+  ],
+  "add_people_to_category_defined_above": [
+    {
+      "show_in_team_page": true,
+      "show_in_home_team": true,
+      "add_name": "Michael Carter",
+      "position": "Principal Investigator",
+      "relevant_sub_category_name": "pi",
+      "honorary_title_or_titles": "Dean and John T. Groves Collegiate Professor of Chemistry",
+      "image_path": "assets/images/team_and_alumni/michael_carter.jpg",
+      "text": [
+        "Michael founded CLEAR WATER LAB in 2016 after six years at ETH Zürich. His group studies how carbon moves through soil — from root-scale chemistry to catchment-scale fluxes — and builds the field instrumentation needed to measure it continuously."
+      ],
+      "add_email": "michael.carter@clearwaterlab.org",
+      "cv_name_or_path_to_cv": "assets/documents/cv/millercv.pdf",
+      "googlescholar": "https://scholar.google.com/citations?user=michael-carter",
+      "orcid": "https://orcid.org/0000-0002-1825-0097",
+      "linkedin": "https://linkedin.com/in/michael-carter",
+      "github": "https://github.com/michael-carter"
+    },
+    {
+      "add_name": "Prof. Katherine Bennett",
+      "position": "Professor",
+      "relevant_sub_category_name": "professor",
+      "show_in_team_page": true,
+      "show_in_home_team": true,
+      "image_path": "assets/images/team_and_alumni/katherine_bennett.jpg",
+      "photo_credit": "CLEAR WATER LAB",
+      "text": "Mycelium networks, nutrient cycling & alpine soil core archives.",
+      "add_email": "katherine.bennett@clearwaterlab.org",
+      "cv_name_or_path_to_cv": "assets/documents/cv/millercv.pdf",
+      "googlescholar": "https://scholar.google.com/citations?user=katherine-bennett",
+      "linkedin": "https://linkedin.com/in/katherine-bennett",
+      "github": "https://github.com/katherine-bennett"
+    },
+    {
+      "add_name": "Dr. Emily Morgan",
+      "position": "Postdoctoral Researcher",
+      "relevant_sub_category_name": "postdoc",
+      "show_in_home_team": false,
+      "image_path": "assets/images/team_and_alumni/emily_morgan.jpg",
+      "text": "Aerosol tracing, particulate flux & low-cost air-quality sensors.",
+      "add_email": "emily.morgan@clearwaterlab.org",
+      "cv_name_or_path_to_cv": "assets/documents/cv/millercv.pdf",
+      "googlescholar": "https://scholar.google.com/citations?user=emily-morgan",
+      "orcid": "https://orcid.org/0000-0002-1825-0097",
+      "linkedin": "https://linkedin.com/in/emily-morgan",
+      "github": "https://github.com/emily-morgan"
+    },
+    {
+      "add_name": "Jasmine Brooks",
+      "position": "Research Lead",
+      "relevant_sub_category_name": "lead",
+      "image_path": "assets/images/team_and_alumni/jasmine_brooks.jpg",
+      "text": "Chitin-mycelium composites & biodegradable polymer synthesis.",
+      "add_email": "jasmine.brooks@clearwaterlab.org",
+      "cv_name_or_path_to_cv": "assets/documents/cv/millercv.pdf",
+      "googlescholar": "https://scholar.google.com/citations?user=jasmine-brooks",
+      "orcid": "https://orcid.org/0000-0002-1825-0097",
+      "linkedin": "https://linkedin.com/in/jasmine-brooks",
+      "github": "https://github.com/jasmine-brooks"
+    },
+    {
+      "add_name": "Min-jun Park",
+      "position": "Research Lead",
+      "relevant_sub_category_name": "lead",
+      "show_in_home_team": false,
+      "image_path": "assets/images/team_and_alumni/min_jun_park.jpg",
+      "text": "Bio-acoustics, sensor fusion & open data pipelines.",
+      "add_email": "minjun.park@clearwaterlab.org",
+      "cv_name_or_path_to_cv": "assets/documents/cv/millercv.pdf",
+      "googlescholar": "https://scholar.google.com/citations?user=min-jun-park",
+      "orcid": "https://orcid.org/0000-0001-2345-6789",
+      "linkedin": "https://linkedin.com/in/min-jun-park",
+      "github": "https://github.com/minjun-park"
+    },
+    {
+      "add_name": "Carlos Mendoza",
+      "position": "Field Systems Engineer",
+      "relevant_sub_category_name": "engineer",
+      "image_path": "assets/images/team_and_alumni/carlos_mendoza.jpg",
+      "text": "IoT sensor grids & autonomous telemetry arrays.",
+      "add_email": "carlos.mendoza@clearwaterlab.org",
+      "cv_name_or_path_to_cv": "assets/documents/cv/millercv.pdf",
+      "googlescholar": "https://scholar.google.com/citations?user=carlos-mendoza",
+      "orcid": "https://orcid.org/0000-0003-1234-5678",
+      "linkedin": "https://linkedin.com/in/carlos-mendoza",
+      "github": "https://github.com/carlos-mendoza"
+    },
+    {
+      "add_name": "Priya Nair",
+      "position": "PhD Student",
+      "relevant_sub_category_name": "phd",
+      "image_path": "assets/images/team_and_alumni/priya_nair.jpg",
+      "text": "Root exudate chemistry under variable temperature.",
+      "add_email": "priya.nair@clearwaterlab.org",
+      "cv_name_or_path_to_cv": "assets/documents/cv/millercv.pdf",
+      "googlescholar": "https://scholar.google.com/citations?user=priya-nair",
+      "orcid": "https://orcid.org/0000-0002-1825-0097",
+      "linkedin": "https://linkedin.com/in/priya-nair",
+      "github": "https://github.com/priya-nair"
+    },
+    {
+      "add_name": "Ethan Miller",
+      "position": "MSc Student",
+      "relevant_sub_category_name": "msc",
+      "image_path": "assets/images/team_and_alumni/ethan_miller.jpg",
+      "text": "Gap-filling long alpine sensor records.",
+      "add_email": "ethan.miller@clearwaterlab.org",
+      "cv_name_or_path_to_cv": "millercv.pdf",
+      "googlescholar": "https://scholar.google.com/citations?user=ethan-miller",
+      "orcid": "https://orcid.org/0000-0002-1825-0097",
+      "linkedin": "https://linkedin.com/in/ethan-miller",
+      "github": "https://github.com/ethan-miller"
+    },
+    {
+      "add_name": "Aaliyah Thompson",
+      "position": "Undergraduate Researcher",
+      "relevant_sub_category_name": "undergrad",
+      "image_path": "assets/images/team_and_alumni/aaliyah_thompson.jpg",
+      "text": "Calibrating the low-cost particulate sensors.",
+      "add_email": "aaliyah.thompson@clearwaterlab.org",
+      "cv_name_or_path_to_cv": "assets/documents/cv/millercv.pdf",
+      "linkedin": "https://linkedin.com/in/aaliyah-thompson",
+      "github": "https://github.com/aaliyah-thompson"
+    },
+    {
+      "add_name": "Grace Kim",
+      "position": "High School Student",
+      "relevant_sub_category_name": "highschool",
+      "image_path": "assets/images/team_and_alumni/grace_kim.jpg",
+      "text": "Building field kits for the school outreach programme.",
+      "add_email": "grace.kim@clearwaterlab.org",
+      "cv_name_or_path_to_cv": "assets/documents/cv/millercv.pdf",
+      "linkedin": "https://linkedin.com/in/grace-kim",
+      "github": "https://github.com/grace-kim"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "about_page": {
+    "label": "About the Lab",
+    "title": "About the Lab",
+    "sections": {
+      "who_we_are": {
+        "number": "01",
+        "eyebrow": "Who we are",
+        "statement": "A chemistry lab that works where the water goes.",
+        "image": {
+          "image_path": "about_us_section_01.jpg",
+          "image_alt": "The Marine Sciences Building at TerraNova Institute",
+          "image_caption": "Marine Sciences Building, TerraNova Institute",
+          "image_credit": "TerraNova Media"
+        },
+        "paragraphs": [
+          "CLEAR WATER LAB was founded in 2016 at TerraNova Institute in Oslo. We are an environmental chemistry group working across three connected systems: the soil that stores carbon, the air that moves it, and the water that eventually receives it.",
+          "Our methods combine isotope chemistry, high-resolution mass spectrometry and long-running field observatories. We care about measurements that hold up outside the lab — in winter, in tide, and in the hands of the communities who use the results."
+        ],
+        "button": {
+          "label": "Our research areas",
+          "link": "@areas",
+          "icon": "arrow_outward"
+        }
+      },
+      "principal_investigator": {
+        "number": "02",
+        "title": "Meet the PI",
+        "message": "Michael founded the lab in 2016 after six years at ETH Zürich. He studies how carbon moves through soil — from root-scale chemistry to catchment-scale fluxes — and builds the field instruments that make those measurements possible.",
+        "note": "Michael supervises the soil-carbon and sensor-network programmes and teaches environmental chemistry at TerraNova Institute.",
+        "name": "Prof. Michael Carter",
+        "subtitle": "Director, CLEAR WATER LAB · Professor of Environmental Chemistry",
+        "photo": "assets/images/team_and_alumni/michael_carter.jpg",
+        "photo_caption": "Soil sampling, Hallandsåsen beech forest",
+        "photo_credit": "TerraNova Media",
+        "buttons": [
+          {
+            "label": "View CV",
+            "link": "assets/documents/cv/millercv.pdf"
+          },
+          {
+            "label": "Email",
+            "link": "mailto:michael.carter@clearwaterlab.org"
+          },
+          {
+            "label": "Meet the team",
+            "link": "@team",
+            "icon": "arrow_outward"
+          }
+        ]
+      },
+      "what_we_do": {
+        "number": "03",
+        "title": "What we do",
+        "introduction": "Five research areas, one connected question: where does material go, and how long does it stay?",
+        "paragraphs": [
+          "We follow carbon, nutrients and contaminants from their source to their resting place. That means sampling soil profiles in beech forest, running aerosol monitors on the institute roof, and counting mangrove seedlings with community partners in the Sundarbans."
+        ],
+        "images": [
+          {
+            "image_path": "atmosphere.jpg",
+            "image_alt": "Aerosol sampling station on a rooftop",
+            "image_caption": "Aerosol monitoring, Oslo",
+            "image_credit": "TerraNova Media"
+          },
+          {
+            "image_path": "mangrove.jpg",
+            "image_alt": "Mangrove seedlings at a community nursery",
+            "image_caption": "Community nursery, Sundarbans",
+            "image_credit": "CLEAR WATER LAB"
+          },
+          {
+            "image_path": "soil.jpg",
+            "image_alt": "Soil cores sorted by depth",
+            "image_caption": "Soil cores, northern transect",
+            "image_credit": "TerraNova Media"
+          },
+          {
+            "image_path": "polymers.jpg",
+            "image_alt": "Chitin-based polymer samples on a bench",
+            "image_caption": "Chitin films in the materials lab",
+            "image_credit": "CLEAR WATER LAB"
+          }
+        ],
+        "columns": "2",
+        "titles": true
+      },
+      "quote": {
+        "number": "04",
+        "title": "In their words",
+        "text": "The useful unit of environmental chemistry is not the sample. It is the decade.",
+        "author": "Prof. Michael Carter",
+        "role": "Director, CLEAR WATER LAB"
+      },
+      "our_approach": {
+        "number": "05",
+        "title": "How we work",
+        "heading": "Field-first, open by default",
+        "text": [
+          "Our projects begin in the field, not the literature. We design sampling around the questions that matter to the people who live with the water, then bring those samples back to instruments we maintain ourselves.",
+          "Everything we can publish openly, we publish openly: raw spectra, calibration records, sensor firmware and the code that turns them into numbers. A result that cannot be checked is not yet a result."
+        ],
+        "chips": [
+          "Open data",
+          "Reproducible methods",
+          "Long-term observatories",
+          "Community partnerships"
+        ]
+      },
+      "impact": {
+        "section": {
+          "number": "06",
+          "title": "By the numbers",
+          "items": [
+            {
+              "metric_value": "9",
+              "metric_label": "field sites across four countries"
+            },
+            {
+              "metric_value": "42 TB",
+              "metric_label": "open environmental data published"
+            },
+            {
+              "metric_value": "28",
+              "metric_label": "peer-reviewed papers since 2016"
+            },
+            {
+              "metric_value": "6",
+              "metric_label": "PhD researchers graduated"
+            }
+          ]
+        },
+        "photo": {
+          "image_path": "impact.jpg",
+          "image_alt": "Sediment coring in the inner Oslofjord",
+          "caption": "Sediment coring, inner Oslofjord",
+          "credit": "TerraNova Media"
+        }
+      },
+      "lab_in_action": {
+        "number": "07",
+        "title": "Life in the lab",
+        "paragraph": "From tide tables to titration curves — a week in the lab rarely looks the same twice.",
+        "paragraphs": [
+          "Field campaigns alternate with long stretches at the bench: preparing sediment traps, calibrating sensors, and coaxing clean spectra out of stubborn samples. Students rotate through both, so nobody spends a whole degree indoors."
+        ],
+        "rotation_time_milliseconds": 5000,
+        "images": [
+          {
+            "image_path": "action_1.jpg",
+            "image_alt": "Researchers preparing sediment traps",
+            "image_caption": "Preparing sediment traps before the monsoon",
+            "image_credit": "CLEAR WATER LAB"
+          },
+          {
+            "image_path": "action_2.jpg",
+            "image_alt": "Nutrient analysis on the ICP-MS",
+            "image_caption": "Nutrient analysis on the ICP-MS",
+            "image_credit": "TerraNova Media"
+          },
+          {
+            "image_path": "action_3.jpg",
+            "image_alt": "Sensor calibration in the cold room",
+            "image_caption": "Sensor calibration at 4 °C",
+            "image_credit": "CLEAR WATER LAB"
+          },
+          {
+            "image_path": "action_4.jpg",
+            "image_alt": "Community nursery work in the Sundarbans",
+            "image_caption": "Community nursery, Sundarbans",
+            "image_credit": "TerraNova Media"
+          },
+          {
+            "image_path": "action_5.jpg",
+            "image_alt": "Winter sampling at Storglommen",
+            "image_caption": "Winter sampling, Storglommen",
+            "image_credit": "CLEAR WATER LAB"
+          }
+        ],
+        "button": {
+          "label": "Join a field campaign",
+          "link": "@positions",
+          "icon": "arrow_outward"
+        }
+      },
+      "closing": {
+        "heading": "Want to work with us?",
+        "text": "We collaborate with agencies, communities and other labs. If you have a question about water, soil or air, we would like to hear it.",
+        "button": {
+          "label": "Get in touch",
+          "link": "@contact",
+          "icon": "arrow_outward"
+        }
+      }
+    }
+  }
+}

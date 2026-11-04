@@ -1,0 +1,78 @@
+{
+  "research_section": {
+    "subheading": "Research areas",
+    "heading": "Five questions we keep asking",
+    "intro": "Our work runs from molecular-scale chemistry to catchment-scale monitoring. Each area has its own methods and field sites, but they share one goal: a defensible line of evidence from source to impact.",
+    "images": [
+      {
+        "image_path": "soil_microbiome_and_carbon_sequestration.jpg",
+        "image_caption": "Roots, fungi and the carbon they keep in the soil",
+        "image_credit": "CLEAR WATER LAB"
+      },
+      {
+        "image_path": "atmospheric_particulate_tracing.jpg",
+        "image_caption": "Tracing particulate plumes from source to deposition",
+        "image_credit": "CLEAR WATER LAB"
+      },
+      {
+        "image_path": "coastal_and_mangrove_restoration.jpg",
+        "image_caption": "Community nursery in the mangrove restoration pilot",
+        "image_credit": "TerraNova Media"
+      },
+      {
+        "image_path": "biodegradable_polymer_synthesis.jpg",
+        "image_caption": "Chitin films curing in the materials lab",
+        "image_credit": "CLEAR WATER LAB"
+      },
+      {
+        "image_path": "GIF_by_Harvard_Medical_School.gif",
+        "image_caption": "Inside the soil microcosm experiment",
+        "image_credit": "CLEAR WATER LAB"
+      }
+    ],
+    "rotation_time_milliseconds": 5000,
+    "// aspect_ratio — any ratio works; aspect-[1/1] gives a square plate": "",
+    "aspect_ratio": "aspect-[1/1]",
+    "zoom_on": true,
+    "button": {
+      "label": "All labs & stations",
+      "link": "@labs"
+    },
+    "max_items": 7,
+    "card_button": {
+      "label": "Explore area"
+    }
+  },
+  "individual_research_area_cards": [
+    {
+      "individual_research_area_file_name": "soil_microbiome",
+      "individual_research_area_card_title": "Soil Microbiome & Carbon Sequestration",
+      "individual_research_area_card_keyword": "Soil biogeochemistry",
+      "individual_research_area_card_introduction": "How root exudates and fungal networks decide how long carbon stays in boreal and alpine soils."
+    },
+    {
+      "individual_research_area_file_name": "atmospheric_particulates",
+      "individual_research_area_card_title": "Atmospheric Particulate Tracing",
+      "individual_research_area_card_keyword": "Air quality",
+      "individual_research_area_card_introduction": "Following metals, organics and microplastics from emission sources to the lakes and coasts where they land."
+    },
+    {
+      "individual_research_area_file_name": "coastal_mangrove",
+      "individual_research_area_card_title": "Coastal & Mangrove Restoration",
+      "individual_research_area_card_keyword": "Coastal ecology",
+      "individual_research_area_card_introduction": "Sediment traps, blue-carbon accounting and community nurseries across three Southeast Asian estuaries."
+    },
+    {
+      "individual_research_area_file_name": "polymer_synthesis",
+      "individual_research_area_card_title": "Biodegradable Polymer Synthesis",
+      "individual_research_area_card_keyword": "Materials chemistry",
+      "individual_research_area_card_introduction": "Turning chitin waste into films and coatings that degrade in seawater on a measurable timescale."
+    },
+    {
+      "individual_research_area_file_name": "sensor_networks",
+      "individual_research_area_card_title": "Environmental Sensor Networks",
+      "individual_research_area_card_keyword": "Instrumentation",
+      "individual_research_area_card_introduction": "Open-hardware nutrient and contaminant sensors built to survive a Norwegian winter unattended."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "news_page": {
+    "subheading": "From the field",
+    "heading": "News & updates",
+    "divider_label": "The Feed",
+    "intro": "Field notes, new papers, open data and the occasional graduation — everything the lab has been up to, newest first.",
+    "back_button_label": "Back to Home",
+    "more_button_label": "Load older updates"
+  },
+  "pinned_label": "Pinned",
+  "featured_tag_label": "Featured",
+  "featured_tag_background_colour": "#1B1C19",
+  "card_button_label": "Read",
+  "add_categories": [
+    {
+      "category_name": "Publication",
+      "background_colour": "#e7e2d3"
+    },
+    {
+      "category_name": "Project",
+      "background_colour": "#d4e4d0"
+    },
+    {
+      "category_name": "Dataset",
+      "background_colour": "#dfe7d2"
+    },
+    {
+      "category_name": "Graduation",
+      "background_colour": "#e5dfd0"
+    },
+    {
+      "category_name": "Opportunity",
+      "background_colour": "#e7e2d3"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "title": "PhD Student",
+  "add_relevant_category_name": "PhD",
+  "duration": "4 year position",
+  "date": "2026-10-01",
+  "summary": "A four-year PhD on how root exudate chemistry controls mineral-associated carbon in boreal forest soils.",
+  "add_content_to_page": [
+    {
+      "add_paragraph": [
+        "The PhD position combines ==field campaigns at Storglombreen== with laboratory analysis and numerical modelling. You will collect porewater and sediment samples, run isotope-tracing experiments, and publish your work in open-access venues.",
+        "A master's degree in environmental science, geochemistry, hydrology or a related discipline is required. We value curiosity, careful record-keeping and a willingness to spend two to three field seasons in the Arctic."
+      ]
+    },
+    {
+      "add_button": [
+        {
+          "label": "Apply now",
+          "link": "mailto:michael.carter@clearwaterlab.org?subject=PhD%20Student%20application",
+          "style": "solid"
+        },
+        {
+          "label": "Graduate school info",
+          "link": "#",
+          "style": "outline"
+        }
+      ]
+    },
+    {
+      "add_paragraph": [
+        "The position is funded for four years including a teaching component of 25%. ==Applications close 15 January 2027==."
+      ]
+    }
+  ],
+  "add_tags": [
+    "Soil carbon",
+    "Isotope chemistry",
+    "Boreal ecology"
+  ],
+  "add_contact_information": {
+    "name": "Michael Carter",
+    "email": "michael.carter@clearwaterlab.org"
+  }
+}

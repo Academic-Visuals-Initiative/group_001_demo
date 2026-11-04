@@ -1,0 +1,177 @@
+{
+  "list_name": "publication",
+  "label": "Publications",
+  "small_tag_label_shown_in_single_items_in_main_list": "Publication",
+  "background_colour": "#e5dfd0",
+  "primary_button_label": "Read paper",
+  "secondary_button_label": "Publisher",
+  "add_items_to_list": [
+    {
+      "people": [
+        "Michael Carter",
+        "Katherine Bennett",
+        "Priya Nair"
+      ],
+      "venue": "Nature Climate Change",
+      "year": 2026,
+      "status": "Published",
+      "is_featured": true,
+      "is_pinned": true,
+      "title": "Fungal network continuity slows carbon loss in boreal forest soils",
+      "details": "A four-year labelling experiment across 36 plots shows that mineral-associated carbon persists longest where fungal networks remain intact.",
+      "image_path": "assets/images/about_us/soil.jpg",
+      "link": "https://doi.org/10.1038/s41558-026-01984-2",
+      "added_date": "02.09.2026"
+    },
+    {
+      "people": [
+        "Emily Morgan",
+        "Michael Carter"
+      ],
+      "venue": "Atmospheric Environment",
+      "year": 2026,
+      "status": "Published",
+      "is_featured": true,
+      "title": "Isotopic fingerprints of winter particulate sources in a coastal capital",
+      "details": "PM2.5 composition and lead isotopes separate traffic, biomass burning and sea-spray contributions across an annual cycle.",
+      "image_path": "assets/images/about_us/atmosphere.jpg",
+      "link": "https://doi.org/10.1016/j.atmosenv.2026.121407",
+      "added_date": "14.06.2026"
+    },
+    {
+      "people": [
+        "Jasmine Brooks",
+        "Carlos Mendoza"
+      ],
+      "venue": "Green Chemistry",
+      "year": 2025,
+      "status": "Published",
+      "title": "Tuning chitin film degradation in seawater through acetylation control",
+      "details": "A simple two-step route produces films whose mass loss in seawater ranges from 4% to 61% per year without additives.",
+      "link": "https://doi.org/10.1039/D5GC01822K",
+      "added_date": "19.11.2025"
+    },
+    {
+      "people": [
+        "Mia Lin",
+        "Min-jun Park",
+        "Sofia Rossi"
+      ],
+      "venue": "Limnology & Oceanography: Methods",
+      "year": 2025,
+      "status": "Published",
+      "title": "An open-hardware turbidity sensor for long-term coastal deployment",
+      "details": "Design files, firmware and a two-year field comparison against a commercial reference instrument.",
+      "link": "https://doi.org/10.1002/lom3.10611",
+      "added_date": "07.08.2025"
+    },
+    {
+      "people": [
+        "Katherine Bennett",
+        "Nia Johnson"
+      ],
+      "venue": "Soil Biology & Biochemistry",
+      "year": 2024,
+      "status": "Published",
+      "title": "Root exudate composition shifts with soil temperature but not with community composition",
+      "details": "A microcosm study spanning a 9 °C gradient in two contrasting soils.",
+      "link": "https://doi.org/10.1016/j.soilbio.2024.109402",
+      "added_date": "22.10.2024"
+    },
+    {
+      "people": [
+        "Sofia Rossi",
+        "Grace Kim",
+        "Michael Carter"
+      ],
+      "venue": "Estuarine, Coastal and Shelf Science",
+      "year": 2024,
+      "status": "Published",
+      "title": "Sediment accretion in restored mangrove plots: a three-estuary comparison",
+      "details": "Accretion rates and organic carbon burial measured with a common sediment-trap protocol across Southeast Asia.",
+      "link": "https://doi.org/10.1016/j.ecss.2024.108771",
+      "added_date": "03.05.2024"
+    },
+    {
+      "people": [
+        "Min-jun Park",
+        "Ethan Miller"
+      ],
+      "venue": "Environmental Monitoring and Assessment",
+      "year": 2023,
+      "status": "Published",
+      "title": "Gap-filling long alpine sensor records with a physics-informed model",
+      "details": "A lightweight approach that reconstructs winter soil-temperature series from incomplete telemetry.",
+      "link": "https://doi.org/10.1007/s10661-023-11802-9",
+      "added_date": "11.12.2023"
+    },
+    {
+      "people": [
+        "Michael Carter",
+        "Katherine Bennett"
+      ],
+      "venue": "Global Change Biology",
+      "year": 2023,
+      "status": "Published",
+      "title": "Mineral protection, not microbial efficiency, explains decadal carbon persistence in boreal soil",
+      "details": "A synthesis of density fractionation and incubation data from six long-term plots.",
+      "link": "https://doi.org/10.1111/gcb.16619",
+      "added_date": "27.02.2023"
+    },
+    {
+      "people": [
+        "Emily Morgan",
+        "Min-jun Park",
+        "Sofia Rossi"
+      ],
+      "venue": "Environmental Science & Technology",
+      "year": 2025,
+      "status": "Published",
+      "title": "Microplastic retention in fjord sediments follows organic-matter gradients",
+      "details": "A joint survey of 18 stations shows that fibres and fragments accumulate where sediment organic content and slow bottom currents coincide.",
+      "image_path": "assets/images/about_us/action_3.jpg",
+      "link": "https://doi.org/10.1021/acs.est.5c04127",
+      "added_date": "12.03.2025"
+    },
+    {
+      "people": [
+        "Carlos Mendoza",
+        "Min-jun Park",
+        "Aaliyah Thompson"
+      ],
+      "venue": "HardwareX",
+      "year": 2026,
+      "status": "Published",
+      "title": "A low-cost nitrate sensor for community-managed estuaries",
+      "details": "Full build instructions, calibration protocol and a six-month field trial against a laboratory reference method.",
+      "link": "https://doi.org/10.1016/j.ohx.2026.e00541",
+      "added_date": "21.01.2026"
+    },
+    {
+      "people": [
+        "Jasmine Brooks",
+        "Katherine Bennett"
+      ],
+      "venue": "ACS Sustainable Chemistry & Engineering",
+      "year": 2024,
+      "status": "Published",
+      "title": "Chitin–cellulose blends for compostable fishing gear",
+      "details": "Blending recovered chitin with cellulose improves wet strength while keeping seawater degradation within a single fishing season.",
+      "link": "https://doi.org/10.1021/acssuschemeng.4c03318",
+      "added_date": "30.06.2024"
+    },
+    {
+      "people": [
+        "Michael Carter",
+        "Priya Nair"
+      ],
+      "venue": "EGUsphere",
+      "year": 2026,
+      "status": "Preprint",
+      "title": "Temperature variability, not mean warming, governs rhizosphere carbon loss",
+      "details": "A modelling and labelling study separating the effects of mean temperature from the amplitude and frequency of soil-temperature swings.",
+      "link": "https://doi.org/10.5194/egusphere-2026-118",
+      "added_date": "05.10.2026"
+    }
+  ]
+}

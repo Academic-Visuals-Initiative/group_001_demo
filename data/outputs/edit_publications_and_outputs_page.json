@@ -1,0 +1,34 @@
+{
+  "outputs_page": {
+    "subheading": "Recent work from our lab",
+    "heading": "Publications & Outputs",
+    "intro": "Peer-reviewed papers, open datasets and methods produced by the lab — everything we put out into the world.",
+    "divider_label": "The Record",
+    "back_button_label": "Back to Home",
+    "more_button_label": "Load older outputs",
+    "closing": {
+      "heading": "Looking for the full bibliography?",
+      "text": "Complete publication lists, citation metrics and preprints are available on our Google Scholar and ORCID profiles.",
+      "buttons": [
+        {
+          "style": "light",
+          "label": "Google Scholar",
+          "link": "https://scholar.google.com/citations?user=clearwaterlab"
+        },
+        {
+          "style": "outline",
+          "label": "ORCID",
+          "link": "https://orcid.org/0000-0002-1825-0097"
+        }
+      ]
+    }
+  },
+  "pinned_label": "Pinned",
+  "featured_tag_label": "Featured",
+  "featured_tag_background_colour": "#567813",
+  "list_file_names": [
+    "publications",
+    "datasets",
+    "patents"
+  ]
+}

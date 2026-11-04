@@ -1,0 +1,144 @@
+{
+  "name_as_exactly_as_in_category_file": "Carlos Mendoza",
+  "summary": "IoT sensor grids, autonomous telemetry arrays & field-deployable instrumentation.",
+  "add_affiliations": [
+    {
+      "affiliation": "Field Systems Engineer",
+      "affiliation_info": [
+        "CLEAR WATER LAB, Department of Engineering"
+      ]
+    }
+  ],
+  "add_single_line_information": [
+    {
+      "label": "In the lab since",
+      "value": "2021"
+    },
+    {
+      "label": "Main focus",
+      "value": "Sensor grids & telemetry"
+    },
+    {
+      "label": "Field sites",
+      "value": "Station Nord-03, coastal transect"
+    }
+  ],
+  "orcid": "https://orcid.org/0000-0003-1234-5678",
+  "googlescholar": "https://scholar.google.com/citations?user=carlos-mendoza",
+  "linkedin": "https://linkedin.com/in/carlos-mendoza",
+  "github": "https://github.com/carlos-mendoza",
+  "cv": "assets/documents/cv/millercv.pdf",
+  "add_expandable_information": [
+    {
+      "expandable_information_row_label": "Education",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "BEng, 2015",
+          "expandable_item_right_column_primary_information": [
+            "BEng in Electronic Engineering",
+            "Universidad Nacional de Colombia"
+          ],
+          "expandable_item_right_column_secondary_information": [
+            {
+              "label": "Thesis",
+              "value": "A low-power telemetry node for unattended environmental sensing"
+            },
+            {
+              "label": "Supervisor",
+              "value": "Prof. C. Rojas (Universidad Nacional de Colombia)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "expandable_information_row_label": "Honours & recognition",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "2023",
+          "expandable_item_right_column_primary_information": "Best Field Instrumentation Paper, AGU Fall Meeting"
+        }
+      ]
+    },
+    {
+      "expandable_information_row_label": "Previous appointments",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "2016 – 2021",
+          "expandable_item_right_column_primary_information": "Industrial instrumentation, sensors for plants that could not stop running"
+        }
+      ]
+    }
+  ],
+  "add_paragraph": [
+    "Carlos designs and builds the hardware the science runs on: sensor grids that wake on a schedule, log for a season on a battery, and survive weather that would end a laptop in an afternoon.",
+    "The ==autonomous telemetry arrays== at Station Nord-03 and the coastal sites are his — as are the field repairs, the spare parts box and the deployment calendar.",
+    "He came to the lab from industrial instrumentation and still writes every deployment as a checklist that a visiting student can follow."
+  ],
+  "add_focus_list": [
+    "IoT sensor grids",
+    "Autonomous telemetry arrays",
+    "Power & enclosure design",
+    "Field deployment & repair"
+  ],
+  "add_a_timeline": {
+    "heading": "Path",
+    "items_of_the_timeline": [
+      {
+        "timeline_item_date": "2016 – 2021",
+        "timeline_item_title": "Industrial instrumentation",
+        "timeline_item_text": "Sensors for plants that could not stop running."
+      },
+      {
+        "timeline_item_date": "2021",
+        "timeline_item_title": "Joined CLEAR WATER LAB",
+        "timeline_item_text": "Took on the sensor grids, the spare parts box and the deployment calendar."
+      },
+      {
+        "timeline_item_date": "2022",
+        "timeline_item_title": "The telemetry arrays at Station Nord-03",
+        "timeline_item_text": "Autonomous arrays logging a season on one battery."
+      }
+    ]
+  },
+  "add_people": {
+    "heading": "Works closely with",
+    "people": [
+      {
+        "name": "Min-jun Park",
+        "position": "Research Lead"
+      },
+      {
+        "name": "Jasmine Brooks",
+        "position": "Research Lead"
+      }
+    ]
+  },
+  "publications": true,
+  "add_gallery": {
+    "heading": "From the field",
+    "layout": "grid",
+    "columns": 2,
+    "size": "4x3",
+    "images": [
+      {
+        "image_path": "ph-15.jpg",
+        "image_alt": "",
+        "image_caption": "Installing a sensor node on the transect",
+        "credit": "CWL Field Team"
+      },
+      {
+        "image_path": "ph-13.jpg",
+        "image_alt": "",
+        "image_caption": "Coastal site, after a winter",
+        "credit": "CWL Field Team"
+      }
+    ]
+  },
+  "add_tags": [
+    "iot",
+    "telemetry",
+    "instrumentation",
+    "fieldwork"
+  ]
+}

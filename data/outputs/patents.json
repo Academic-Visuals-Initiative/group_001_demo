@@ -1,0 +1,50 @@
+{
+  "list_name": "patent",
+  "label": "Patents",
+  "small_tag_label_shown_in_single_items_in_main_list": "Patent",
+  "background_colour": "#e3dfd0",
+  "primary_button_label": "View filing",
+  "secondary_button_label": "Documentation",
+  "add_items_to_list": [
+    {
+      "people": [
+        "Carlos Mendoza",
+        "Min-jun Park"
+      ],
+      "venue": "Norwegian Industrial Property Office",
+      "year": 2026,
+      "status": "Granted",
+      "is_featured": true,
+      "title": "Open-hardware turbidity sensor with biofouling compensation",
+      "details": "A self-cleaning optical path and drift-correction method for long-term deployment in coastal and estuarine waters. Patent NO 348 219 B1.",
+      "link": "https://patents.example.org/NO348219B1",
+      "added_date": "14.05.2026"
+    },
+    {
+      "people": [
+        "Jasmine Brooks",
+        "Michael Carter"
+      ],
+      "venue": "European Patent Office",
+      "year": 2025,
+      "status": "Pending",
+      "title": "Chitin-based biodegradable film and method of manufacture",
+      "details": "A solvent-free route to flexible chitin films whose degradation rate is set by acetylation degree rather than additives. Application EP 4 512 887 A1.",
+      "link": "https://patents.example.org/EP4512887A1",
+      "added_date": "09.10.2025"
+    },
+    {
+      "people": [
+        "Min-jun Park",
+        "Emily Morgan"
+      ],
+      "venue": "Norwegian Industrial Property Office",
+      "year": 2024,
+      "status": "Granted",
+      "title": "Passive aerosol sampler with size-selective inlet",
+      "details": "A low-power sampler that separates coarse and fine particulate fractions for isotopic source apportionment. Patent NO 341 706 B1.",
+      "link": "https://patents.example.org/NO341706B1",
+      "added_date": "22.08.2024"
+    }
+  ]
+}

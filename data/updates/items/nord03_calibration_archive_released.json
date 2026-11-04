@@ -1,0 +1,64 @@
+{
+  "current_date": "2026-10-28",
+  "add_relevant_category_name": "Dataset",
+  "item_title": "Five years of Station Nord-03 corrections are now public",
+  "item_introduction": "The archive explains every gap and every drift correction behind the Oslofjord water-quality series.",
+  "add_author_names": [
+    "Carlos Mendoza",
+    "Min-jun Park"
+  ],
+  "add_image": {
+    "image_path": "assets/images/research_areas_and_labs/labs/station_nord_03_coastal_observatory_01.jpg",
+    "image_alt": "The coastal observatory building on the shore",
+    "image_caption": "Station Nord-03 at low tide. The archive covers every service visit since 2021."
+  },
+  "add_paragraph": [
+    "The water-quality series from **Station Nord-03** has been online since 2021, but until now the corrections behind it lived in a shared spreadsheet and a folder of photographs. The new archive publishes **412 service records** across nine sensors: reference comparisons, drift coefficients, firmware versions and the reason for every gap.",
+    "It is a deliberately unglamorous release. Each quality flag in the hourly series can now be traced to a specific visit — a scratched optical window, a logger reset, a calibration that failed its acceptance check. Reusers no longer have to take the flags on trust.",
+    "The archive is versioned on TerraNova Open Data and will be updated after each quarterly service. A README explains the file layout and the correction workflow."
+  ],
+  "add_gallery": {
+    "layout": "grid",
+    "columns": 2,
+    "size": "16x9",
+    "images": [
+      {
+        "image_path": "assets/images/research_areas_and_labs/labs/station_nord_03_coastal_observatory_02.jpg",
+        "image_alt": "The observatory station against a mountain backdrop",
+        "image_caption": "The station in winter, when servicing is hardest.",
+        "credit": "CLEAR WATER LAB"
+      },
+      {
+        "image_path": "assets/images/research_areas_and_labs/labs/environmental_sensor_development_lab.jpg",
+        "image_alt": "Electronics benches in the sensor development lab",
+        "image_caption": "Where the replacement sensor heads are built and tested.",
+        "credit": "Carlos Mendoza"
+      }
+    ]
+  },
+  "add_tags": [
+    "dataset",
+    "open-data",
+    "calibration",
+    "coastal-observatory"
+  ],
+  "add_full_width_links": {
+    "heading": "Access",
+    "links": [
+      {
+        "label": "Open the calibration archive",
+        "link": "https://data.terranova.example.edu/datasets/nord03-calibration",
+        "note": "CC BY 4.0"
+      },
+      {
+        "label": "Oslofjord water-quality series",
+        "link": "https://data.terranova.example.edu/datasets/oslofjord-nord03",
+        "note": "Hourly series, 2021–2026"
+      }
+    ]
+  },
+  "add_contact_information": {
+    "name": "Carlos Mendoza",
+    "email": "carlos.mendoza@clearwaterlab.org"
+  }
+}

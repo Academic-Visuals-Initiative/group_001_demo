@@ -1,0 +1,18 @@
+{
+  "papers_section": {
+    "subheading": "Selected work",
+    "heading": "Recent publications",
+    "intro": "Peer-reviewed papers, open datasets and methods from the last three years. The full list, including preprints and conference outputs, lives on the Publications & Outputs page.",
+    "lists": "publications",
+    "number_only": [
+      "publications",
+      "patents"
+    ],
+    "max_items": 3,
+    "show_reverse_numbering": true,
+    "button": {
+      "label": "View all outputs",
+      "link": "@outputs"
+    }
+  }
+}

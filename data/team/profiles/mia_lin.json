@@ -1,0 +1,105 @@
+{
+  "name_as_exactly_as_in_category_file": "Dr. Mia Lin",
+  "summary": "Isotope tracing, root exudate chemistry & plant-soil carbon exchange in alpine warming experiments.",
+  "add_affiliations": [
+    {
+      "affiliation": "Assistant Professor",
+      "affiliation_info": [
+        "Tsinghua University, Beijing",
+        "Former Postdoc, CLEAR WATER LAB"
+      ]
+    }
+  ],
+  "ribbon": "Now Assistant Professor, Tsinghua University, Beijing.",
+  "add_single_line_information": [
+    {
+      "label": "Degree",
+      "value": "Postdoc, 2023"
+    },
+    {
+      "label": "In the lab",
+      "value": "2021 â€“ 2023"
+    },
+    {
+      "label": "Supervisor",
+      "value": "Michael Carter"
+    },
+    {
+      "label": "Working on",
+      "value": "Plant-soil carbon exchange"
+    }
+  ],
+  "add_expandable_information": [
+    {
+      "expandable_information_row_label": "Education",
+      "add_information_to_expandable_item": [
+        {
+          "expandable_item_left_column_info": "PhD, 2020",
+          "expandable_item_right_column_primary_information": [
+            "PhD in Soil Biogeochemistry",
+            "Peking University"
+          ],
+          "expandable_item_right_column_secondary_information": [
+            {
+              "label": "Thesis",
+              "value": "Stable isotope tracing of rhizosphere carbon fluxes"
+            },
+            {
+              "label": "Supervisor",
+              "value": "Prof. W. Zhang (Peking University)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "add_paragraph": [
+    "Mia Lin was a postdoc in the lab until 2023, working on isotope tracing and the chemistry of root exudates â€” the compounds that decide what a rhizosphere becomes.",
+    "She built the ==Â¹Â³C labelling rig== the lab still uses for its warming experiment.",
+    "She is now an Assistant Professor at Tsinghua University in Beijing, running her own group on plant-soil carbon exchange."
+  ],
+  "add_focus_list": [
+    "Isotope tracing",
+    "Root exudate chemistry",
+    "Plant-soil carbon exchange"
+  ],
+  "add_a_timeline": {
+    "heading": "Where they went",
+    "items_of_the_timeline": [
+      {
+        "timeline_item_date": "2021",
+        "timeline_item_title": "Joined the lab as a postdoc",
+        "timeline_item_text": "Isotope tracing and the chemistry of root exudates."
+      },
+      {
+        "timeline_item_date": "2023",
+        "timeline_item_title": "Postdoc completed",
+        "timeline_item_text": "Built the Â¹Â³C labelling rig the warming experiment still uses."
+      },
+      {
+        "timeline_item_date": "Now",
+        "timeline_item_title": "Assistant Professor, Tsinghua University",
+        "timeline_item_text": "Beijing â€” her own group on plant-soil carbon exchange."
+      }
+    ]
+  },
+  "add_gallery": {
+    "heading": "From the field",
+    "layout": "grid",
+    "columns": 1,
+    "size": "4x3",
+    "images": [
+      {
+        "image_path": "ph-04.png",
+        "image_alt": "",
+        "image_caption": "The plots the labelling rig was built for",
+        "credit": "CWL Field Team"
+      }
+    ]
+  },
+  "add_tags": [
+    "alumni",
+    "isotopes",
+    "exudates"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "title": "Biodegradable Polymer Synthesis",
+  "keywords_for_the_page_and_card": "Materials chemistry · Chitin · Marine degradation · Circular materials",
+  "intro": "Most plastics that reach the sea stay there. We design materials that do not — and measure how quickly they disappear.",
+  "show_the_page_heading": true,
+  "add_image": {
+    "image_path": "assets/images/research_areas_and_labs/home_research_areas_section/biodegradable_polymer_synthesis.jpg",
+    "image_alt": "Biodegradable polymer samples on a laboratory bench"
+  },
+  "add_focus_list": [
+    "Chitin and chitosan films from shellfish waste",
+    "Seawater degradation measured under controlled conditions",
+    "Mechanical properties tuned for packaging and coatings",
+    "Life-cycle assessment with regional waste streams"
+  ],
+  "add_paragraph": "Chitin is the second most abundant biopolymer on Earth and a large fraction of it is discarded by the seafood industry. We turn that waste into films and coatings whose degradation rate can be tuned — fast enough to disappear in seawater, slow enough to do their job on a shelf.\n\nEvery formulation is tested in the same seawater mesocosm, with mass loss, oxygen demand and fragmentation tracked over twelve months. The results feed a simple question: is this material genuinely better, or just differently labelled?",
+  "add_gallery": {
+    "images": [
+      {
+        "image_path": "assets/images/research_areas_and_labs/home_research_areas_section/biodegradable_polymer_synthesis.jpg",
+        "image_alt": "Polymer synthesis pathways",
+        "image_caption": "From shellfish waste to compostable film."
+      }
+    ]
+  },
+  "add_content_to_page": [
+    {
+      "add_gallery": {
+        "heading": "Materials lab",
+        "size": "4:3",
+        "columns": 3,
+        "images": [
+          {
+            "image_path": "assets/images/research_areas_and_labs/home_research_areas_section/biodegradable_polymer_synthesis.jpg",
+            "image_alt": "Polymer chemistry diagram",
+            "image_caption": "Chitin extraction and film casting"
+          },
+          {
+            "image_path": "assets/images/about_us/polymers.jpg",
+            "image_alt": "Polymer samples on a bench",
+            "image_caption": "Films curing at controlled humidity"
+          },
+          {
+            "image_path": "assets/images/research_areas_and_labs/labs/icp_ms_suite.jpg",
+            "image_alt": "Analytical instrumentation",
+            "image_caption": "Residual-monomer analysis"
+          }
+        ]
+      }
+    }
+  ]
+}
